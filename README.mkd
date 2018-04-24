@@ -1,4 +1,6 @@
-# CSharpSDK
+# Kii Cloud Unity SDK
+
+**Official support by Kii has been terminated**
 
 ## Precondition
 
