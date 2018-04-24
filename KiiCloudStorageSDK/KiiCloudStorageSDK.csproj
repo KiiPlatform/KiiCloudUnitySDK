@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0E5F1D35-3C5E-43B6-AC40-482B222FFBD4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KiiCorp.Cloud.Storage</RootNamespace>
+    <AssemblyName>KiiCloudStorageSDK</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ReleaseVersion>1.2.3</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <DocumentationFile>bin\Debug\KiiCloudStorageSDK.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'DebugTest|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <DocumentationFile>bin\Debug\KiiCloudStorageSDK.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="storage\ConstantValues.cs" />
+    <Compile Include="storage\Kii.cs" />
+    <Compile Include="storage\KiiBaseObject.cs" />
+    <Compile Include="storage\KiiUser.cs" />
+    <Compile Include="storage\engine\ApiResponse.cs" />
+    <Compile Include="storage\engine\KiiCloudEngine.cs" />
+    <Compile Include="storage\exception\IllegalKiiBaseObjectFormatException.cs" />
+    <Compile Include="storage\utils\ErrorInfo.cs" />
+    <Compile Include="storage\utils\Utils.cs" />
+    <Compile Include="storage\KiiBucket.cs" />
+    <Compile Include="storage\KiiScope.cs" />
+    <Compile Include="storage\KiiObject.cs" />
+    <Compile Include="storage\KiiGroup.cs" />
+    <Compile Include="storage\exception\GroupOperationException.cs" />
+    <Compile Include="storage\exception\CloudException.cs" />
+    <Compile Include="storage\KiiQueryResult.cs" />
+    <Compile Include="storage\KiiQuery.cs" />
+    <Compile Include="storage\KiiClause.cs" />
+    <Compile Include="storage\KiiBaseBucket.cs" />
+    <Compile Include="storage\http\KiiHttpClient.cs" />
+    <Compile Include="storage\http\KiiHttpHeaderList.cs" />
+    <Compile Include="storage\http\KiiHttpClientFactory.cs" />
+    <Compile Include="storage\http\impl\KiiClientFactoryImpl.cs" />
+    <Compile Include="storage\http\impl\KiiHttpClientImpl.cs" />
+    <Compile Include="storage\http\impl\KiiHttpHeaderListImpl.cs" />
+    <Compile Include="storage\http\KiiHttpMethod.cs" />
+    <Compile Include="storage\KiiACL.cs" />
+    <Compile Include="storage\utils\KiiSet.cs" />
+    <Compile Include="storage\KiiACLEntry.cs" />
+    <Compile Include="storage\KiiSubject.cs" />
+    <Compile Include="storage\KiiBucketACL.cs" />
+    <Compile Include="storage\ACLOperation.cs" />
+    <Compile Include="storage\BucketAction.cs" />
+    <Compile Include="storage\KiiObjectACL.cs" />
+    <Compile Include="storage\ObjectAction.cs" />
+    <Compile Include="storage\KiiAnonymousUser.cs" />
+    <Compile Include="storage\KiiAnyAuthenticatedUser.cs" />
+    <Compile Include="storage\AccessControllable.cs" />
+    <Compile Include="storage\utils\IKiiLogger.cs" />
+    <Compile Include="storage\http\NetworkException.cs" />
+    <Compile Include="storage\KiiGeoPoint.cs" />
+    <Compile Include="storage\callbacks\KiiCallbacks.cs" />
+    <Compile Include="storage\http\impl\KiiAsyncClientFactoryImpl.cs" />
+    <Compile Include="storage\http\impl\KiiAsyncHttpClientImpl.cs" />
+    <Compile Include="storage\exception\BadRequestException.cs" />
+    <Compile Include="storage\exception\ConflictException.cs" />
+    <Compile Include="storage\exception\ForbiddenException.cs" />
+    <Compile Include="storage\exception\NotFoundException.cs" />
+    <Compile Include="storage\exception\UnauthorizedException.cs" />
+    <Compile Include="storage\callbacks\KiiACLListCallback.cs" />
+    <Compile Include="abtesting\ConversionEvent.cs" />
+    <Compile Include="abtesting\KiiExperiment.cs" />
+    <Compile Include="abtesting\KiiExperimentCallback.cs" />
+    <Compile Include="abtesting\KiiExperimentStatus.cs" />
+    <Compile Include="abtesting\Variation.cs" />
+    <Compile Include="abtesting\VariationSamplerByKiiUser.cs" />
+    <Compile Include="abtesting\VariationSampler.cs" />
+    <Compile Include="storage\http\ProgressCallbackHelper.cs" />
+    <Compile Include="storage\KiiServerCodeEntry.cs" />
+    <Compile Include="storage\KiiServerCodeExecResult.cs" />
+    <Compile Include="storage\KiiServerCodeEntryArgument.cs" />
+    <Compile Include="storage\KiiPushInstallation.cs" />
+    <Compile Include="storage\KiiTopic.cs" />
+    <Compile Include="storage\KiiTopicACL.cs" />
+    <Compile Include="storage\KiiPushSubscription.cs" />
+    <Compile Include="storage\TopicAction.cs" />
+    <Compile Include="storage\KiiSubscribable.cs" />
+    <Compile Include="storage\SDKClientInfo.cs" />
+    <Compile Include="analytics\KiiAnalytics.cs" />
+    <Compile Include="analytics\KiiEvent.cs" />
+    <Compile Include="analytics\exception\ErrorInfo.cs" />
+    <Compile Include="analytics\exception\EventUploadException.cs" />
+    <Compile Include="analytics\result\GroupedResult.cs" />
+    <Compile Include="analytics\result\ResultCondition.cs" />
+    <Compile Include="analytics\result\GroupedSnapShot.cs" />
+    <Compile Include="analytics\result\DateRange.cs" />
+    <Compile Include="analytics\callbacks\KiiAnalyticsCallbacks.cs" />
+    <Compile Include="storage\push_message\APNSJsonMapper.cs" />
+    <Compile Include="storage\push_message\APNSData.cs" />
+    <Compile Include="storage\push_message\APNSMessage.cs" />
+    <Compile Include="storage\push_message\DirectPushMessage.cs" />
+    <Compile Include="storage\push_message\GCMJsonMapper.cs" />
+    <Compile Include="storage\push_message\GCMMessage.cs" />
+    <Compile Include="storage\push_message\GCMData.cs" />
+    <Compile Include="storage\push_message\JsonMapper.cs" />
+    <Compile Include="storage\push_message\KiiPushMessage.cs" />
+    <Compile Include="storage\push_message\KiiPushMessageData.cs" />
+    <Compile Include="storage\push_message\PushToAppMessage.cs" />
+    <Compile Include="storage\push_message\PushToUserMessage.cs" />
+    <Compile Include="storage\push_message\ReceivedMessage.cs" />
+    <Compile Include="storage\http\KiiHttpUtils.cs" />
+    <Compile Include="storage\UserFields.cs" />
+    <Compile Include="storage\exception\AlreadyHasIdentityException.cs" />
+    <Compile Include="storage\IdentityData.cs" />
+    <Compile Include="abtesting\RandomVariationSampler.cs" />
+    <Compile Include="storage\exception\SocialException.cs" />
+    <Compile Include="storage\exception\OAuthException.cs" />
+    <Compile Include="storage\utils\_KiiInternalUtils.cs" />
+    <Compile Include="storage\exception\UserCancelException.cs" />
+    <Compile Include="storage\exception\NativeInteractionException.cs" />
+    <Compile Include="storage\exception\ServerConnectionException.cs" />
+    <Compile Include="storage\connector\Provider.cs" />
+    <Compile Include="storage\connector\SocialAccountInfo.cs" />
+    <Compile Include="storage\KiiListResult.cs" />
+    <Compile Include="storage\push_message\MqttData.cs" />
+    <Compile Include="storage\push_message\MqttMessage.cs" />
+    <Compile Include="storage\LocaleContainer.cs" />
+    <Compile Include="storage\exception\GoneException.cs" />
+    <Compile Include="storage\KiiServerCodeEnvironmentVersion.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="storage\http\" />
+    <Folder Include="storage\http\impl\" />
+    <Folder Include="storage\callbacks\" />
+    <Folder Include="abtesting\" />
+    <Folder Include="storage\push_message\" />
+    <Folder Include="storage\connector\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JsonOrg\JsonOrg.csproj">
+      <Project>{67C02AC4-13B3-48AE-85D1-B567ECF04802}</Project>
+      <Name>JsonOrg</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

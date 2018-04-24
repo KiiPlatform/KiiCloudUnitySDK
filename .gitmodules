@@ -1,0 +1,3 @@
+[submodule "UnityPlugins"]
+	path = UnityPlugins
+	url = https://github.com/KiiCorp/KiiUnityPushPlugin.git

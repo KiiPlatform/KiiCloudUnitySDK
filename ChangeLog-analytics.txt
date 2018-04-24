@@ -1,0 +1,11 @@
+# Unity Analytics SDK Changes:
+
+## Release v1.1.0.0 (September 19, 2013 / File MD5: 6ac9cb77b723c44bc28f93cc83ee742a)
+
+China server is supported.
+If you want to use the server in China, please set 
+KiiAnalytics.Site.CN to KiiAnalytics.Initialize.
+
+## Release v1.0.0.0 (August 21, 2013 / File MD5: 912c02c7ce798aac7d90464486cf3d23)
+
+Initial Release!

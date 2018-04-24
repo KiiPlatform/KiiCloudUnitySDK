@@ -1,0 +1,21 @@
+# CSharpSDK
+
+## Precondition
+
+This repository has git sub module. After cloning this repository, you
+must execute following commands in this directory:
+
+```sh
+# git submodule init
+# git submodule update
+```
+
+## Build
+
+You only have to run `xbuild` on project root.
+
+```
+$ xbuild
+```
+
+Thus, you can find CSharpSDK dll under `KiiCloudStorageSDK/bin/` directory.

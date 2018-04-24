@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1714AEC9-9A5E-4DC0-B17C-A4F90AA8FF35}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KiiCorp.Cloud.Storage</RootNamespace>
+    <AssemblyName>KiiCloudStorageTest</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ReleaseVersion>1.2.3</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>True</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Moq">
+      <HintPath>..\..\Moq.4.0.10827\NET35\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="nunit.framework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="storage\test\utils\json\JSONObjectTest.cs" />
+    <Compile Include="storage\test\http\MockHttpClient.cs" />
+    <Compile Include="storage\test\http\MockHttpClientFactory.cs" />
+    <Compile Include="storage\test\http\MockHttpHeaderList.cs" />
+    <Compile Include="storage\test\utils\TestKiiSet.cs" />
+    <Compile Include="storage\test\KiiUser\KiiUser_BuilderTest.cs" />
+    <Compile Include="storage\test\KiiUser\KiiUser_LoginLogoutTest.cs" />
+    <Compile Include="storage\test\KiiUser\KiiUser_PropertyTest.cs" />
+    <Compile Include="storage\test\KiiUser\KiiUser_RegisterRefresh.cs" />
+    <Compile Include="storage\test\KiiUser\KiiUser_validationTest.cs" />
+    <Compile Include="storage\test\KiiBucket\TestKiiBucket.cs" />
+    <Compile Include="storage\test\KiiBucket\TestKiiBucket_validation.cs" />
+    <Compile Include="storage\test\KiiObject\TestKiiObject.cs" />
+    <Compile Include="storage\test\KiiObject\ACL\TestKiiObjectACL.cs" />
+    <Compile Include="storage\test\KiiGroup\TestKiiGroup.cs" />
+    <Compile Include="storage\test\KiiGroup\TestKiiGroup_request.cs" />
+    <Compile Include="storage\test\KiiUser\TestKiiUser_find.cs" />
+    <Compile Include="storage\test\KiiClause\TestKiiClause.cs" />
+    <Compile Include="storage\test\KiiClause\TestKiiClause_and_or.cs" />
+    <Compile Include="storage\test\KiiQuery\TestKiiQuery.cs" />
+    <Compile Include="storage\test\KiiBaseObject\TestKiiBaseObject.cs" />
+    <Compile Include="storage\test\TestKii.cs" />
+    <Compile Include="storage\attributes\KiiUTInfoAttribute.cs" />
+    <Compile Include="storage\attributes\KiiTestCollector.cs" />
+    <Compile Include="storage\test\KiiUser\KiiUser_CreateByUriTest.cs" />
+    <Compile Include="storage\test\KiiClause\TestKiiClause_geo.cs" />
+    <Compile Include="storage\test\KiiGeoPoint\TestKiiGeoPoint.cs" />
+    <Compile Include="storage\test\KiiObject\TestKiiObject_geo.cs" />
+    <Compile Include="storage\test\JIRA\CMO4964.cs" />
+    <Compile Include="storage\test\JIRA\CMO5086.cs" />
+    <Compile Include="storage\test\KiiBucket\TestKiiBucketACL.cs" />
+    <Compile Include="storage\test\KiiObject\ACL\TestKiiObjectACL_async.cs" />
+    <Compile Include="storage\test\KiiBucket\TestKiiBucketACL_async.cs" />
+    <Compile Include="storage\test\KiiUser\KiiUser_LoginLogoutTest_async.cs" />
+    <Compile Include="storage\test\KiiBucket\TestKiiBucket_async.cs" />
+    <Compile Include="storage\test\KiiObject\TestKiiObject_async.cs" />
+    <Compile Include="storage\test\KiiGroup\TestKiiGroup_request_async.cs" />
+    <Compile Include="storage\test\KiiUser\KiiUser_PasswordResetTest_async.cs" />
+    <Compile Include="storage\test\KiiUser\KiiUser_PasswordResetTest.cs" />
+    <Compile Include="storage\test\KiiUser\TestKiiUser_find_async.cs" />
+    <Compile Include="storage\test\KiiUser\TestKiiUser_Register_async.cs" />
+    <Compile Include="storage\test\KiiUser\TestKiiUser_ChangeAPI.cs" />
+    <Compile Include="storage\test\KiiUser\TestKiiUser_ChangeAPI_async.cs" />
+    <Compile Include="storage\test\KiiUser\TestKiiUser_RUD.cs" />
+    <Compile Include="storage\test\KiiUser\TestKiiUser_RUD_async.cs" />
+    <Compile Include="storage\test\KiiUser\TestKiiUser_resendVerification.cs" />
+    <Compile Include="storage\test\KiiUser\TestKiiUser_resendVerification_async.cs" />
+    <Compile Include="storage\test\KiiObject\TestKiiObject_body.cs" />
+    <Compile Include="abtesting\test\TestVariationSamplerByKiiUser.cs" />
+    <Compile Include="abtesting\test\TestKiiExperiment.cs" />
+    <Compile Include="abtesting\test\TestVariation.cs" />
+    <Compile Include="abtesting\test\TestConversionEvent.cs" />
+    <Compile Include="storage\test\KiiObject\TestKiiObject_publish.cs" />
+    <Compile Include="storage\test\KiiServerCodeEntry\TestKiiServerCodeEntry.cs" />
+    <Compile Include="storage\test\KiiObject\TestKiiObject_DeleteBody.cs" />
+    <Compile Include="storage\test\MockExample.cs" />
+    <Compile Include="storage\test\Push\TestKiiPushInstallation.cs" />
+    <Compile Include="storage\test\Push\TestKiiPushMessage.cs" />
+    <Compile Include="storage\test\Push\TestKiiPushMessageData.cs" />
+    <Compile Include="storage\test\Push\TestKiiPushSubscription.cs" />
+    <Compile Include="storage\test\Push\TestReceivedMessage.cs" />
+    <Compile Include="storage\test\Push\TestKiiTopic.cs" />
+    <Compile Include="storage\test\KiiUser\KiiUserEqualityTest.cs" />
+    <Compile Include="storage\test\AppConst.cs" />
+    <Compile Include="storage\test\TestSDKHeader.cs" />
+    <Compile Include="storage\test\KiiQuery\TestObjectCount.cs" />
+    <Compile Include="storage\test\utils\KiiAssertion.cs" />
+    <Compile Include="storage\test\utils\CountDownLatch.cs" />
+    <Compile Include="storage\test\KiiQuery\TestObjectCountAsync.cs" />
+    <Compile Include="storage\test\TestSiteSG.cs" />
+    <Compile Include="storage\test\KiiObject\TestKiiObjectWithId.cs" />
+    <Compile Include="storage\test\KiiObject\TestKiiObjectWithUri.cs" />
+    <Compile Include="storage\test\KiiObject\TestKiiObjectWithNoId.cs" />
+    <Compile Include="storage\test\KiiObject\TestKiiObjectWithQuery.cs" />
+    <Compile Include="abtesting\test\TestRandomVariationSampler.cs" />
+    <Compile Include="storage\test\KiiACL\TestKiiACLEquality.cs" />
+    <Compile Include="storage\test\KiiACL\TestKiiACLEntryEquality.cs" />
+    <Compile Include="storage\test\KiiUser\PseudoUserTest.cs" />
+    <Compile Include="storage\test\KiiUser\IdentityDataTest.cs" />
+    <Compile Include="storage\test\KiiUser\UserFieldsTest.cs" />
+    <Compile Include="storage\test\KiiUser\KiiUserWithIDTest.cs" />
+    <Compile Include="storage\test\KiiGroup\TestKiiGroupWithID.cs" />
+    <Compile Include="storage\test\KiiUser\KiiUserGetIDTest.cs" />
+    <Compile Include="storage\test\KiiObject\KiiObjectWithIdValidationTest.cs" />
+    <Compile Include="storage\test\KiiUser\TestAccessTokenExpiration.cs" />
+    <Compile Include="storage\test\KiiUtils\IsGlobalPhoneNumberTest.cs" />
+    <Compile Include="storage\test\KiiUser\KiiUser_LoginWithTokenAndExpiresAtTest.cs" />
+    <Compile Include="storage\test\Push\TestPushToAppMessageParse.cs" />
+    <Compile Include="storage\test\KiiUser\KiiUser_SocialProviderTest.cs" />
+    <Compile Include="storage\test\KiiUser\KiiUserStatusTest.cs" />
+    <Compile Include="storage\test\KiiUser\TestKiiUser_FBLogin.cs" />
+    <Compile Include="storage\test\KiiUser\KiiUser_ResetPasswordWithNotificationMethodTest.cs" />
+    <Compile Include="storage\test\Push\ListTopicsTest.cs" />
+    <Compile Include="storage\test\Push\TopicExistsTest.cs" />
+    <Compile Include="storage\test\Push\TestKiiTopicACL.cs" />
+    <Compile Include="storage\test\KiiUtils\ValidateEmailTest.cs" />
+    <Compile Include="storage\test\KiiUser\TestKiiUser_SNS_Login.cs" />
+    <Compile Include="storage\test\KiiUser\TestKiiUser_SNS_Link.cs" />
+    <Compile Include="storage\test\KiiUser\TestKiiUser_SNS_UnLink.cs" />
+    <Compile Include="storage\test\TestSiteCN3.cs" />
+    <Compile Include="storage\test\KiiGroup\TestRegisterGroupWithID.cs" />
+    <Compile Include="storage\test\KiiUser\LocaleTest.cs" />
+    <Compile Include="storage\test\KiiUser\KiiUser_CompleteResetPasswordTest.cs" />
+    <Compile Include="storage\test\http\KiiHttpUtilsTest.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="storage\" />
+    <Folder Include="storage\test\" />
+    <Folder Include="storage\test\utils\" />
+    <Folder Include="storage\test\http\" />
+    <Folder Include="storage\test\KiiUser\" />
+    <Folder Include="storage\test\KiiBucket\" />
+    <Folder Include="storage\test\KiiObject\" />
+    <Folder Include="storage\test\KiiObject\ACL\" />
+    <Folder Include="storage\test\KiiGroup\" />
+    <Folder Include="storage\test\KiiClause\" />
+    <Folder Include="storage\test\KiiQuery\" />
+    <Folder Include="storage\test\KiiBaseObject\" />
+    <Folder Include="storage\attributes\" />
+    <Folder Include="storage\test\KiiGeoPoint\" />
+    <Folder Include="storage\test\JIRA\" />
+    <Folder Include="abtesting\" />
+    <Folder Include="abtesting\test\" />
+    <Folder Include="storage\test\KiiServerCodeEntry\" />
+    <Folder Include="storage\test\Push\" />
+    <Folder Include="storage\test\KiiACL\" />
+    <Folder Include="storage\test\KiiUtils\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KiiCloudStorageSDK.csproj">
+      <Project>{0E5F1D35-3C5E-43B6-AC40-482B222FFBD4}</Project>
+      <Name>KiiCloudStorageSDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\KiiTestingCommonLib\KiiTestingCommonLib.csproj">
+      <Project>{172DC1F4-1704-46FE-A501-D3A1F37C63AF}</Project>
+      <Name>KiiTestingCommonLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\JsonOrg\JsonOrg.csproj">
+      <Project>{67C02AC4-13B3-48AE-85D1-B567ECF04802}</Project>
+      <Name>JsonOrg</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ProjectExtensions>
+    <MonoDevelop>
+      <Properties>
+        <Policies>
+          <TextStylePolicy inheritsSet="VisualStudio" inheritsScope="text/plain" scope="text/x-csharp" />
+          <CSharpFormattingPolicy IndentSwitchBody="True" AnonymousMethodBraceStyle="NextLine" PropertyBraceStyle="NextLine" PropertyGetBraceStyle="NextLine" PropertySetBraceStyle="NextLine" EventBraceStyle="NextLine" EventAddBraceStyle="NextLine" EventRemoveBraceStyle="NextLine" StatementBraceStyle="NextLine" ArrayInitializerBraceStyle="NextLine" BeforeMethodDeclarationParentheses="False" BeforeMethodCallParentheses="False" BeforeConstructorDeclarationParentheses="False" BeforeDelegateDeclarationParentheses="False" NewParentheses="False" inheritsSet="Mono" inheritsScope="text/x-csharp" scope="text/x-csharp" />
+        </Policies>
+      </Properties>
+    </MonoDevelop>
+  </ProjectExtensions>
+</Project>

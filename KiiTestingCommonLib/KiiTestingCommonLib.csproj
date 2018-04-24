@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{172DC1F4-1704-46FE-A501-D3A1F37C63AF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KiiCorp.Cloud.Storage</RootNamespace>
+    <AssemblyName>KiiTestingCommonLib</AssemblyName>
+    <ReleaseVersion>1.2.3</ReleaseVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="TestUtilities\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TestUtilities\SDKTestHack.cs" />
+    <Compile Include="TestUtilities\TextUtils.cs" />
+    <Compile Include="TestUtilities\AppUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KiiCloudStorageSDK\KiiCloudStorageSDK.csproj">
+      <Project>{0E5F1D35-3C5E-43B6-AC40-482B222FFBD4}</Project>
+      <Name>KiiCloudStorageSDK</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

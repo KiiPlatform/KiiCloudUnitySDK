@@ -1,0 +1,30 @@
+using System.Reflection;
+using System.Runtime.CompilerServices;
+
+// Information about this assembly is defined by the following attributes.
+// Change them to the values specific to your project.
+
+[assembly: AssemblyTitle("KiiCloudStorageSDK")]
+[assembly: AssemblyDescription("KiiCloud Storage SDK")]
+[assembly: AssemblyConfiguration("")]
+[assembly: AssemblyCompany("Kii")]
+[assembly: AssemblyProduct("Cloud")]
+[assembly: AssemblyCopyright("Kii Corp")]
+[assembly: AssemblyTrademark("")]
+[assembly: AssemblyCulture("")]
+[assembly: InternalsVisibleTo("KiiCloudStorageTest")]
+[assembly: InternalsVisibleTo("KiiCloudStorageLargeTest")]
+[assembly: InternalsVisibleTo("KiiAnalyticsSDKTest")]
+[assembly: InternalsVisibleTo("KiiAnalyticsSDKLargeTest")]
+
+// The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".
+// The form "{Major}.{Minor}.*" will automatically update the build and revision,
+// and "{Major}.{Minor}.{Build}.*" will update just the revision.
+
+[assembly: AssemblyVersion("3.2.10.0")]
+
+// The following attributes are used to specify the signing key for the assembly,
+// if desired. See the Mono documentation for more information about signing.
+
+//[assembly: AssemblyDelaySign(false)]
+//[assembly: AssemblyKeyFile("")]

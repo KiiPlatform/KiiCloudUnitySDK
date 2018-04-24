@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1D002467-60B6-4ABE-92E9-D02298B33816}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KiiCloudUnitySDK</RootNamespace>
+    <AssemblyName>KiiCloudUnitySDK</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ReleaseVersion>1.2.3</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="UnityEngine">
+      <HintPath>libs\UnityEngine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="unity\KiiInitializeBehaviour.cs" />
+    <Compile Include="unity\http\WWWRequestLooper.cs" />
+    <Compile Include="unity\http\impl\KiiAsyncHttpUnityClientImpl.cs" />
+    <Compile Include="unity\http\impl\KiiAsyncUnityClientFactoryImpl.cs" />
+    <Compile Include="unity\http\impl\KiiHttpUnityClientImpl.cs" />
+    <Compile Include="unity\http\impl\KiiUnityClientFactoryImpl.cs" />
+    <Compile Include="unity\http\ProgressCallbackHelper.cs" />
+    <Compile Include="unity\http\impl\WWWUtils.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\KiiCloudStorageSDK\KiiCloudStorageSDK.csproj">
+      <Project>{0E5F1D35-3C5E-43B6-AC40-482B222FFBD4}</Project>
+      <Name>KiiCloudStorageSDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JsonOrg\JsonOrg.csproj">
+      <Project>{67C02AC4-13B3-48AE-85D1-B567ECF04802}</Project>
+      <Name>JsonOrg</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="unity\" />
+    <Folder Include="unity\http\" />
+    <Folder Include="unity\http\impl\" />
+  </ItemGroup>
+</Project>

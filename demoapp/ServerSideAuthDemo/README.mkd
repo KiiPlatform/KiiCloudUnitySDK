@@ -1,0 +1,10 @@
+== Usage
+ 1. Open this project or "Assets/Main.unity" on Unity.
+ 2. Set parameters to MainGUI.cs(AppID, AppKey and ServerUrl in Awake method).
+ 3. Select platform in Unity.
+ 4. Build & Run
+
+== For Android
+When you can't open web site, please check "Internet Access" in PlayerSettings Android tab.
+Unity-KiiCloud needs internet access permission.
+Please set "Internet Access" to "Require".

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED66D79A-8CB5-41F5-89C2-DCBEF7DE29FD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>KiiCorp.Cloud.Analytics</RootNamespace>
+    <AssemblyName>KiiAnalyticsSDKTest</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ReleaseVersion>1.2.3</ReleaseVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="nunit.framework">
+      <HintPath>..\NUnit-2.6.3\bin\nunit.framework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="analytics\test\TestKiiEvent.cs" />
+    <Compile Include="analytics\test\TestKiiAnalytics.cs" />
+    <Compile Include="mock\MockHttpClient.cs" />
+    <Compile Include="mock\MockHttpClientFactory.cs" />
+    <Compile Include="mock\MockHttpHeaderList.cs" />
+    <Compile Include="analytics\test\TestKiiAnalytics_result.cs" />
+    <Compile Include="analytics\test\TestResultCondition.cs" />
+    <Compile Include="analytics\test\TestGroupedResult.cs" />
+    <Compile Include="analytics\test\TestDataRange.cs" />
+    <Compile Include="analytics\test\TestAsyncEventUpload.cs" />
+    <Compile Include="analytics\util\CountDownLatch.cs" />
+    <Compile Include="analytics\test\TestAsyncGetResult.cs" />
+    <Compile Include="analytics\test\TestSiteSG.cs" />
+    <Compile Include="analytics\test\TestSiteCN3.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="analytics\" />
+    <Folder Include="analytics\test\" />
+    <Folder Include="analytics\util\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KiiCloudStorageSDK\KiiCloudStorageSDK.csproj">
+      <Project>{0E5F1D35-3C5E-43B6-AC40-482B222FFBD4}</Project>
+      <Name>KiiCloudStorageSDK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JsonOrg\JsonOrg.csproj">
+      <Project>{67C02AC4-13B3-48AE-85D1-B567ECF04802}</Project>
+      <Name>JsonOrg</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

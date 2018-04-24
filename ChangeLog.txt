@@ -1,0 +1,11 @@
+# Unity Cloud Storage SDK Changes:
+
+## Release v1.1.0.0 (September 19, 2013 / File MD5: 0f41d80f9f6fe67961a09d7413f76e30)
+
+China server is supported.
+If you want to use the server in China, please set 
+Kii.Site.CN to Kii.Initialize.
+
+## Release v1.0.0.0 (August 21, 2013 / File MD5: 7d26e00b9fc92fac4601319caa968bd4)
+
+Initial Release!

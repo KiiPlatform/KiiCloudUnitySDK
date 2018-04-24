@@ -1,0 +1,13 @@
+# Requirements
+
+  * Unity SDK 4.5.3 and above.
+  * Android 2.2 Platform (API Level: 8) and above.
+  * XCode 6 and above.
+
+You also need to read Android-Source/README.mkd.
+
+# Build
+
+```sh
+make
+```

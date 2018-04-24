@@ -1,0 +1,23 @@
+# Mono file
+bin/
+obj/
+*.pidb
+*.userprefs
+AssemblyInfo.dll
+
+# OSX
+.DS_Store
+
+# Documentation
+KiiCloudStorageSDK_doc*.zip
+KiiAnalyticsSDK_doc*.zip
+doc.xml
+docs-cloud/
+docs-analytics/
+mdoc/
+
+# Test result
+TestResult*
+test-results/
+
+Sample
