@@ -14,10 +14,38 @@ must execute following commands in this directory:
 
 ## Build
 
-You only have to run `xbuild` on project root.
+Build steps in Mac OS environment
 
-```
-$ xbuild
+### Requirement
+
+- Unity.
+- Android SDK.
+- XCode command line tools.
+
+### Build unity package
+
+```sh
+make clean
+make archive
 ```
 
-Thus, you can find CSharpSDK dll under `KiiCloudStorageSDK/bin/` directory.
+After completed, Unity must be created under the path.
+
+`./KiiCloudUnitySDK/bin/Release/KiiCloudUnitySDK-Release-{version-name}.unitypackage`
+
+### Build document
+
+```sh
+make clean
+make doc
+```
+
+After completed, HTML files must be created under the path.
+
+`./KiiCloudUnitySDK/docs-cloud`
+
+## Use Visual Studio Community
+
+- open `./KiiCloudUnitySDK.sln`.
+- Choose Project -> Restore NuGet packages. (First time.)
+- Choose Build -> Rebuild All

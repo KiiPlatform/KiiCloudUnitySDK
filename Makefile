@@ -32,6 +32,7 @@ clean-unity:
 build: build-unity
 
 build-unity:
+	nuget restore .
 	(cd UnityPlugins; \
 	sh ./build.sh; \
 	cd ../; \
