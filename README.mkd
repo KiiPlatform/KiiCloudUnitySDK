@@ -2,7 +2,7 @@
 
 **Official support by Kii has been terminated**
 
-## Prepare Submodule
+## Precondition
 
 This repository has git sub module. After cloning this repository, you
 must execute following commands in this directory:
@@ -18,26 +18,34 @@ Build steps in Mac OS environment
 
 ### Requirement
 
-- Visual Studio Community
 - Unity.
 - Android SDK.
 - XCode command line tools.
 
-## Restore NuGet packages
-
-- open `./KiiCloudUnitySDK.sln`.
-- Choose Project -> Restore NuGet packages. (First time.)
-
 ### Build unity package
 
 ```sh
-make all
+make clean
+make archive
 ```
 
-After completed, Unity package must be created under the path.
+After completed, Unity must be created under the path.
 
 `./KiiCloudUnitySDK/bin/Release/KiiCloudUnitySDK-Release-{version-name}.unitypackage`
 
-HTML files must be created under the path.
+### Build document
+
+```sh
+make clean
+make doc
+```
+
+After completed, HTML files must be created under the path.
 
 `./KiiCloudUnitySDK/docs-cloud`
+
+## Use Visual Studio Community
+
+- open `./KiiCloudUnitySDK.sln`.
+- Choose Project -> Restore NuGet packages. (First time.)
+- Choose Build -> Rebuild All
