@@ -1,0 +1,1155 @@
+<html>
+  <head>
+    <title>Kii Cloud SDK: KiiCorp.Cloud.Storage</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">Kii Cloud SDK</a>
+    </div>
+    <h1 class="PageTitle">KiiCorp.Cloud.Storage Namespace</h1>
+    <p class="Summary">
+    </p>
+    <div>
+    </div>
+    <div class="Remarks">
+      <h2 class="Section"> Namespace</h2>
+      <p>
+        <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+      </p>
+      <table class="TypesListing" style="margin-top: 1em">
+        <tr>
+          <th>Type</th>
+          <th>Description</th>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./_KiiInternalUtils.html">_KiiInternalUtils</a>
+          </td>
+          <td>
+             Utility class for internal use.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./AccessControllable.html">AccessControllable</a>
+          </td>
+          <td>
+             Represents an object to which user can set ACL.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ACLOperation.html">ACLOperation</a>
+          </td>
+          <td>
+             Provides enumerated values that indicate a type of ACL operation.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./AlreadyHasIdentityException.html">AlreadyHasIdentityException</a>
+          </td>
+          <td>
+             Thrown if a user already has the identity when the operation is expected for targeted to a pseudo user.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ApiResponse.html">ApiResponse</a>
+          </td>
+          <td>
+             Represents API response.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./APNSData.html">APNSData</a>
+          </td>
+          <td>
+             Represents data to be delivered to each device via Apple Push Notification Service.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./APNSMessage.html">APNSMessage</a>
+          </td>
+          <td>
+             Represents a message for Apple Push Notification Service.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./APNSMessage+Builder.html">APNSMessage.Builder</a>
+          </td>
+          <td>
+             Builder of APNSMessage.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./BadRequestException.html">BadRequestException</a>
+          </td>
+          <td>
+             The exception that is thrown when the Request is not acceptable due to the request is not expected.
+             Reason would be represented by enum.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./BadRequestException+Reason.html">BadRequestException.Reason</a>
+          </td>
+          <td>
+             Represents reason of error.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./BucketAction.html">BucketAction</a>
+          </td>
+          <td>
+             Provides enumerated values that indicate a type of ACL Action for <a href="../KiiCorp.Cloud.Storage/KiiBucket.html">KiiCorp.Cloud.Storage.KiiBucket</a>.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./CloudException.html">CloudException</a>
+          </td>
+          <td>
+             The exception that is thrown when KiiCloud sends error response.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ConflictException.html">ConflictException</a>
+          </td>
+          <td>
+             The exception that is thrown when the Request is not acceptable due to conflict.
+             Reason would be represented by enum.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ConflictException+Reason.html">ConflictException.Reason</a>
+          </td>
+          <td>
+             Represents reason of error.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ConstantValues.html">ConstantValues</a>
+          </td>
+          <td>
+             Collection of constant values for internal use.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./CountCallback.html">CountCallback</a>
+          </td>
+          <td>
+             This callback is used when count aggregation execution completed.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./DirectPushMessage.html">DirectPushMessage</a>
+          </td>
+          <td>
+             "Direct Push" notifications allows you to push messages directly to a specific user.
+             The feature is intended to be used by an app developer only.
+             An app developer can select any application user and directly push a message to this user via the developer portal.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./FieldType.html">FieldType</a>
+          </td>
+          <td>
+             Represents supported field type for hasFieldClause.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ForbiddenException.html">ForbiddenException</a>
+          </td>
+          <td>
+             The exception that is thrown when the Request is forbidden.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./GCMData.html">GCMData</a>
+          </td>
+          <td>
+             Represents data to be delivered to each device via Google Cloud Messaging.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./GCMMessage.html">GCMMessage</a>
+          </td>
+          <td>
+             Represents a message for Google Cloud Messaging.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./GCMMessage+Builder.html">GCMMessage.Builder</a>
+          </td>
+          <td>
+             Builder of GCMMessage.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./GoneException.html">GoneException</a>
+          </td>
+          <td>
+             The exception that is thrown when the requested resource is gone.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./GroupOperationException.html">GroupOperationException</a>
+          </td>
+          <td>
+             The exception that is thrown when Group operation is failed.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./IdentityData.html">IdentityData</a>
+          </td>
+          <td>
+             Identity data.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./IdentityData+Builder.html">IdentityData.Builder</a>
+          </td>
+          <td>
+             Identity data builder.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./IKiiLogger.html">IKiiLogger</a>
+          </td>
+          <td>
+             Provides logging APIs
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./IllegalKiiBaseObjectFormatException.html">IllegalKiiBaseObjectFormatException</a>
+          </td>
+          <td>
+             The exception that is thrown when SDK receives broken json.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./Kii.html">Kii</a>
+          </td>
+          <td>
+             Provides APIs for KiiCloud application features.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./Kii+Site.html">Kii.Site</a>
+          </td>
+          <td>
+             Provides enumerated values that indicate Kii sites.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiACL`2.html">KiiACL&lt;T,U&gt;</a>
+          </td>
+          <td>
+             Provides ACL operations.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiACLCallback`2.html">KiiACLCallback&lt;T,U&gt;</a>
+          </td>
+          <td>
+             Kii ACL callback.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiACLEntry`2.html">KiiACLEntry&lt;T,U&gt;</a>
+          </td>
+          <td>
+             Provides APIs to add/remove ACL entry.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiACLListCallback`2.html">KiiACLListCallback&lt;T,U&gt;</a>
+          </td>
+          <td>
+             This callback is used when API return a list of KiiACLEntry
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiAnonymousUser.html">KiiAnonymousUser</a>
+          </td>
+          <td>
+             Represents Anonymous user
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiAnyAuthenticatedUser.html">KiiAnyAuthenticatedUser</a>
+          </td>
+          <td>
+             Represents any user who is authenticated
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiBaseBucket`1.html">KiiBaseBucket&lt;T&gt;</a>
+          </td>
+          <td>
+             Base interface of KiiBucket
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiBaseObject.html">KiiBaseObject</a>
+          </td>
+          <td>
+             Base class of key-value object.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiBucket.html">KiiBucket</a>
+          </td>
+          <td>
+             Provides APIs for bucket features.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiBucketAcl.html">KiiBucketAcl</a>
+          </td>
+          <td>
+             Provides Bucket ACL operations.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiBucketCallback.html">KiiBucketCallback</a>
+          </td>
+          <td>
+             This callback is used when API returns KiiBucket
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiCallback.html">KiiCallback</a>
+          </td>
+          <td>
+             This callback is used when API does not returns target.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiCheckSubscriptionCallback.html">KiiCheckSubscriptionCallback</a>
+          </td>
+          <td>
+             Kii check subscription callback.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiClause.html">KiiClause</a>
+          </td>
+          <td>
+             Provides APIs to construct query condition.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiGenericsCallback`1.html">KiiGenericsCallback&lt;T&gt;</a>
+          </td>
+          <td>
+             This callback is used when API returns generic types.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiGeoPoint.html">KiiGeoPoint</a>
+          </td>
+          <td>
+             Represents Geo Point.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiGroup.html">KiiGroup</a>
+          </td>
+          <td>
+             Provides APIs for Group features.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiGroupCallback.html">KiiGroupCallback</a>
+          </td>
+          <td>
+             This callback is used when API returns KiiGroup
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiGroupListCallback.html">KiiGroupListCallback</a>
+          </td>
+          <td>
+             This callback is used when API returns a list of KiiGroup
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiHttpClient.html">KiiHttpClient</a>
+          </td>
+          <td>
+             Kii http client. All Http request should be called through this interface
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiHttpClientCallback.html">KiiHttpClientCallback</a>
+          </td>
+          <td>
+             This callback is used when received API response.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiHttpClientFactory.html">KiiHttpClientFactory</a>
+          </td>
+          <td>
+             Kii http client factory.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiHttpClientProgressCallback.html">KiiHttpClientProgressCallback</a>
+          </td>
+          <td>
+             A KiiHttpClientProgressCallback is used to get progress of an operation. 
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiHttpClientProgressPercentageCallback.html">KiiHttpClientProgressPercentageCallback</a>
+          </td>
+          <td>
+             A KiiHttpClientProgressCallback is used to get progress of an operation. 
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiHttpHeaderList.html">KiiHttpHeaderList</a>
+          </td>
+          <td>
+             Kii http header.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiHttpMethod.html">KiiHttpMethod</a>
+          </td>
+          <td>
+             Represents Http method.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiHttpUtils.html">KiiHttpUtils</a>
+          </td>
+          <td>
+             Kii http utils.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiListResult`1.html">KiiListResult&lt;T&gt;</a>
+          </td>
+          <td>
+             Kii list result.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiObject.html">KiiObject</a>
+          </td>
+          <td>
+             Provides APIs for key-value Object CRUD operation on KiiCloud.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiObjectAcl.html">KiiObjectAcl</a>
+          </td>
+          <td>
+             Provides Object ACL operations.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiObjectBodyDownloadCallback.html">KiiObjectBodyDownloadCallback</a>
+          </td>
+          <td>
+             This callback is used when API returns KiiObject and stream
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiObjectBodyProgressCallback.html">KiiObjectBodyProgressCallback</a>
+          </td>
+          <td>
+             This callback is used by the API to notify upload or download progress.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiObjectBodyProgressPercentageCallback.html">KiiObjectBodyProgressPercentageCallback</a>
+          </td>
+          <td>
+             This callback is used by the API to notify upload or download progress.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiObjectCallback.html">KiiObjectCallback</a>
+          </td>
+          <td>
+             This callback is used when API returns KiiObject.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiObjectPublishCallback.html">KiiObjectPublishCallback</a>
+          </td>
+          <td>
+             This callback is used when API returns KiiObject and the URL for attached file.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiPushInstallation.html">KiiPushInstallation</a>
+          </td>
+          <td>
+             Provides APIs of push installation.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiPushInstallation+DeviceType.html">KiiPushInstallation.DeviceType</a>
+          </td>
+          <td>
+             Type of device
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiPushInstallationCallback.html">KiiPushInstallationCallback</a>
+          </td>
+          <td>
+             Kii push installation callback.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiPushMessage.html">KiiPushMessage</a>
+          </td>
+          <td>
+             Used for sending message to topic.
+             Able to generate common, android/ios specific message.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiPushMessage+Builder.html">KiiPushMessage.Builder</a>
+          </td>
+          <td>
+             Builder of the message.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiPushMessageCallback.html">KiiPushMessageCallback</a>
+          </td>
+          <td>
+             Kii push message callback.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiPushMessageData.html">KiiPushMessageData</a>
+          </td>
+          <td>
+             Represent data to be delivered to each device.
+             It contains a JSON object whose field represents key-value pairs of message's payload.
+             Note that, if the data intended to deliver to GCM devices, key can not be a reserved word listed bellow:
+             
+             <ul><li>any key starts with 'google'</li><li>from</li><li>registration_ids</li><li>collapse_key</li><li>data</li><li>delay_while_idle</li><li>time_to_live</li><li>restricted_package_name</li><li>dry_run</li></ul></td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiPushSubscription.html">KiiPushSubscription</a>
+          </td>
+          <td>
+             Provides APIs of subscription.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiQuery.html">KiiQuery</a>
+          </td>
+          <td>
+             Represents query interface.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiQueryCallback`1.html">KiiQueryCallback&lt;T&gt;</a>
+          </td>
+          <td>
+             This callback is used by Query API
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiQueryResult`1.html">KiiQueryResult&lt;T&gt;</a>
+          </td>
+          <td>
+             Contains the result from Cloud query operation.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiServerCodeEntry.html">KiiServerCodeEntry</a>
+          </td>
+          <td>
+             Represents a server side code entry in KiiCloud.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiServerCodeEntryArgument.html">KiiServerCodeEntryArgument</a>
+          </td>
+          <td>
+             Argument passed to the KiiServerCodeEntry.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiServerCodeEntryCallback.html">KiiServerCodeEntryCallback</a>
+          </td>
+          <td>
+             This callback is used when API returns ServerCodeExecResult.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiServerCodeEnvironmentVersion.html">KiiServerCodeEnvironmentVersion</a>
+          </td>
+          <td>
+             Kii server code environment version.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiServerCodeExecResult.html">KiiServerCodeExecResult</a>
+          </td>
+          <td>
+             Represents a result of server side code execution.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiSubject.html">KiiSubject</a>
+          </td>
+          <td>
+             Represents an object that can be set as ACL subject.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiSubscribable.html">KiiSubscribable</a>
+          </td>
+          <td>
+             Describes that user can subscribe this entity.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiSubscriptionCallback.html">KiiSubscriptionCallback</a>
+          </td>
+          <td>
+             Kii subscription callback.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiTopic.html">KiiTopic</a>
+          </td>
+          <td>
+             Topic on Kii push notification service
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiTopicACL.html">KiiTopicACL</a>
+          </td>
+          <td>
+             Provides Topic ACL operations.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiTopicCallback.html">KiiTopicCallback</a>
+          </td>
+          <td>
+             Kii topic callback.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiUser.html">KiiUser</a>
+          </td>
+          <td>
+             Provides APIs for user management features.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiUser+Builder.html">KiiUser.Builder</a>
+          </td>
+          <td>
+             Builds KiiUser instance.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiUser+NotificationMethod.html">KiiUser.NotificationMethod</a>
+          </td>
+          <td>
+             Notification method.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiUser+SocialResultParams.html">KiiUser.SocialResultParams</a>
+          </td>
+          <td>
+             Social result.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiUserCallback.html">KiiUserCallback</a>
+          </td>
+          <td>
+             This callback is used when API returns KiiUser
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./KiiUserListCallback.html">KiiUserListCallback</a>
+          </td>
+          <td>
+             This callback is used when API returns a list of KiiUser
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./LocaleContainer.html">LocaleContainer</a>
+          </td>
+          <td>
+             The purpose of this class is to support the BCP 47 format.
+             Some language code is not supported by System.Globalization.CultureInfo
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./MqttData.html">MqttData</a>
+          </td>
+          <td>
+             Represents data to be delivered to each device via MQTT Notification Service.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./MqttMessage.html">MqttMessage</a>
+          </td>
+          <td>
+             Represents a message for MQTT Notification Service.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./MqttMessage+Builder.html">MqttMessage.Builder</a>
+          </td>
+          <td>
+             Builder of MqttMessage.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./NativeInteractionException.html">NativeInteractionException</a>
+          </td>
+          <td>
+             The exception that is thrown when error occurred in native layer.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./NetworkException.html">NetworkException</a>
+          </td>
+          <td>
+             This exception will be thrown when .NET framework throws a network-related exception.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./NotFoundException.html">NotFoundException</a>
+          </td>
+          <td>
+             The exception that is thrown when the requested entity is not found.
+             Reason would be represented by enum.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./NotFoundException+Reason.html">NotFoundException.Reason</a>
+          </td>
+          <td>
+             Represents reason of error.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./OAuthException.html">OAuthException</a>
+          </td>
+          <td>
+             The exception that is thrown when oauth is failed.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ObjectAction.html">ObjectAction</a>
+          </td>
+          <td>
+             Provides enumerated values that indicate a type of ACL Action for <a href="../KiiCorp.Cloud.Storage/KiiObject.html">KiiCorp.Cloud.Storage.KiiObject</a>.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./PushToAppMessage.html">PushToAppMessage</a>
+          </td>
+          <td>
+             A "Push to App" notification mechanism will let your application know that there were some changes on object(s) in a bucket.
+             By leveraging this notification feature, your application can quickly fetch the changes that occur on the server-side.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./PushToUserMessage.html">PushToUserMessage</a>
+          </td>
+          <td>
+             "Push to User" notifications provide a means to push messages using a publisher-subscriber model.
+             This feature will let you and your app users quickly send messages to other users while providing a way to scope to whom the messages are sent.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ReceivedMessage.html">ReceivedMessage</a>
+          </td>
+          <td>
+             Represents push message.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ReceivedMessage+MessageType.html">ReceivedMessage.MessageType</a>
+          </td>
+          <td>
+             Type of the push message.
+             Details of the push message is described in <a href="../KiiCorp.Cloud.Storage/KiiPushSubscription.html">KiiCorp.Cloud.Storage.KiiPushSubscription</a></td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ReceivedMessage+Scope.html">ReceivedMessage.Scope</a>
+          </td>
+          <td>
+             Scope of the object to which the event is occurred.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./SDKClientInfo.html">SDKClientInfo</a>
+          </td>
+          <td>
+             Generate unity SDK client info.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./ServerConnectionException.html">ServerConnectionException</a>
+          </td>
+          <td>
+             The exception that is thrown when server connection is failed. The
+             process will be succeeded a little later. Please retry later.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./SocialException.html">SocialException</a>
+          </td>
+          <td>
+             The exception that is thrown when social authentication is failed.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./TopicAction.html">TopicAction</a>
+          </td>
+          <td>
+             Defines action of topic. Applicable for <a href="../KiiCorp.Cloud.Storage/KiiTopic.html">KiiCorp.Cloud.Storage.KiiTopic</a>.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./UnauthorizedException.html">UnauthorizedException</a>
+          </td>
+          <td>
+             The exception that is thrown when the request is not authorized.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./UserCancelException.html">UserCancelException</a>
+          </td>
+          <td>
+             The exception that is thrown when user cancels the authorization.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./UserFields.html">UserFields</a>
+          </td>
+          <td>
+             The User Information except for the Identity Data.
+             </td>
+        </tr>
+        <tr valign="top">
+          <td>
+            <a href="./Utils.html">Utils</a>
+          </td>
+          <td>
+             Contains utilities that the KiiSDK uses.
+             </td>
+        </tr>
+      </table>
+    </div>
+    <div class="Members">
+    </div>
+    <hr size="1" />
+    <div class="Copyright">(c) 2014 Kii. All rights reserved. (Last updated: 2018-10-19)</div>
+  </body>
+</html>

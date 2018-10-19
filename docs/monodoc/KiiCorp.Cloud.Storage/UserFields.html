@@ -1,0 +1,967 @@
+<html>
+  <head>
+    <title>KiiCorp.Cloud.Storage.UserFields</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">KiiCloudStorageSDK</a> : <a href="index.html">KiiCorp.Cloud.Storage Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.UserFields">Overview</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.UserFields:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.UserFields:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.UserFields:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:KiiCorp.Cloud.Storage.UserFields">UserFields  Class</h1>
+    <p class="Summary" id="T:KiiCorp.Cloud.Storage.UserFields:Summary">
+             The User Information except for the Identity Data.
+             </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:KiiCorp.Cloud.Storage.UserFields:Signature">public class  <b>UserFields</b> : <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a></div>
+    </div>
+    <div class="Remarks" id="T:KiiCorp.Cloud.Storage.UserFields:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:KiiCorp.Cloud.Storage.UserFields:Docs:Remarks">
+        <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+      </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:KiiCorp.Cloud.Storage.UserFields:Docs:Version Information">
+        <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.
+							</p>
+        <h2 class="Section">Public Constructors</h2>
+        <div class="SectionBox" id="Public Constructors">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:KiiCorp.Cloud.Storage.UserFields()">UserFields</a>
+                    </b>()</div>
+                </td>
+                <td>
+             Initializes a new instance of the <a href="../KiiCorp.Cloud.Storage/UserFields.html">KiiCorp.Cloud.Storage.UserFields</a> class.
+             </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Properties</h2>
+        <div class="SectionBox" id="Public Properties">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.Storage.UserFields.Country">Country</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. 
+             Gets or sets the country.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.Storage.UserFields.Displayname">Displayname</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. 
+             Gets or sets the displayname.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.Storage.UserFields.IsEmpty">IsEmpty</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>
+                  </i>. 
+             Gets a value indicating whether this instance is empty.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                    <i>default property</i>
+                  </div>
+                  <div>override </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.Storage.UserFields.Item(System.String)">Item</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)</td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>
+                  </i>. 
+             Gets or sets the object with the specified key.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                    <i>default property</i>
+                  </div>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#P:KiiCorp.Cloud.Storage.KiiBaseObject.Item(System.String)">Item</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)</td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>
+                  </i>. 
+             Gets or sets the object with the specified key.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.Storage.UserFields.Locale">Locale</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../KiiCorp.Cloud.Storage/LocaleContainer.html">LocaleContainer</a>
+                  </i>. 
+             Gets or sets the locale.
+             </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetBoolean(System.String)">GetBoolean</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+             Gets the boolean in KiiBaseObject.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetBoolean(System.String,System.Boolean)">GetBoolean</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+             Gets the boolean. If key is not found, returns fallback.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetByteArray(System.String)">GetByteArray</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Byte">byte</a>[]</nobr><blockquote>
+             Gets the byte array with the specified key.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetDouble(System.String)">GetDouble</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a></nobr><blockquote>
+             Gets the double in KiiBaseObject.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetDouble(System.String,System.Double)">GetDouble</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a></nobr><blockquote>
+             Gets the double. If key is not found, returns fallback.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetInt(System.String)">GetInt</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote>
+             Gets the integer in KiiBaseObject.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetInt(System.String,System.Int32)">GetInt</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote>
+             Gets the integer. If key is not found, returns fallback.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetJsonArray(System.String)">GetJsonArray</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="javascript:alert(&quot;Documentation not found.&quot;)">JsonOrg.JsonArray</a></nobr><blockquote>
+             Gets the Json array with the specified key.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetJsonObject(System.String)">GetJsonObject</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="javascript:alert(&quot;Documentation not found.&quot;)">JsonOrg.JsonObject</a></nobr><blockquote>
+             Gets the JSON object with the specified key.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetLong(System.String)">GetLong</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a></nobr><blockquote>
+             Gets the long in KiiBaseObject.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetLong(System.String,System.Int64)">GetLong</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a></nobr><blockquote>
+             Gets the long. If key is not found, returns fallback.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetString(System.String)">GetString</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+             Gets the string in KiiBaseObject.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetString(System.String,System.String)">GetString</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+             Gets the string. If key is not found, returns fallback.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetUri(System.String)">GetUri</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a></nobr><blockquote>
+             Gets the Uri with the specified key.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.Has(System.String)">Has</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+             Determine if this instance has the specified key.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.Keys()">Keys</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a></nobr><blockquote>
+             Gets the list of keys
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>override </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.UserFields.Remove(System.String)">Remove</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<blockquote>
+             Remove the specified key and value.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.Remove(System.String)">Remove</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<blockquote>
+             Remove the specified key and value.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.UserFields.RemoveCountry()">RemoveCountry</a>
+                  </b>()<blockquote>
+             Removes the country from this instance.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.UserFields.RemoveDisplayname()">RemoveDisplayname</a>
+                  </b>()<blockquote>
+             Removes the displayname from this instance.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.UserFields.RemoveFromServer(System.String)">RemoveFromServer</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<blockquote>
+             Remove a pair of key/value from UserFields.
+             This pair is also removed from server when <a href="../KiiCorp.Cloud.Storage/KiiUser.html#M:KiiCorp.Cloud.Storage.KiiUser.Update(KiiCorp.Cloud.Storage.IdentityData,KiiCorp.Cloud.Storage.UserFields,KiiCorp.Cloud.Storage.KiiUserCallback)">KiiUser.Update(IdentityData, UserFields, KiiUserCallback)</a> is succeeded.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.UserFields.RemoveLocale()">RemoveLocale</a>
+                  </b>()<blockquote>
+             Removes the locale from this instance.
+             </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:KiiCorp.Cloud.Storage.UserFields:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="C:KiiCorp.Cloud.Storage.UserFields()">UserFields Constructor</h3>
+        <blockquote id="C:KiiCorp.Cloud.Storage.UserFields():member">
+          <div class="msummary">
+             Initializes a new instance of the <a href="../KiiCorp.Cloud.Storage/UserFields.html">KiiCorp.Cloud.Storage.UserFields</a> class.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public  <b>UserFields</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="C:KiiCorp.Cloud.Storage.UserFields():Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="C:KiiCorp.Cloud.Storage.UserFields():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.Storage.UserFields.Country">Country Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.Storage.UserFields.Country:member">
+          <div class="msummary">
+             Gets or sets the country.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Country</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.UserFields.Country:Value">
+             The country.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.UserFields.Country:Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when an argument is invalid.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.UserFields.Country:Remarks">
+             Country must be valid.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.UserFields.Country:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.Storage.UserFields.Displayname">Displayname Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.Storage.UserFields.Displayname:member">
+          <div class="msummary">
+             Gets or sets the displayname.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Displayname</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.UserFields.Displayname:Value">
+             The displayname.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.UserFields.Displayname:Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when an argument is invalid.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.UserFields.Displayname:Remarks">
+             Display name must be valid.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.UserFields.Displayname:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.Storage.UserFields.IsEmpty">IsEmpty Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.Storage.UserFields.IsEmpty:member">
+          <div class="msummary">
+             Gets a value indicating whether this instance is empty.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>IsEmpty</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.UserFields.IsEmpty:Value">
+            <tt>true</tt> if this instance is empty; otherwise, <tt>false</tt>.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.UserFields.IsEmpty:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.UserFields.IsEmpty:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.Storage.UserFields.Item(System.String)">Item Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.Storage.UserFields.Item(System.String):member">
+          <div class="msummary">
+             Gets or sets the object with the specified key.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">
+            <p>
+              <i>This is the default property for this class.</i>
+            </p>public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> this [<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key] { get; set; }</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.UserFields.Item(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>Key.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.UserFields.Item(System.String):Value">
+             Value associated with the key.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.UserFields.Item(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+             Is thrown when key is null.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/IllegalKiiBaseObjectFormatException.html">KiiCorp.Cloud.Storage.IllegalKiiBaseObjectFormatException</a>
+                </td>
+                <td>
+             Is thrown when specified key is not existed.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.UserFields.Item(System.String):Remarks">
+             As the type of value is <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>, developers need to cast value.
+             If you want to suppress IllegalKiiBaseObjectFormatException, use GetXxx(key, fallback)
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.UserFields.Item(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.Storage.UserFields.Locale">Locale Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.Storage.UserFields.Locale:member">
+          <div class="msummary">
+             Gets or sets the locale.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/LocaleContainer.html">LocaleContainer</a> <b>Locale</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.UserFields.Locale:Value">
+             The locale.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.UserFields.Locale:Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when an argument is null.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.UserFields.Locale:Remarks">
+             locale must be not null.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.UserFields.Locale:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.UserFields.Remove(System.String)">Remove Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.UserFields.Remove(System.String):member">
+          <div class="msummary">
+             Remove the specified key and value.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public override <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Remove</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.UserFields.Remove(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key you want to remove
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.UserFields.Remove(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when key is empty or reserved.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.UserFields.Remove(System.String):Remarks">
+             Key must be valid and should not be reserved.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.UserFields.Remove(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.UserFields.RemoveCountry()">RemoveCountry Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.UserFields.RemoveCountry():member">
+          <div class="msummary">
+             Removes the country from this instance.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>RemoveCountry</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.UserFields.RemoveCountry():Remarks">
+             Even if you use this method, country is not removed from server.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.UserFields.RemoveCountry():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.UserFields.RemoveDisplayname()">RemoveDisplayname Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.UserFields.RemoveDisplayname():member">
+          <div class="msummary">
+             Removes the displayname from this instance.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>RemoveDisplayname</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.UserFields.RemoveDisplayname():Remarks">
+             Even if you use this method, display name is not removed from server.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.UserFields.RemoveDisplayname():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.UserFields.RemoveFromServer(System.String)">RemoveFromServer Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.UserFields.RemoveFromServer(System.String):member">
+          <div class="msummary">
+             Remove a pair of key/value from UserFields.
+             This pair is also removed from server when <a href="../KiiCorp.Cloud.Storage/KiiUser.html#M:KiiCorp.Cloud.Storage.KiiUser.Update(KiiCorp.Cloud.Storage.IdentityData,KiiCorp.Cloud.Storage.UserFields,KiiCorp.Cloud.Storage.KiiUserCallback)">KiiUser.Update(IdentityData, UserFields, KiiUserCallback)</a> is succeeded.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>RemoveFromServer</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.UserFields.RemoveFromServer(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>Key.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.UserFields.RemoveFromServer(System.String):Remarks">
+            <a href="../KiiCorp.Cloud.Storage/UserFields.html">KiiCorp.Cloud.Storage.UserFields</a> has a similar method which is <a href="../KiiCorp.Cloud.Storage/UserFields.html#M:KiiCorp.Cloud.Storage.UserFields.Remove(System.String)">UserFields.Remove(string)</a>
+             If you remove fields by <a href="../KiiCorp.Cloud.Storage/UserFields.html#M:KiiCorp.Cloud.Storage.UserFields.Remove(System.String)">UserFields.Remove(string)</a> , pairs are not removed from server.
+             So you can use <a href="../KiiCorp.Cloud.Storage/UserFields.html#M:KiiCorp.Cloud.Storage.UserFields.Remove(System.String)">UserFields.Remove(string)</a> if you want to cancel to update fields which are set in <a href="../KiiCorp.Cloud.Storage/UserFields.html">KiiCorp.Cloud.Storage.UserFields</a>.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.UserFields.RemoveFromServer(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.UserFields.RemoveLocale()">RemoveLocale Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.UserFields.RemoveLocale():member">
+          <div class="msummary">
+             Removes the locale from this instance.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>RemoveLocale</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.UserFields.RemoveLocale():Remarks">
+             Even if you use this method, locale is not removed from server.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.UserFields.RemoveLocale():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

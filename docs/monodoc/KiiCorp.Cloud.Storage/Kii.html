@@ -1,0 +1,1525 @@
+<html>
+  <head>
+    <title>KiiCorp.Cloud.Storage.Kii</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="index.html">KiiCloudStorageSDK</a> : <a href="index.html">KiiCorp.Cloud.Storage Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.Kii">Overview</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.Kii:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.Kii:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.Kii:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:KiiCorp.Cloud.Storage.Kii">Kii  Class</h1>
+    <p class="Summary" id="T:KiiCorp.Cloud.Storage.Kii:Summary">
+             Provides APIs for KiiCloud application features.
+             </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:KiiCorp.Cloud.Storage.Kii:Signature">public class  <b>Kii</b></div>
+    </div>
+    <div class="Remarks" id="T:KiiCorp.Cloud.Storage.Kii:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:KiiCorp.Cloud.Storage.Kii:Docs:Remarks">
+             Please call Kii.Initialize(string, string, Kii.Site) at the top of your application.
+             </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:KiiCorp.Cloud.Storage.Kii:Docs:Version Information">
+        <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h2 class="Section">Public Properties</h2>
+        <div class="SectionBox" id="Public Properties">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.Storage.Kii.AccessTokenExpiration">AccessTokenExpiration</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a>
+                  </i>. 
+             Gets or set the access token lifetime in seconds.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div>static </div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.Storage.Kii.AppId">AppId</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. 
+             Gets the application ID.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div>static </div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.Storage.Kii.AppKey">AppKey</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. 
+             Gets the application key.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div>static </div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.Storage.Kii.BaseUrl">BaseUrl</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. 
+             Gets the server URL.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div>static </div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.Storage.Kii.KiiAppsBaseUrl">KiiAppsBaseUrl</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. 
+             URL for KiiApps server.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.Storage.Kii.Logger">Logger</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../KiiCorp.Cloud.Storage/IKiiLogger.html">IKiiLogger</a>
+                  </i>. 
+             Sets the logger.
+             </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.Kii.Bucket(System.String)">Bucket</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiBucket.html">KiiBucket</a></nobr><blockquote>
+             Gets new Kiibucket whose scope is app scope.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.Kii.Group(System.String)">Group</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiGroup.html">KiiGroup</a></nobr><blockquote>
+             Create a group own by current user.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.Kii.Group(System.String,System.Collections.Generic.IList{KiiCorp.Cloud.Storage.KiiUser})">Group</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;KiiUser&gt;</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiGroup.html">KiiGroup</a></nobr><blockquote>
+             Create a group with the specified groupName and groupMembers.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,KiiCorp.Cloud.Storage.Kii.Site)">Initialize</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="../KiiCorp.Cloud.Storage/Kii+Site.html">Kii.Site</a>)<blockquote>
+             Initialize KiiSDK appId, appKey and Site.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,System.String)">Initialize</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<blockquote>
+             Initialize KiiSDK appId, appKey and serverUrl.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,KiiCorp.Cloud.Storage.Kii.Site,KiiCorp.Cloud.Storage.KiiHttpClientFactory,KiiCorp.Cloud.Storage.KiiHttpClientFactory)">Initialize</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="../KiiCorp.Cloud.Storage/Kii+Site.html">Kii.Site</a>, <a href="../KiiCorp.Cloud.Storage/KiiHttpClientFactory.html">KiiHttpClientFactory</a>, <a href="../KiiCorp.Cloud.Storage/KiiHttpClientFactory.html">KiiHttpClientFactory</a>)<blockquote>
+             This method is intended for use in internal purposes. Do not use it to initialize your application.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,System.String,KiiCorp.Cloud.Storage.KiiHttpClientFactory,KiiCorp.Cloud.Storage.KiiHttpClientFactory)">Initialize</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="../KiiCorp.Cloud.Storage/KiiHttpClientFactory.html">KiiHttpClientFactory</a>, <a href="../KiiCorp.Cloud.Storage/KiiHttpClientFactory.html">KiiHttpClientFactory</a>)<blockquote>
+             Initialize KiiSDK appID, appKey, deviceID, serverUrl and KiiHttpClientFactory.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.Kii.ListTopics()">ListTopics</a>
+                  </b>()<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiListResult`1.html">KiiListResult&lt;KiiTopic&gt;</a></nobr><blockquote>
+             Gets the list of topics in app scope.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.Kii.ListTopics(KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}})">ListTopics</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/KiiGenericsCallback`1.html">KiiGenericsCallback&lt;KiiListResult&lt;KiiTopic&gt;&gt;</a>)<blockquote>
+             Asynchronous call for <a href="../KiiCorp.Cloud.Storage/Kii.html#M:KiiCorp.Cloud.Storage.Kii.ListTopics">Kii.ListTopics</a>.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.Kii.ListTopics(System.String)">ListTopics</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiListResult`1.html">KiiListResult&lt;KiiTopic&gt;</a></nobr><blockquote>
+             Gets the list of next page of topics in app scope.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.Kii.ListTopics(System.String,KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}})">ListTopics</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="../KiiCorp.Cloud.Storage/KiiGenericsCallback`1.html">KiiGenericsCallback&lt;KiiListResult&lt;KiiTopic&gt;&gt;</a>)<blockquote>
+             Asynchronous call for <a href="../KiiCorp.Cloud.Storage/Kii.html#M:KiiCorp.Cloud.Storage.Kii.ListTopics(System.String)">Kii.ListTopics(string)</a>.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String)">ServerCodeEntry</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiServerCodeEntry.html">KiiServerCodeEntry</a></nobr><blockquote>
+             Instantiate KiiServerCodeEntry with specified entry name.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.Nullable{KiiCorp.Cloud.Storage.KiiServerCodeEnvironmentVersion})">ServerCodeEntry</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;KiiServerCodeEnvironmentVersion&gt;</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiServerCodeEntry.html">KiiServerCodeEntry</a></nobr><blockquote>
+             Instantiate KiiServerCodeEntry with specified entry name and environment version.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.String)">ServerCodeEntry</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiServerCodeEntry.html">KiiServerCodeEntry</a></nobr><blockquote>
+             Instantiate KiiServerCodeEntry with specified entry name and version.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.String,System.Nullable{KiiCorp.Cloud.Storage.KiiServerCodeEnvironmentVersion})">ServerCodeEntry</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;KiiServerCodeEnvironmentVersion&gt;</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiServerCodeEntry.html">KiiServerCodeEntry</a></nobr><blockquote>
+             Instantiate KiiServerCodeEntry with specified entry name and version and environment version.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.Kii.Topic(System.String)">Topic</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiTopic.html">KiiTopic</a></nobr><blockquote>
+             Get instance of app scope topic.
+             The topic bound to the application.
+             </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:KiiCorp.Cloud.Storage.Kii:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="P:KiiCorp.Cloud.Storage.Kii.AccessTokenExpiration">AccessTokenExpiration Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.Storage.Kii.AccessTokenExpiration:member">
+          <div class="msummary">
+             Gets or set the access token lifetime in seconds.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a> <b>AccessTokenExpiration</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.Kii.AccessTokenExpiration:Value">
+             The life time of access token in seconds.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.Kii.AccessTokenExpiration:Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                </td>
+                <td>
+             Thrown if SDK has not initialized yet.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.Kii.AccessTokenExpiration:Remarks">
+             If you don't set this or set with 0, token won't be expired.
+             Set this if you like the access token to be expired
+             after a certain period. Once set, token retrieved
+             by each future authentication will have the specified lifetime.
+             Note that, it will not update the lifetime of token received prior
+             calling this method. Once expired, you have to login again to renew the token.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.Kii.AccessTokenExpiration:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.Storage.Kii.AppId">AppId Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.Storage.Kii.AppId:member">
+          <div class="msummary">
+             Gets the application ID.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>AppId</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.Kii.AppId:Value">
+             Application ID found in your Kii developer console
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.Kii.AppId:Remarks">
+             If Kii.Initialize(string, string, Kii.Site) is not called, return null.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.Kii.AppId:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.Storage.Kii.AppKey">AppKey Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.Storage.Kii.AppKey:member">
+          <div class="msummary">
+             Gets the application key.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>AppKey</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.Kii.AppKey:Value">
+             Application key found in your Kii developer console
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.Kii.AppKey:Remarks">
+             If Kii.Initialize(string,string,Kii.Site) is not called, return null.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.Kii.AppKey:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.Storage.Kii.BaseUrl">BaseUrl Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.Storage.Kii.BaseUrl:member">
+          <div class="msummary">
+             Gets the server URL.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>BaseUrl</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.Kii.BaseUrl:Value">
+             The server URL.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.Kii.BaseUrl:Remarks">
+             If Kii.Initialize(string,string,string) is not called, return null.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.Kii.BaseUrl:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.Kii.Bucket(System.String)">Bucket Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.Kii.Bucket(System.String):member">
+          <div class="msummary">
+             Gets new Kiibucket whose scope is app scope.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiBucket.html">KiiBucket</a> <b>Bucket</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> bucketName)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Bucket(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>bucketName</i>
+              </dt>
+              <dd>
+             Bucket name
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Bucket(System.String):Returns">
+             KiiBucket instance.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Bucket(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when bucket name is invalid.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Bucket(System.String):Remarks">
+             This API doesn't call server API.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Bucket(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.Kii.Group(System.String)">Group Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.Kii.Group(System.String):member">
+          <div class="msummary">
+             Create a group own by current user.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiGroup.html">KiiGroup</a> <b>Group</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> groupName)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Group(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>groupName</i>
+              </dt>
+              <dd>
+             Group name.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Group(System.String):Returns">
+             New KiiGroup instance.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Group(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when group name is empty.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Group(System.String):Remarks">
+             This API is equivalent to Kii.Group(groupName, null)
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Group(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.Kii.Group(System.String,System.Collections.Generic.IList{KiiCorp.Cloud.Storage.KiiUser})">Group Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.Kii.Group(System.String,System.Collections.Generic.IList{KiiCorp.Cloud.Storage.KiiUser}):member">
+          <div class="msummary">
+             Create a group with the specified groupName and groupMembers.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiGroup.html">KiiGroup</a> <b>Group</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> groupName, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;KiiUser&gt;</a> groupMembers)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Group(System.String,System.Collections.Generic.IList{KiiCorp.Cloud.Storage.KiiUser}):Parameters">
+            <dl>
+              <dt>
+                <i>groupName</i>
+              </dt>
+              <dd>
+             Group name.
+             </dd>
+              <dt>
+                <i>groupMembers</i>
+              </dt>
+              <dd>
+             Group members.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Group(System.String,System.Collections.Generic.IList{KiiCorp.Cloud.Storage.KiiUser}):Returns">
+             New KiiGroup instance.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Group(System.String,System.Collections.Generic.IList{KiiCorp.Cloud.Storage.KiiUser}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when group name is empty.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Group(System.String,System.Collections.Generic.IList{KiiCorp.Cloud.Storage.KiiUser}):Remarks">
+             To create new group on KiiCloud, please call KiiGroup.Save() API of returned KiiGroup.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Group(System.String,System.Collections.Generic.IList{KiiCorp.Cloud.Storage.KiiUser}):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,KiiCorp.Cloud.Storage.Kii.Site)">Initialize Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,KiiCorp.Cloud.Storage.Kii.Site):member">
+          <div class="msummary">
+             Initialize KiiSDK appId, appKey and Site.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Initialize</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> appId, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> appKey, <a href="../KiiCorp.Cloud.Storage/Kii+Site.html">Kii.Site</a> site)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,KiiCorp.Cloud.Storage.Kii.Site):Parameters">
+            <dl>
+              <dt>
+                <i>appId</i>
+              </dt>
+              <dd>
+             Application ID found in your Kii developer console.
+             </dd>
+              <dt>
+                <i>appKey</i>
+              </dt>
+              <dd>
+             Application key found in your Kii developer console
+             </dd>
+              <dt>
+                <i>site</i>
+              </dt>
+              <dd>
+             Please set any one of Site.US, Site.JP, Site.CN, Site.CN3 or Site.SG you've chosen when you created application on Kii developer console.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,KiiCorp.Cloud.Storage.Kii.Site):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when an argument is invalid.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,KiiCorp.Cloud.Storage.Kii.Site):Remarks">
+             Initialize KiiCloudStorage SDK and this must be call prior to all APIs call.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,KiiCorp.Cloud.Storage.Kii.Site):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,System.String)">Initialize Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,System.String):member">
+          <div class="msummary">
+             Initialize KiiSDK appId, appKey and serverUrl.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Initialize</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> appId, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> appKey, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> serverUrl)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>appId</i>
+              </dt>
+              <dd>
+             Application ID found in your Kii developer console
+             </dd>
+              <dt>
+                <i>appKey</i>
+              </dt>
+              <dd>
+             Application key found in your Kii developer console
+             </dd>
+              <dt>
+                <i>serverUrl</i>
+              </dt>
+              <dd>
+             Server URL.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when an argument passed to a method is invalid.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,System.String):Remarks">
+             Initialize KiiCloudStorage SDK and this must be call prior to all APIs call.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,KiiCorp.Cloud.Storage.Kii.Site,KiiCorp.Cloud.Storage.KiiHttpClientFactory,KiiCorp.Cloud.Storage.KiiHttpClientFactory)">Initialize Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,KiiCorp.Cloud.Storage.Kii.Site,KiiCorp.Cloud.Storage.KiiHttpClientFactory,KiiCorp.Cloud.Storage.KiiHttpClientFactory):member">
+          <div class="msummary">
+             This method is intended for use in internal purposes. Do not use it to initialize your application.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Initialize</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> appId, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> appKey, <a href="../KiiCorp.Cloud.Storage/Kii+Site.html">Kii.Site</a> site, <a href="../KiiCorp.Cloud.Storage/KiiHttpClientFactory.html">KiiHttpClientFactory</a> syncFactory, <a href="../KiiCorp.Cloud.Storage/KiiHttpClientFactory.html">KiiHttpClientFactory</a> asyncFactory)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,KiiCorp.Cloud.Storage.Kii.Site,KiiCorp.Cloud.Storage.KiiHttpClientFactory,KiiCorp.Cloud.Storage.KiiHttpClientFactory):Parameters">
+            <dl>
+              <dt>
+                <i>appId</i>
+              </dt>
+              <dd>
+             Application ID found in your Kii developer console
+             </dd>
+              <dt>
+                <i>appKey</i>
+              </dt>
+              <dd>
+             Application key found in your Kii developer console
+             </dd>
+              <dt>
+                <i>site</i>
+              </dt>
+              <dd>
+             Please set any one of Site.US, Site.JP, Site.CN, Site.CN3 or Site.SG you've chosen when you created application on Kii developer console.
+             </dd>
+              <dt>
+                <i>syncFactory</i>
+              </dt>
+              <dd>
+             Http client factory for blocking api.
+             </dd>
+              <dt>
+                <i>asyncFactory</i>
+              </dt>
+              <dd>
+             Http client factory for non-blocking api.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,KiiCorp.Cloud.Storage.Kii.Site,KiiCorp.Cloud.Storage.KiiHttpClientFactory,KiiCorp.Cloud.Storage.KiiHttpClientFactory):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when an argument passed to a method is invalid.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,KiiCorp.Cloud.Storage.Kii.Site,KiiCorp.Cloud.Storage.KiiHttpClientFactory,KiiCorp.Cloud.Storage.KiiHttpClientFactory):Remarks">
+             Initialize KiiCloudStorage SDK and this must be call prior to all APIs call.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,KiiCorp.Cloud.Storage.Kii.Site,KiiCorp.Cloud.Storage.KiiHttpClientFactory,KiiCorp.Cloud.Storage.KiiHttpClientFactory):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,System.String,KiiCorp.Cloud.Storage.KiiHttpClientFactory,KiiCorp.Cloud.Storage.KiiHttpClientFactory)">Initialize Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,System.String,KiiCorp.Cloud.Storage.KiiHttpClientFactory,KiiCorp.Cloud.Storage.KiiHttpClientFactory):member">
+          <div class="msummary">
+             Initialize KiiSDK appID, appKey, deviceID, serverUrl and KiiHttpClientFactory.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Initialize</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> appId, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> appKey, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> serverUrl, <a href="../KiiCorp.Cloud.Storage/KiiHttpClientFactory.html">KiiHttpClientFactory</a> syncFactory, <a href="../KiiCorp.Cloud.Storage/KiiHttpClientFactory.html">KiiHttpClientFactory</a> asyncFactory)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,System.String,KiiCorp.Cloud.Storage.KiiHttpClientFactory,KiiCorp.Cloud.Storage.KiiHttpClientFactory):Parameters">
+            <dl>
+              <dt>
+                <i>appId</i>
+              </dt>
+              <dd>
+             Application ID found in your Kii developer console
+             </dd>
+              <dt>
+                <i>appKey</i>
+              </dt>
+              <dd>
+             Application key found in your Kii developer console
+             </dd>
+              <dt>
+                <i>serverUrl</i>
+              </dt>
+              <dd>
+             Server URL.
+             </dd>
+              <dt>
+                <i>syncFactory</i>
+              </dt>
+              <dd>
+             Http client factory for blocking api.
+             </dd>
+              <dt>
+                <i>asyncFactory</i>
+              </dt>
+              <dd>
+             Http client factory for non-blocking api.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,System.String,KiiCorp.Cloud.Storage.KiiHttpClientFactory,KiiCorp.Cloud.Storage.KiiHttpClientFactory):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when an argument passed to a method is invalid.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,System.String,KiiCorp.Cloud.Storage.KiiHttpClientFactory,KiiCorp.Cloud.Storage.KiiHttpClientFactory):Remarks">
+             This method is intended for use in internal purposes. Do not use it to initialize your application.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Initialize(System.String,System.String,System.String,KiiCorp.Cloud.Storage.KiiHttpClientFactory,KiiCorp.Cloud.Storage.KiiHttpClientFactory):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.Storage.Kii.KiiAppsBaseUrl">KiiAppsBaseUrl Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.Storage.Kii.KiiAppsBaseUrl:member">
+          <div class="msummary">
+             URL for KiiApps server.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>KiiAppsBaseUrl</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.Kii.KiiAppsBaseUrl:Value">
+             The KiiApps server URL.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.Kii.KiiAppsBaseUrl:Remarks">
+             No need to serialize because this value is generated in
+             initialize by appId and serverUrl.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.Kii.KiiAppsBaseUrl:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.Kii.ListTopics()">ListTopics Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.Kii.ListTopics():member">
+          <div class="msummary">
+             Gets the list of topics in app scope.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiListResult`1.html">KiiListResult&lt;KiiTopic&gt;</a> <b>ListTopics</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ListTopics():Returns">A list of the topics in app scope.</blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ListTopics():Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/CloudException.html">KiiCorp.Cloud.Storage.CloudException</a>
+                </td>
+                <td>
+             Is thrown when server sends error response.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/UnauthorizedException.html">KiiCorp.Cloud.Storage.UnauthorizedException</a>
+                </td>
+                <td>
+             Is thrown when this method called by anonymous user.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ListTopics():Remarks">
+             This api sends a request to server.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ListTopics():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.Kii.ListTopics(KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}})">ListTopics Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.Kii.ListTopics(KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}}):member">
+          <div class="msummary">
+             Asynchronous call for <a href="../KiiCorp.Cloud.Storage/Kii.html#M:KiiCorp.Cloud.Storage.Kii.ListTopics">Kii.ListTopics</a>.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>ListTopics</b> (<a href="../KiiCorp.Cloud.Storage/KiiGenericsCallback`1.html">KiiGenericsCallback&lt;KiiListResult&lt;KiiTopic&gt;&gt;</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ListTopics(KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}}):Parameters">
+            <dl>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>Callback.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ListTopics(KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/CloudException.html">KiiCorp.Cloud.Storage.CloudException</a>
+                </td>
+                <td>
+             Is thrown when server sends error response.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ListTopics(KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}}):Remarks">
+             This api sends a request to server.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ListTopics(KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}}):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.Kii.ListTopics(System.String)">ListTopics Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.Kii.ListTopics(System.String):member">
+          <div class="msummary">
+             Gets the list of next page of topics in app scope.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiListResult`1.html">KiiListResult&lt;KiiTopic&gt;</a> <b>ListTopics</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> paginationKey)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ListTopics(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>paginationKey</i>
+              </dt>
+              <dd>
+             Specifies the pagination key that is obtained by <a href="../KiiCorp.Cloud.Storage/KiiListResult`1.html#P:KiiCorp.Cloud.Storage.KiiListResult`1.PaginationKey">KiiListResult`1.PaginationKey</a>.
+             If specified null or empty, it's same as the <a href="../KiiCorp.Cloud.Storage/Kii.html#M:KiiCorp.Cloud.Storage.Kii.ListTopics">Kii.ListTopics</a>.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ListTopics(System.String):Returns">A list of the topics in app scope.</blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ListTopics(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/CloudException.html">KiiCorp.Cloud.Storage.CloudException</a>
+                </td>
+                <td>
+             Is thrown when server sends error response.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/UnauthorizedException.html">KiiCorp.Cloud.Storage.UnauthorizedException</a>
+                </td>
+                <td>
+             Is thrown when this method called by anonymous user.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ListTopics(System.String):Remarks">
+             This api sends a request to server.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ListTopics(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.Kii.ListTopics(System.String,KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}})">ListTopics Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.Kii.ListTopics(System.String,KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}}):member">
+          <div class="msummary">
+             Asynchronous call for <a href="../KiiCorp.Cloud.Storage/Kii.html#M:KiiCorp.Cloud.Storage.Kii.ListTopics(System.String)">Kii.ListTopics(string)</a>.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>ListTopics</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> paginationKey, <a href="../KiiCorp.Cloud.Storage/KiiGenericsCallback`1.html">KiiGenericsCallback&lt;KiiListResult&lt;KiiTopic&gt;&gt;</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ListTopics(System.String,KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}}):Parameters">
+            <dl>
+              <dt>
+                <i>paginationKey</i>
+              </dt>
+              <dd>
+             Specifies the pagination key that is obtained by <a href="../KiiCorp.Cloud.Storage/KiiListResult`1.html#P:KiiCorp.Cloud.Storage.KiiListResult`1.PaginationKey">KiiListResult`1.PaginationKey</a>.
+             If specified null or empty, it's same as the <a href="../KiiCorp.Cloud.Storage/Kii.html#M:KiiCorp.Cloud.Storage.Kii.ListTopics(KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}})">Kii.ListTopics(KiiGenericsCallback&lt;KiiListResult&lt;KiiTopic&gt;&gt;)</a>.
+             </dd>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>Callback.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ListTopics(System.String,KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/CloudException.html">KiiCorp.Cloud.Storage.CloudException</a>
+                </td>
+                <td>
+             Is thrown when server sends error response.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ListTopics(System.String,KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}}):Remarks">
+             This api sends a request to server.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ListTopics(System.String,KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}}):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.Storage.Kii.Logger">Logger Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.Storage.Kii.Logger:member">
+          <div class="msummary">
+             Sets the logger.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/IKiiLogger.html">IKiiLogger</a> <b>Logger</b>  { get; set; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.Kii.Logger:Value">
+             The logger.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.Kii.Logger:Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.Kii.Logger:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String)">ServerCodeEntry Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String):member">
+          <div class="msummary">
+             Instantiate KiiServerCodeEntry with specified entry name.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiServerCodeEntry.html">KiiServerCodeEntry</a> <b>ServerCodeEntry</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> entryName)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>entryName</i>
+              </dt>
+              <dd>
+             Entry name.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String):Returns">
+             KiiServerCodeEntry instance.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+             Is thrown when entryName is null or empty string.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when entryName does not match ^[a-zA-Z][_a-zA-Z0-9]*$
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String):Remarks">
+             Name must be valid.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.Nullable{KiiCorp.Cloud.Storage.KiiServerCodeEnvironmentVersion})">ServerCodeEntry Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.Nullable{KiiCorp.Cloud.Storage.KiiServerCodeEnvironmentVersion}):member">
+          <div class="msummary">
+             Instantiate KiiServerCodeEntry with specified entry name and environment version.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiServerCodeEntry.html">KiiServerCodeEntry</a> <b>ServerCodeEntry</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> entryName, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;KiiServerCodeEnvironmentVersion&gt;</a> environmentVersion)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.Nullable{KiiCorp.Cloud.Storage.KiiServerCodeEnvironmentVersion}):Parameters">
+            <dl>
+              <dt>
+                <i>entryName</i>
+              </dt>
+              <dd>
+             Entry name.
+             </dd>
+              <dt>
+                <i>environmentVersion</i>
+              </dt>
+              <dd>
+             Environment Version.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.Nullable{KiiCorp.Cloud.Storage.KiiServerCodeEnvironmentVersion}):Returns">
+             KiiServerCodeEntry instance.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.Nullable{KiiCorp.Cloud.Storage.KiiServerCodeEnvironmentVersion}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+             Is thrown when entryName / version is null or empty string.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when entryName does not match ^[a-zA-Z][_a-zA-Z0-9]*$ or version is larger than 36 characters.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.Nullable{KiiCorp.Cloud.Storage.KiiServerCodeEnvironmentVersion}):Remarks">
+             Name must be valid.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.Nullable{KiiCorp.Cloud.Storage.KiiServerCodeEnvironmentVersion}):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.String)">ServerCodeEntry Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.String):member">
+          <div class="msummary">
+             Instantiate KiiServerCodeEntry with specified entry name and version.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiServerCodeEntry.html">KiiServerCodeEntry</a> <b>ServerCodeEntry</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> entryName, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> version)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>entryName</i>
+              </dt>
+              <dd>
+             Entry name.
+             </dd>
+              <dt>
+                <i>version</i>
+              </dt>
+              <dd>
+             Version.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.String):Returns">
+             KiiServerCodeEntry instance.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+             Is thrown when entryName / version is null or empty string.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when entryName does not match ^[a-zA-Z][_a-zA-Z0-9]*$ or version is larger than 36 characters.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.String):Remarks">
+             Name must be valid.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.String,System.Nullable{KiiCorp.Cloud.Storage.KiiServerCodeEnvironmentVersion})">ServerCodeEntry Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.String,System.Nullable{KiiCorp.Cloud.Storage.KiiServerCodeEnvironmentVersion}):member">
+          <div class="msummary">
+             Instantiate KiiServerCodeEntry with specified entry name and version and environment version.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiServerCodeEntry.html">KiiServerCodeEntry</a> <b>ServerCodeEntry</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> entryName, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> version, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Nullable`1">Nullable&lt;KiiServerCodeEnvironmentVersion&gt;</a> environmentVersion)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.String,System.Nullable{KiiCorp.Cloud.Storage.KiiServerCodeEnvironmentVersion}):Parameters">
+            <dl>
+              <dt>
+                <i>entryName</i>
+              </dt>
+              <dd>
+             Entry name.
+             </dd>
+              <dt>
+                <i>version</i>
+              </dt>
+              <dd>
+             Version.
+             </dd>
+              <dt>
+                <i>environmentVersion</i>
+              </dt>
+              <dd>
+             Environment Version.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.String,System.Nullable{KiiCorp.Cloud.Storage.KiiServerCodeEnvironmentVersion}):Returns">
+             KiiServerCodeEntry instance.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.String,System.Nullable{KiiCorp.Cloud.Storage.KiiServerCodeEnvironmentVersion}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+             Is thrown when entryName / version is null or empty string.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when entryName does not match ^[a-zA-Z][_a-zA-Z0-9]*$ or version is larger than 36 characters.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.String,System.Nullable{KiiCorp.Cloud.Storage.KiiServerCodeEnvironmentVersion}):Remarks">
+             Name must be valid.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.ServerCodeEntry(System.String,System.String,System.Nullable{KiiCorp.Cloud.Storage.KiiServerCodeEnvironmentVersion}):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.Kii.Topic(System.String)">Topic Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.Kii.Topic(System.String):member">
+          <div class="msummary">
+             Get instance of app scope topic.
+             The topic bound to the application.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiTopic.html">KiiTopic</a> <b>Topic</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> name)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Topic(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>name</i>
+              </dt>
+              <dd>topic name.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Topic(System.String):Returns">KiiTopic bound to the application.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Topic(System.String):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.Kii.Topic(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

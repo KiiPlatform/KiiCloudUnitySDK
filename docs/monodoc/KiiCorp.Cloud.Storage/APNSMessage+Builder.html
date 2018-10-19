@@ -1,0 +1,1005 @@
+<html>
+  <head>
+    <title>KiiCorp.Cloud.Storage.APNSMessage.Builder</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">KiiCloudStorageSDK</a> : <a href="index.html">KiiCorp.Cloud.Storage Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.APNSMessage.Builder">Overview</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.APNSMessage.Builder:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.APNSMessage.Builder:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.APNSMessage.Builder:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:KiiCorp.Cloud.Storage.APNSMessage.Builder">APNSMessage.Builder  Class</h1>
+    <p class="Summary" id="T:KiiCorp.Cloud.Storage.APNSMessage.Builder:Summary">
+             Builder of APNSMessage.
+             </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:KiiCorp.Cloud.Storage.APNSMessage.Builder:Signature">public class  <b>APNSMessage.Builder</b></div>
+    </div>
+    <div class="Remarks" id="T:KiiCorp.Cloud.Storage.APNSMessage.Builder:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:KiiCorp.Cloud.Storage.APNSMessage.Builder:Docs:Remarks">
+      </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:KiiCorp.Cloud.Storage.APNSMessage.Builder:Docs:Version Information">
+        <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.APNSMessage.Builder.Build()">Build</a>
+                  </b>()<nobr> : <a href="../KiiCorp.Cloud.Storage/APNSMessage.html">APNSMessage</a></nobr><blockquote>
+             Build and return APNSMessage.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.APNSMessage.Builder.Enable(System.Boolean)">Enable</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a></nobr><blockquote>
+             Set flag of APNS delivery.
+             If omit calling this method, APNS delivery is enabled.
+             If <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableAPNS(System.Boolean)">KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableAPNS(bool)</a> called after <a href="javascript:alert(&quot;Documentation not found.&quot;)">KiiPushMessage.Builder.WithAPNSMessage(GCMMessage)</a>,
+             This property would be overwritten. 
+             (The converse also overwrite the property.)
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertActionLocKey(System.String)">WithAlertActionLocKey</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a></nobr><blockquote>
+             Build with alert action loc key.
+             Corresponding to APNS's "action-loc-key" in apns.alert
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertBody(System.String)">WithAlertBody</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a></nobr><blockquote>
+             Build with alert body message.
+             Corresponding to APNS's "body" in apns.alert
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLaunchImage(System.String)">WithAlertLaunchImage</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a></nobr><blockquote>
+             Build with alert launch Image.
+             Corresponding to APNS's "launch-image" in apns.alert
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLocArgs(System.String[])">WithAlertLocArgs</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>[])<nobr> : <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a></nobr><blockquote>
+             Build with alert locArgs.
+             Corresponding to APNS's "loc-args" in apns.alert
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLocKey(System.String)">WithAlertLocKey</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a></nobr><blockquote>
+             Build with alert loc key.
+             Corresponding to APNS's "action-loc-key" in apns.alert
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertSubtitle(System.String)">WithAlertSubtitle</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a></nobr><blockquote>
+             Build with alert subtitle.
+             Corresponding to APNS's "subtitle" in apns.alert
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertTitle(System.String)">WithAlertTitle</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a></nobr><blockquote>
+             Build with alert title.
+             Corresponding to APNS's "title" in apns.alert
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAPNSData(KiiCorp.Cloud.Storage.APNSData)">WithAPNSData</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/APNSData.html">APNSData</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a></nobr><blockquote>
+             Create builder with Data that will be sent only to iOS-APNS devices.
+             Corresponding to APNS's custom payload.
+             The data specified here will be merged with the data specified on <a href="javascript:alert(&quot;Documentation not found.&quot;)">KiiPushMessage.BuildWith(KiiPushMessage.Data)</a></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithBadge(System.Int32)">WithBadge</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a></nobr><blockquote>
+             If provided, it will be used as the "badge" to be sent with the notification.
+             Corresponding to APNS's "badge" in aps notification payload.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithCategory(System.String)">WithCategory</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a></nobr><blockquote>
+             Build with category.
+             Corresponding to APNs's "category" in apns.
+             For details, please refer to APNS document</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithContentAvailable(System.Int32)">WithContentAvailable</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a></nobr><blockquote>
+             Build with content-available.
+             Corresponding to APNs's "content-available" in apns.
+             For details, please refer to APNS document</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithMutableContent(System.Int32)">WithMutableContent</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a></nobr><blockquote>
+             Build with mutable-content.
+             Corresponding to APNs's "mutable-content" in apns.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithSound(System.String)">WithSound</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a></nobr><blockquote>
+             If provided, it will be used as the "sound" to be sent with the notification.
+             Corresponding to APNS's "sound" in aps notification payload.
+             </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:KiiCorp.Cloud.Storage.APNSMessage.Builder:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.Build()">Build Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.Build():member">
+          <div class="msummary">
+             Build and return APNSMessage.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/APNSMessage.html">APNSMessage</a> <b>Build</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.Build():Returns">APNSMessage</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.Build():Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.Build():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.Enable(System.Boolean)">Enable Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.Enable(System.Boolean):member">
+          <div class="msummary">
+             Set flag of APNS delivery.
+             If omit calling this method, APNS delivery is enabled.
+             If <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableAPNS(System.Boolean)">KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableAPNS(bool)</a> called after <a href="javascript:alert(&quot;Documentation not found.&quot;)">KiiPushMessage.Builder.WithAPNSMessage(GCMMessage)</a>,
+             This property would be overwritten. 
+             (The converse also overwrite the property.)
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a> <b>Enable</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> enabled)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.Enable(System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>enabled</i>
+              </dt>
+              <dd>if true message would be delivered via APNS. If false, this message would not delivered thru APNS.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.Enable(System.Boolean):Returns">Builder of the message.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.Enable(System.Boolean):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.Enable(System.Boolean):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertActionLocKey(System.String)">WithAlertActionLocKey Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertActionLocKey(System.String):member">
+          <div class="msummary">
+             Build with alert action loc key.
+             Corresponding to APNS's "action-loc-key" in apns.alert
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a> <b>WithAlertActionLocKey</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> actionLocKey)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertActionLocKey(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>actionLocKey</i>
+              </dt>
+              <dd>String that iOS uses as a key to get localized string in to use for alert "View" button.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertActionLocKey(System.String):Returns">Builder of the message.</blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertActionLocKey(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+             Is thrown when an argument is null.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertActionLocKey(System.String):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertActionLocKey(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertBody(System.String)">WithAlertBody Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertBody(System.String):member">
+          <div class="msummary">
+             Build with alert body message.
+             Corresponding to APNS's "body" in apns.alert
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a> <b>WithAlertBody</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> body)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertBody(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>body</i>
+              </dt>
+              <dd>APNS alert message text.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertBody(System.String):Returns">Builder of the message.</blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertBody(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+             Is thrown when an argument is null.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertBody(System.String):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertBody(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLaunchImage(System.String)">WithAlertLaunchImage Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLaunchImage(System.String):member">
+          <div class="msummary">
+             Build with alert launch Image.
+             Corresponding to APNS's "launch-image" in apns.alert
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a> <b>WithAlertLaunchImage</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> launchImage)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLaunchImage(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>launchImage</i>
+              </dt>
+              <dd>The filename of an image file in the application bundle.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLaunchImage(System.String):Returns">Builder of the message.</blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLaunchImage(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+             Is thrown when an argument is null.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLaunchImage(System.String):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLaunchImage(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLocArgs(System.String[])">WithAlertLocArgs Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLocArgs(System.String[]):member">
+          <div class="msummary">
+             Build with alert locArgs.
+             Corresponding to APNS's "loc-args" in apns.alert
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a> <b>WithAlertLocArgs</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>[] locArgs)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLocArgs(System.String[]):Parameters">
+            <dl>
+              <dt>
+                <i>locArgs</i>
+              </dt>
+              <dd>Variable string values to appear in place of the format specifiers in locKey.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLocArgs(System.String[]):Returns">Builder of the message.</blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLocArgs(System.String[]):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when an argument is null or empty.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLocArgs(System.String[]):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLocArgs(System.String[]):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLocKey(System.String)">WithAlertLocKey Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLocKey(System.String):member">
+          <div class="msummary">
+             Build with alert loc key.
+             Corresponding to APNS's "action-loc-key" in apns.alert
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a> <b>WithAlertLocKey</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> locKey)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLocKey(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>locKey</i>
+              </dt>
+              <dd>String that used as a key to an alert-message string in a "localizable.strings" file for current localization.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLocKey(System.String):Returns">Builder of the message.</blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLocKey(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+             Is thrown when an argument is null.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLocKey(System.String):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertLocKey(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertSubtitle(System.String)">WithAlertSubtitle Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertSubtitle(System.String):member">
+          <div class="msummary">
+             Build with alert subtitle.
+             Corresponding to APNS's "subtitle" in apns.alert
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a> <b>WithAlertSubtitle</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> subtitle)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertSubtitle(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>subtitle</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertSubtitle(System.String):Returns">Builder of the message.</blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertSubtitle(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+             Is thrown when an argument is null.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertSubtitle(System.String):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertSubtitle(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertTitle(System.String)">WithAlertTitle Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertTitle(System.String):member">
+          <div class="msummary">
+             Build with alert title.
+             Corresponding to APNS's "title" in apns.alert
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a> <b>WithAlertTitle</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> title)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertTitle(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>title</i>
+              </dt>
+              <dd>APNS alert title text.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertTitle(System.String):Returns">Builder of the message.</blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertTitle(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+             Is thrown when an argument is null.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertTitle(System.String):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAlertTitle(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAPNSData(KiiCorp.Cloud.Storage.APNSData)">WithAPNSData Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAPNSData(KiiCorp.Cloud.Storage.APNSData):member">
+          <div class="msummary">
+             Create builder with Data that will be sent only to iOS-APNS devices.
+             Corresponding to APNS's custom payload.
+             The data specified here will be merged with the data specified on <a href="javascript:alert(&quot;Documentation not found.&quot;)">KiiPushMessage.BuildWith(KiiPushMessage.Data)</a></div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a> <b>WithAPNSData</b> (<a href="../KiiCorp.Cloud.Storage/APNSData.html">APNSData</a> data)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAPNSData(KiiCorp.Cloud.Storage.APNSData):Parameters">
+            <dl>
+              <dt>
+                <i>data</i>
+              </dt>
+              <dd>APNS specific data.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAPNSData(KiiCorp.Cloud.Storage.APNSData):Returns">Builder of the message.</blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAPNSData(KiiCorp.Cloud.Storage.APNSData):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+             Is thrown when an argument is null.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAPNSData(KiiCorp.Cloud.Storage.APNSData):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithAPNSData(KiiCorp.Cloud.Storage.APNSData):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithBadge(System.Int32)">WithBadge Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithBadge(System.Int32):member">
+          <div class="msummary">
+             If provided, it will be used as the "badge" to be sent with the notification.
+             Corresponding to APNS's "badge" in aps notification payload.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a> <b>WithBadge</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> badge)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithBadge(System.Int32):Parameters">
+            <dl>
+              <dt>
+                <i>badge</i>
+              </dt>
+              <dd>The number to display as the badge of the application icon.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithBadge(System.Int32):Returns">Builder of the message.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithBadge(System.Int32):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithBadge(System.Int32):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithCategory(System.String)">WithCategory Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithCategory(System.String):member">
+          <div class="msummary">
+             Build with category.
+             Corresponding to APNs's "category" in apns.
+             For details, please refer to APNS document</div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a> <b>WithCategory</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> category)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithCategory(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>category</i>
+              </dt>
+              <dd>
+             APNs category field string.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithCategory(System.String):Returns">Builder of the message.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithCategory(System.String):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithCategory(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithContentAvailable(System.Int32)">WithContentAvailable Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithContentAvailable(System.Int32):member">
+          <div class="msummary">
+             Build with content-available.
+             Corresponding to APNs's "content-available" in apns.
+             For details, please refer to APNS document</div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a> <b>WithContentAvailable</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> available)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithContentAvailable(System.Int32):Parameters">
+            <dl>
+              <dt>
+                <i>available</i>
+              </dt>
+              <dd>
+             APNs content-available field number.
+             If 0, content-available payload is not delivered.
+             Otherwise, content-available=1 payload is delivered.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithContentAvailable(System.Int32):Returns">Builder of the message.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithContentAvailable(System.Int32):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithContentAvailable(System.Int32):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithMutableContent(System.Int32)">WithMutableContent Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithMutableContent(System.Int32):member">
+          <div class="msummary">
+             Build with mutable-content.
+             Corresponding to APNs's "mutable-content" in apns.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a> <b>WithMutableContent</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> mutableContent)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithMutableContent(System.Int32):Parameters">
+            <dl>
+              <dt>
+                <i>mutableContent</i>
+              </dt>
+              <dd>
+             APNs mutable-content field number.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithMutableContent(System.Int32):Returns">Builder of the message.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithMutableContent(System.Int32):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithMutableContent(System.Int32):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithSound(System.String)">WithSound Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithSound(System.String):member">
+          <div class="msummary">
+             If provided, it will be used as the "sound" to be sent with the notification.
+             Corresponding to APNS's "sound" in aps notification payload.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/APNSMessage+Builder.html">APNSMessage.Builder</a> <b>WithSound</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> sound)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithSound(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>sound</i>
+              </dt>
+              <dd>The name of a sound file in the application bundle.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithSound(System.String):Returns">Builder of the message.</blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithSound(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+             Is thrown when an argument is null.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithSound(System.String):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.APNSMessage.Builder.WithSound(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

@@ -1,0 +1,2275 @@
+<html>
+  <head>
+    <title>KiiCorp.Cloud.Storage.KiiObject</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">KiiCloudStorageSDK</a> : <a href="index.html">KiiCorp.Cloud.Storage Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiObject">Overview</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiObject:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiObject:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiObject:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:KiiCorp.Cloud.Storage.KiiObject">KiiObject  Class</h1>
+    <p class="Summary" id="T:KiiCorp.Cloud.Storage.KiiObject:Summary">
+             Provides APIs for key-value Object CRUD operation on KiiCloud.
+             </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:KiiCorp.Cloud.Storage.KiiObject:Signature">public class  <b>KiiObject</b> : <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>,	<a href="../KiiCorp.Cloud.Storage/AccessControllable.html">AccessControllable</a></div>
+    </div>
+    <div class="Remarks" id="T:KiiCorp.Cloud.Storage.KiiObject:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:KiiCorp.Cloud.Storage.KiiObject:Docs:Remarks">
+             KiiObject works as key-value object.
+             <table class="CodeExampleTable"><tr><td><b><font size="-1"> Example</font></b></td></tr><tr><td><pre class="">
+             // example 1. Create new object on KiiCloud.
+             KiiObject obj = Kii.Bucket("hiscore").NewKiiObject();
+             obj["name"] = "John";
+             obj["score"] = 95;
+             obj.Save();
+             // example 2. Update an object.
+             KiiObject obj = KiiObject.CreateByUri(uri);
+             obj.Refresh();
+             obj["score"] = 100;
+             obj.Save();
+             </pre></td></tr></table></div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:KiiCorp.Cloud.Storage.KiiObject:Docs:Version Information">
+        <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.
+							</p>
+        <h2 class="Section">Public Properties</h2>
+        <div class="SectionBox" id="Public Properties">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.Storage.KiiObject.BodyContentType">BodyContentType</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. 
+             Gets the ContentType of the body. 
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.Storage.KiiObject.CreatedTime">CreatedTime</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a>
+                  </i>. 
+             Gets the created time on KiiCloud.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                    <i>default property</i>
+                  </div>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#P:KiiCorp.Cloud.Storage.KiiBaseObject.Item(System.String)">Item</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)</td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>
+                  </i>. 
+             Gets or sets the object with the specified key.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.Storage.KiiObject.ModifedTime">ModifedTime</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a>
+                  </i>. 
+             Gets the modifed time on KiiCloud.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.Storage.KiiObject.Uri">Uri</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a>
+                  </i>. 
+             Gets the URI of this instance.
+             </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.Acl(KiiCorp.Cloud.Storage.ObjectAction)">Acl</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/ObjectAction.html">ObjectAction</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiObjectAcl.html">KiiObjectAcl</a></nobr><blockquote>
+             Gets the acl for this object
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.CreateByUri(System.Uri)">CreateByUri</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiObject.html">KiiObject</a></nobr><blockquote>
+             Creates KiiObject by Uri
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.Delete()">Delete</a>
+                  </b>()<blockquote>
+             Delete KiiObject from KiiCloud
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.Delete(KiiCorp.Cloud.Storage.KiiObjectCallback)">Delete</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/KiiObjectCallback.html">KiiObjectCallback</a>)<blockquote>
+             Delete KiiObject from KiiCloud
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.DeleteBody()">DeleteBody</a>
+                  </b>()<blockquote>
+             Delete the body of the KiiObject from KiiCloud.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.DeleteBody(KiiCorp.Cloud.Storage.KiiObjectCallback)">DeleteBody</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/KiiObjectCallback.html">KiiObjectCallback</a>)<blockquote>
+             Delete the body of the KiiObject from KiiCloud.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream)">DownloadBody</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a>)<blockquote>
+             Download the body of the KiiObject from KiiCloud.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectBodyDownloadCallback)">DownloadBody</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a>, <a href="../KiiCorp.Cloud.Storage/KiiObjectBodyDownloadCallback.html">KiiObjectBodyDownloadCallback</a>)<blockquote>
+             Download the body of the KiiObject from KiiCloud. This API will be executed asynchronously.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectBodyDownloadCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressCallback)">DownloadBody</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a>, <a href="../KiiCorp.Cloud.Storage/KiiObjectBodyDownloadCallback.html">KiiObjectBodyDownloadCallback</a>, <a href="../KiiCorp.Cloud.Storage/KiiObjectBodyProgressCallback.html">KiiObjectBodyProgressCallback</a>)<blockquote>
+             Download the body of the KiiObject from KiiCloud. This API will be executed asynchronously.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectBodyDownloadCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressPercentageCallback)">DownloadBody</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a>, <a href="../KiiCorp.Cloud.Storage/KiiObjectBodyDownloadCallback.html">KiiObjectBodyDownloadCallback</a>, <a href="../KiiCorp.Cloud.Storage/KiiObjectBodyProgressPercentageCallback.html">KiiObjectBodyProgressPercentageCallback</a>)<blockquote>
+             Download the body of the KiiObject from KiiCloud. This API will be executed asynchronously.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetBoolean(System.String)">GetBoolean</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+             Gets the boolean in KiiBaseObject.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetBoolean(System.String,System.Boolean)">GetBoolean</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+             Gets the boolean. If key is not found, returns fallback.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetByteArray(System.String)">GetByteArray</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Byte">byte</a>[]</nobr><blockquote>
+             Gets the byte array with the specified key.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetDouble(System.String)">GetDouble</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a></nobr><blockquote>
+             Gets the double in KiiBaseObject.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetDouble(System.String,System.Double)">GetDouble</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a></nobr><blockquote>
+             Gets the double. If key is not found, returns fallback.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.GetGeoPoint(System.String)">GetGeoPoint</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiGeoPoint.html">KiiGeoPoint</a></nobr><blockquote>
+             Gets the GeoPoint associated with the given key.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.GetGeoPoint(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint)">GetGeoPoint</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="../KiiCorp.Cloud.Storage/KiiGeoPoint.html">KiiGeoPoint</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiGeoPoint.html">KiiGeoPoint</a></nobr><blockquote>
+             Get the GeoPoint of this object tied to the specified key. If KiiGeoPoint can not be returned for specified key, fallback will be returned.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetInt(System.String)">GetInt</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote>
+             Gets the integer in KiiBaseObject.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetInt(System.String,System.Int32)">GetInt</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a></nobr><blockquote>
+             Gets the integer. If key is not found, returns fallback.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetJsonArray(System.String)">GetJsonArray</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="javascript:alert(&quot;Documentation not found.&quot;)">JsonOrg.JsonArray</a></nobr><blockquote>
+             Gets the Json array with the specified key.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetJsonObject(System.String)">GetJsonObject</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="javascript:alert(&quot;Documentation not found.&quot;)">JsonOrg.JsonObject</a></nobr><blockquote>
+             Gets the JSON object with the specified key.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetLong(System.String)">GetLong</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a></nobr><blockquote>
+             Gets the long in KiiBaseObject.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetLong(System.String,System.Int64)">GetLong</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a></nobr><blockquote>
+             Gets the long. If key is not found, returns fallback.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetString(System.String)">GetString</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+             Gets the string in KiiBaseObject.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetString(System.String,System.String)">GetString</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+             Gets the string. If key is not found, returns fallback.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.GetUri(System.String)">GetUri</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a></nobr><blockquote>
+             Gets the Uri with the specified key.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.Has(System.String)">Has</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+             Determine if this instance has the specified key.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.Keys()">Keys</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IEnumerable`1">IEnumerable&lt;string&gt;</a></nobr><blockquote>
+             Gets the list of keys
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.ListAclEntries()">ListAclEntries</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;KiiACLEntry&lt;KiiObject, ObjectAction&gt;&gt;</a></nobr><blockquote>
+             Lists the acl entries of this object
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.ListAclEntries(KiiCorp.Cloud.Storage.KiiACLListCallback{KiiCorp.Cloud.Storage.KiiObject,KiiCorp.Cloud.Storage.ObjectAction})">ListAclEntries</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/KiiACLListCallback`2.html">KiiACLListCallback&lt;KiiObject, ObjectAction&gt;</a>)<blockquote>
+             Lists the acl entries of this object
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.PublishBody()">PublishBody</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+             Publishes the KiiObject attached file and return the file URL. URL will not be expired.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.PublishBody(KiiCorp.Cloud.Storage.KiiObjectPublishCallback)">PublishBody</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/KiiObjectPublishCallback.html">KiiObjectPublishCallback</a>)<blockquote>
+             Publishes the KiiObject attached file and return the file URL. URL will not be expired.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresAt(System.DateTime)">PublishBodyExpiresAt</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.DateTime">DateTime</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+             Publishes the KiiObject attached file and return the file URL. URL will be
+             expired on the specified expire time.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresAt(System.DateTime,KiiCorp.Cloud.Storage.KiiObjectPublishCallback)">PublishBodyExpiresAt</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.DateTime">DateTime</a>, <a href="../KiiCorp.Cloud.Storage/KiiObjectPublishCallback.html">KiiObjectPublishCallback</a>)<blockquote>
+             Publishes the KiiObject attached file and return the file URL. URL will be expired on the specified expire time.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresIn(System.Int64)">PublishBodyExpiresIn</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a>)<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote>
+             Publishes the KiiObject attached file and return the file URL. URL will be
+             expired on the specified expire time.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresIn(System.Int64,KiiCorp.Cloud.Storage.KiiObjectPublishCallback)">PublishBodyExpiresIn</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a>, <a href="../KiiCorp.Cloud.Storage/KiiObjectPublishCallback.html">KiiObjectPublishCallback</a>)<blockquote>
+             Publishes the KiiObject attached file and return the file URL. URL will be expired on the specified expire time.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.Refresh()">Refresh</a>
+                  </b>()<blockquote>
+             Get latest KiiObject form KiiCloud and refresh properties.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.Refresh(KiiCorp.Cloud.Storage.KiiObjectCallback)">Refresh</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/KiiObjectCallback.html">KiiObjectCallback</a>)<blockquote>
+             Get latest KiiObject form KiiCloud and refresh properties.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html#M:KiiCorp.Cloud.Storage.KiiBaseObject.Remove(System.String)">Remove</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<blockquote>
+             Remove the specified key and value.
+              (<i>Inherited from <a href="../KiiCorp.Cloud.Storage/KiiBaseObject.html">KiiBaseObject</a>.</i>)</blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.Save()">Save</a>
+                  </b>()<blockquote>
+             Create or update the KiiObject on KiiCloud.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.Save(KiiCorp.Cloud.Storage.KiiObjectCallback)">Save</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/KiiObjectCallback.html">KiiObjectCallback</a>)<blockquote>
+             Create or update the KiiObject on KiiCloud.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.Save(System.Boolean)">Save</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<blockquote>
+             Create or update the KiiObject on KiiCloud.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.Save(System.Boolean,KiiCorp.Cloud.Storage.KiiObjectCallback)">Save</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="../KiiCorp.Cloud.Storage/KiiObjectCallback.html">KiiObjectCallback</a>)<blockquote>
+             Create or update the KiiObject on KiiCloud.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.SaveAllFields(System.Boolean)">SaveAllFields</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<blockquote>
+             Create or update the KiiObject on KiiCloud.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.SaveAllFields(System.Boolean,KiiCorp.Cloud.Storage.KiiObjectCallback)">SaveAllFields</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>, <a href="../KiiCorp.Cloud.Storage/KiiObjectCallback.html">KiiObjectCallback</a>)<blockquote>
+             Create or update the KiiObject on KiiCloud.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.SetGeoPoint(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint)">SetGeoPoint</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="../KiiCorp.Cloud.Storage/KiiGeoPoint.html">KiiGeoPoint</a>)<blockquote>
+             Sets the geo point to this object with the specified key.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream)">UploadBody</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a>)<blockquote>
+             Upload the body of the KiiObject to KiiCloud.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectCallback)">UploadBody</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a>, <a href="../KiiCorp.Cloud.Storage/KiiObjectCallback.html">KiiObjectCallback</a>)<blockquote>
+             Upload the body of the KiiObject to KiiCloud. This API will be executed asynchronously. 
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressCallback)">UploadBody</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a>, <a href="../KiiCorp.Cloud.Storage/KiiObjectCallback.html">KiiObjectCallback</a>, <a href="../KiiCorp.Cloud.Storage/KiiObjectBodyProgressCallback.html">KiiObjectBodyProgressCallback</a>)<blockquote>
+             Upload the body of the KiiObject to KiiCloud. This API will be executed asynchronously. 
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressPercentageCallback)">UploadBody</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a>, <a href="../KiiCorp.Cloud.Storage/KiiObjectCallback.html">KiiObjectCallback</a>, <a href="../KiiCorp.Cloud.Storage/KiiObjectBodyProgressPercentageCallback.html">KiiObjectBodyProgressPercentageCallback</a>)<blockquote>
+             Upload the body of the KiiObject to KiiCloud. This API will be executed asynchronously. 
+             </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:KiiCorp.Cloud.Storage.KiiObject:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.Acl(KiiCorp.Cloud.Storage.ObjectAction)">Acl Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.Acl(KiiCorp.Cloud.Storage.ObjectAction):member">
+          <div class="msummary">
+             Gets the acl for this object
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiObjectAcl.html">KiiObjectAcl</a> <b>Acl</b> (<a href="../KiiCorp.Cloud.Storage/ObjectAction.html">ObjectAction</a> action)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Acl(KiiCorp.Cloud.Storage.ObjectAction):Parameters">
+            <dl>
+              <dt>
+                <i>action</i>
+              </dt>
+              <dd>
+             Object ACL action.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Acl(KiiCorp.Cloud.Storage.ObjectAction):Returns">
+             KiiObjectAcl instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Acl(KiiCorp.Cloud.Storage.ObjectAction):Remarks">
+             See <a href="../KiiCorp.Cloud.Storage/KiiObjectAcl.html">KiiCorp.Cloud.Storage.KiiObjectAcl</a></div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Acl(KiiCorp.Cloud.Storage.ObjectAction):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.Storage.KiiObject.BodyContentType">BodyContentType Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.Storage.KiiObject.BodyContentType:member">
+          <div class="msummary">
+             Gets the ContentType of the body. 
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>BodyContentType</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.KiiObject.BodyContentType:Value">The type of the body content.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.KiiObject.BodyContentType:Remarks">
+             This property will be set after <a href="../KiiCorp.Cloud.Storage/KiiObject.html#M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream)">KiiObject.UploadBody(string, System.IO.Stream)</a> / <a href="../KiiCorp.Cloud.Storage/KiiObject.html#M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream)">KiiObject.DownloadBody(System.IO.Stream)</a> 
+             and clear after <a href="../KiiCorp.Cloud.Storage/KiiObject.html#M:KiiCorp.Cloud.Storage.KiiObject.DeleteBody">KiiObject.DeleteBody</a></div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.KiiObject.BodyContentType:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.CreateByUri(System.Uri)">CreateByUri Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.CreateByUri(System.Uri):member">
+          <div class="msummary">
+             Creates KiiObject by Uri
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiObject.html">KiiObject</a> <b>CreateByUri</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a> uri)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.CreateByUri(System.Uri):Parameters">
+            <dl>
+              <dt>
+                <i>uri</i>
+              </dt>
+              <dd>
+             Uri of KiiObject
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.CreateByUri(System.Uri):Returns">
+             KiiObject instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.CreateByUri(System.Uri):Remarks">
+             Please use <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a> property for an argument.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.CreateByUri(System.Uri):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.Storage.KiiObject.CreatedTime">CreatedTime Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.Storage.KiiObject.CreatedTime:member">
+          <div class="msummary">
+             Gets the created time on KiiCloud.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a> <b>CreatedTime</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.KiiObject.CreatedTime:Value">
+             The created time.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.KiiObject.CreatedTime:Remarks">
+             If this instance is not saved or refreshed, return -1
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.KiiObject.CreatedTime:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.Delete()">Delete Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.Delete():member">
+          <div class="msummary">
+             Delete KiiObject from KiiCloud
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Delete</b> ()</div>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Delete():Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                </td>
+                <td>
+             Is thrown when this instance doesn't have id or bucket.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/CloudException.html">KiiCorp.Cloud.Storage.CloudException</a>
+                </td>
+                <td>
+             Is thrown when server sends error response.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Delete():Remarks">
+             Do not use this instance after this API is called.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Delete():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.Delete(KiiCorp.Cloud.Storage.KiiObjectCallback)">Delete Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.Delete(KiiCorp.Cloud.Storage.KiiObjectCallback):member">
+          <div class="msummary">
+             Delete KiiObject from KiiCloud
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Delete</b> (<a href="../KiiCorp.Cloud.Storage/KiiObjectCallback.html">KiiObjectCallback</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Delete(KiiCorp.Cloud.Storage.KiiObjectCallback):Parameters">
+            <dl>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>
+             Callback.
+             </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Delete(KiiCorp.Cloud.Storage.KiiObjectCallback):Remarks">
+             Do not use this instance after this API is called.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Delete(KiiCorp.Cloud.Storage.KiiObjectCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.DeleteBody()">DeleteBody Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.DeleteBody():member">
+          <div class="msummary">
+             Delete the body of the KiiObject from KiiCloud.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>DeleteBody</b> ()</div>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.DeleteBody():Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                </td>
+                <td>
+             Thrown if this object has not saved to the Kii Cloud.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/NotFoundException.html">KiiCorp.Cloud.Storage.NotFoundException</a>
+                </td>
+                <td>
+             Thrown if object body,object,bucket or bucket owner not exists in Kii Cloud.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/UnauthorizedException.html">KiiCorp.Cloud.Storage.UnauthorizedException</a>
+                </td>
+                <td>
+             Thrown if current user has no permission to delete the KiiObject body.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.DeleteBody():Remarks">
+             NOTE: This api access to server. Should not be executed in UI/Main thread.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.DeleteBody():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.DeleteBody(KiiCorp.Cloud.Storage.KiiObjectCallback)">DeleteBody Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.DeleteBody(KiiCorp.Cloud.Storage.KiiObjectCallback):member">
+          <div class="msummary">
+             Delete the body of the KiiObject from KiiCloud.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>DeleteBody</b> (<a href="../KiiCorp.Cloud.Storage/KiiObjectCallback.html">KiiObjectCallback</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.DeleteBody(KiiCorp.Cloud.Storage.KiiObjectCallback):Parameters">
+            <dl>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>
+             KiiObjectCallback.
+             </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.DeleteBody(KiiCorp.Cloud.Storage.KiiObjectCallback):Remarks">
+             This API sends a request to KiiCloud.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.DeleteBody(KiiCorp.Cloud.Storage.KiiObjectCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream)">DownloadBody Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream):member">
+          <div class="msummary">
+             Download the body of the KiiObject from KiiCloud.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>DownloadBody</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a> outStream)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream):Parameters">
+            <dl>
+              <dt>
+                <i>outStream</i>
+              </dt>
+              <dd>The stream to be written. This stream is NOT closed after execution.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/NotFoundException.html">KiiCorp.Cloud.Storage.NotFoundException</a>
+                </td>
+                <td>
+             Is thrown when KiiObject or body is not in KiiCloud.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/UnauthorizedException.html">KiiCorp.Cloud.Storage.UnauthorizedException</a>
+                </td>
+                <td>
+             Is thrown when current user cannot access this KiiObject.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream):Remarks">
+            <p>The stream will NOT be closed after executon.</p>
+            <p>NOTE: This api access to server. Should not be executed in UI/Main thread.</p>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectBodyDownloadCallback)">DownloadBody Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectBodyDownloadCallback):member">
+          <div class="msummary">
+             Download the body of the KiiObject from KiiCloud. This API will be executed asynchronously.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>DownloadBody</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a> outStream, <a href="../KiiCorp.Cloud.Storage/KiiObjectBodyDownloadCallback.html">KiiObjectBodyDownloadCallback</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectBodyDownloadCallback):Parameters">
+            <dl>
+              <dt>
+                <i>outStream</i>
+              </dt>
+              <dd>The stream to be written. This stream is NOT closed after execution.</dd>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>Callback. </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectBodyDownloadCallback):Remarks">
+             The stream will NOT be closed after executon.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectBodyDownloadCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectBodyDownloadCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressCallback)">DownloadBody Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectBodyDownloadCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressCallback):member">
+          <div class="msummary">
+             Download the body of the KiiObject from KiiCloud. This API will be executed asynchronously.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>DownloadBody</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a> outStream, <a href="../KiiCorp.Cloud.Storage/KiiObjectBodyDownloadCallback.html">KiiObjectBodyDownloadCallback</a> callback, <a href="../KiiCorp.Cloud.Storage/KiiObjectBodyProgressCallback.html">KiiObjectBodyProgressCallback</a> progressCallback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectBodyDownloadCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressCallback):Parameters">
+            <dl>
+              <dt>
+                <i>outStream</i>
+              </dt>
+              <dd>The stream to be written. This stream is NOT closed after execution.</dd>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>Callback. </dd>
+              <dt>
+                <i>progressCallback</i>
+              </dt>
+              <dd>This callback will be called when API will tell a progress.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectBodyDownloadCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressCallback):Remarks">
+             KiiObjectBodyProgressCallback doesn't work properly when use KiiInitializeBehaviour in order to initialize the KiiCloudSDK.
+             Use <a href="../KiiCorp.Cloud.Storage/KiiObject.html#M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectBodyDownloadCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressPercentageCallback)">KiiObject.DownloadBody(System.IO.Stream, KiiObjectBodyDownloadCallback, KiiObjectBodyProgressPercentageCallback)</a> instead.
+             The stream will NOT be closed after executon.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectBodyDownloadCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectBodyDownloadCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressPercentageCallback)">DownloadBody Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectBodyDownloadCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressPercentageCallback):member">
+          <div class="msummary">
+             Download the body of the KiiObject from KiiCloud. This API will be executed asynchronously.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>DownloadBody</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a> outStream, <a href="../KiiCorp.Cloud.Storage/KiiObjectBodyDownloadCallback.html">KiiObjectBodyDownloadCallback</a> callback, <a href="../KiiCorp.Cloud.Storage/KiiObjectBodyProgressPercentageCallback.html">KiiObjectBodyProgressPercentageCallback</a> progressCallback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectBodyDownloadCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressPercentageCallback):Parameters">
+            <dl>
+              <dt>
+                <i>outStream</i>
+              </dt>
+              <dd>The stream to be written. This stream is NOT closed after execution.</dd>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>Callback. </dd>
+              <dt>
+                <i>progressCallback</i>
+              </dt>
+              <dd>This callback will be called when API will tell a progress.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectBodyDownloadCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressPercentageCallback):Remarks">
+             The stream will NOT be closed after executon.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.DownloadBody(System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectBodyDownloadCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressPercentageCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.GetGeoPoint(System.String)">GetGeoPoint Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.GetGeoPoint(System.String):member">
+          <div class="msummary">
+             Gets the GeoPoint associated with the given key.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiGeoPoint.html">KiiGeoPoint</a> <b>GetGeoPoint</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.GetGeoPoint(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             The key to retrieve. Must not null or empty string.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.GetGeoPoint(System.String):Returns">
+             An instance of KiiGeoPoint tied to the key.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.GetGeoPoint(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when an argument is invalid. Please see parameter explanation.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/IllegalKiiBaseObjectFormatException.html">KiiCorp.Cloud.Storage.IllegalKiiBaseObjectFormatException</a>
+                </td>
+                <td>
+             Throw IllegalKiiBaseObjectFormatException if can not get KiiGeoPoint object with specified key.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.GetGeoPoint(System.String):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.GetGeoPoint(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.GetGeoPoint(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint)">GetGeoPoint Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.GetGeoPoint(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint):member">
+          <div class="msummary">
+             Get the GeoPoint of this object tied to the specified key. If KiiGeoPoint can not be returned for specified key, fallback will be returned.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiGeoPoint.html">KiiGeoPoint</a> <b>GetGeoPoint</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="../KiiCorp.Cloud.Storage/KiiGeoPoint.html">KiiGeoPoint</a> fallBack)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.GetGeoPoint(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             The key to retrieve.
+             </dd>
+              <dt>
+                <i>fallBack</i>
+              </dt>
+              <dd>
+             return if geo point can not be returned for the specified key.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.GetGeoPoint(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint):Returns">
+             An instance of KiiGeoPoint tied to the key.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.GetGeoPoint(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.GetGeoPoint(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.ListAclEntries()">ListAclEntries Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.ListAclEntries():member">
+          <div class="msummary">
+             Lists the acl entries of this object
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;KiiACLEntry&lt;KiiObject, ObjectAction&gt;&gt;</a> <b>ListAclEntries</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.ListAclEntries():Returns">
+             The list of acl entries.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.ListAclEntries():Remarks">
+             This API sends a request to KiiCloud.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.ListAclEntries():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.ListAclEntries(KiiCorp.Cloud.Storage.KiiACLListCallback{KiiCorp.Cloud.Storage.KiiObject,KiiCorp.Cloud.Storage.ObjectAction})">ListAclEntries Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.ListAclEntries(KiiCorp.Cloud.Storage.KiiACLListCallback{KiiCorp.Cloud.Storage.KiiObject,KiiCorp.Cloud.Storage.ObjectAction}):member">
+          <div class="msummary">
+             Lists the acl entries of this object
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>ListAclEntries</b> (<a href="../KiiCorp.Cloud.Storage/KiiACLListCallback`2.html">KiiACLListCallback&lt;KiiObject, ObjectAction&gt;</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.ListAclEntries(KiiCorp.Cloud.Storage.KiiACLListCallback{KiiCorp.Cloud.Storage.KiiObject,KiiCorp.Cloud.Storage.ObjectAction}):Parameters">
+            <dl>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>
+             Callback.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.ListAclEntries(KiiCorp.Cloud.Storage.KiiACLListCallback{KiiCorp.Cloud.Storage.KiiObject,KiiCorp.Cloud.Storage.ObjectAction}):Returns">
+             The list of acl entries.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.ListAclEntries(KiiCorp.Cloud.Storage.KiiACLListCallback{KiiCorp.Cloud.Storage.KiiObject,KiiCorp.Cloud.Storage.ObjectAction}):Remarks">
+             This API sends a request to KiiCloud.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.ListAclEntries(KiiCorp.Cloud.Storage.KiiACLListCallback{KiiCorp.Cloud.Storage.KiiObject,KiiCorp.Cloud.Storage.ObjectAction}):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.Storage.KiiObject.ModifedTime">ModifedTime Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.Storage.KiiObject.ModifedTime:member">
+          <div class="msummary">
+             Gets the modifed time on KiiCloud.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a> <b>ModifedTime</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.KiiObject.ModifedTime:Value">
+             The modifed time.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.KiiObject.ModifedTime:Remarks">
+             If this instance is not saved or refreshed, return -1
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.KiiObject.ModifedTime:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBody()">PublishBody Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBody():member">
+          <div class="msummary">
+             Publishes the KiiObject attached file and return the file URL. URL will not be expired.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>PublishBody</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBody():Returns">
+             The file URL.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBody():Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                </td>
+                <td>
+             Is thrown when this object is not uploaded in Kii Cloud.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/NotFoundException.html">KiiCorp.Cloud.Storage.NotFoundException</a>
+                </td>
+                <td>
+             Is thrown when Object / Bucket / Bucket owner is not in Kii Cloud.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/UnauthorizedException.html">KiiCorp.Cloud.Storage.UnauthorizedException</a>
+                </td>
+                <td>
+             Is throwns when current user cannot access this KiiObject.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBody():Remarks">
+             NOTE: This api access to server. Should not be executed in UI/Main thread.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBody():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBody(KiiCorp.Cloud.Storage.KiiObjectPublishCallback)">PublishBody Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBody(KiiCorp.Cloud.Storage.KiiObjectPublishCallback):member">
+          <div class="msummary">
+             Publishes the KiiObject attached file and return the file URL. URL will not be expired.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>PublishBody</b> (<a href="../KiiCorp.Cloud.Storage/KiiObjectPublishCallback.html">KiiObjectPublishCallback</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBody(KiiCorp.Cloud.Storage.KiiObjectPublishCallback):Parameters">
+            <dl>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>
+             Callback. 
+             </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBody(KiiCorp.Cloud.Storage.KiiObjectPublishCallback):Remarks">
+             This API sends a request to KiiCloud. 
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBody(KiiCorp.Cloud.Storage.KiiObjectPublishCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresAt(System.DateTime)">PublishBodyExpiresAt Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresAt(System.DateTime):member">
+          <div class="msummary">
+             Publishes the KiiObject attached file and return the file URL. URL will be
+             expired on the specified expire time.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>PublishBodyExpiresAt</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.DateTime">DateTime</a> expiresAt)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresAt(System.DateTime):Parameters">
+            <dl>
+              <dt>
+                <i>expiresAt</i>
+              </dt>
+              <dd>
+             A time of expired date in milliseconds (Since January 1, 1970 00:00:00 UTC).
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresAt(System.DateTime):Returns">
+             The file URL.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresAt(System.DateTime):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                </td>
+                <td>
+             Is thrown when this object is not uploaded in Kii Cloud.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/NotFoundException.html">KiiCorp.Cloud.Storage.NotFoundException</a>
+                </td>
+                <td>
+             Is thrown when Object / Bucket / Bucket owner is not in Kii Cloud.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/UnauthorizedException.html">KiiCorp.Cloud.Storage.UnauthorizedException</a>
+                </td>
+                <td>
+             Is throwns when current user cannot access this KiiObject.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresAt(System.DateTime):Remarks">
+             NOTE: This api access to server. Should not be executed in UI/Main thread.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresAt(System.DateTime):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresAt(System.DateTime,KiiCorp.Cloud.Storage.KiiObjectPublishCallback)">PublishBodyExpiresAt Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresAt(System.DateTime,KiiCorp.Cloud.Storage.KiiObjectPublishCallback):member">
+          <div class="msummary">
+             Publishes the KiiObject attached file and return the file URL. URL will be expired on the specified expire time.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>PublishBodyExpiresAt</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.DateTime">DateTime</a> expiresAt, <a href="../KiiCorp.Cloud.Storage/KiiObjectPublishCallback.html">KiiObjectPublishCallback</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresAt(System.DateTime,KiiCorp.Cloud.Storage.KiiObjectPublishCallback):Parameters">
+            <dl>
+              <dt>
+                <i>expiresAt</i>
+              </dt>
+              <dd>
+             A time of expired date in milliseconds (Since January 1, 1970 00:00:00 UTC).
+             </dd>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>
+             Callback. 
+             </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresAt(System.DateTime,KiiCorp.Cloud.Storage.KiiObjectPublishCallback):Remarks">
+             This API sends a request to KiiCloud. 
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresAt(System.DateTime,KiiCorp.Cloud.Storage.KiiObjectPublishCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresIn(System.Int64)">PublishBodyExpiresIn Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresIn(System.Int64):member">
+          <div class="msummary">
+             Publishes the KiiObject attached file and return the file URL. URL will be
+             expired on the specified expire time.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>PublishBodyExpiresIn</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a> expiresIn)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresIn(System.Int64):Parameters">
+            <dl>
+              <dt>
+                <i>expiresIn</i>
+              </dt>
+              <dd>
+             The period time in seconds the publication URL has to be available, after that it will expire.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresIn(System.Int64):Returns">
+             The file URL.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresIn(System.Int64):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                </td>
+                <td>
+             Is thrown when this object is not uploaded in Kii Cloud.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when expiresIn &lt;= 0
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/NotFoundException.html">KiiCorp.Cloud.Storage.NotFoundException</a>
+                </td>
+                <td>
+             Is thrown when Object / Bucket / Bucket owner is not in Kii Cloud.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/UnauthorizedException.html">KiiCorp.Cloud.Storage.UnauthorizedException</a>
+                </td>
+                <td>
+             Is throwns when current user cannot access this KiiObject.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresIn(System.Int64):Remarks">
+             NOTE: This api access to server. Should not be executed in UI/Main thread.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresIn(System.Int64):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresIn(System.Int64,KiiCorp.Cloud.Storage.KiiObjectPublishCallback)">PublishBodyExpiresIn Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresIn(System.Int64,KiiCorp.Cloud.Storage.KiiObjectPublishCallback):member">
+          <div class="msummary">
+             Publishes the KiiObject attached file and return the file URL. URL will be expired on the specified expire time.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>PublishBodyExpiresIn</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a> expiresIn, <a href="../KiiCorp.Cloud.Storage/KiiObjectPublishCallback.html">KiiObjectPublishCallback</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresIn(System.Int64,KiiCorp.Cloud.Storage.KiiObjectPublishCallback):Parameters">
+            <dl>
+              <dt>
+                <i>expiresIn</i>
+              </dt>
+              <dd>
+             The period time in seconds the publication URL has to be available, after that it will expire.
+             </dd>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>
+             Callback. 
+             </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresIn(System.Int64,KiiCorp.Cloud.Storage.KiiObjectPublishCallback):Remarks">
+             This API sends a request to KiiCloud. 
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.PublishBodyExpiresIn(System.Int64,KiiCorp.Cloud.Storage.KiiObjectPublishCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.Refresh()">Refresh Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.Refresh():member">
+          <div class="msummary">
+             Get latest KiiObject form KiiCloud and refresh properties.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Refresh</b> ()</div>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Refresh():Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                </td>
+                <td>
+             Is thrown when this instance doesn't have id or bucket.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/IllegalKiiBaseObjectFormatException.html">KiiCorp.Cloud.Storage.IllegalKiiBaseObjectFormatException</a>
+                </td>
+                <td>
+             Is thrown when server sends broken Json.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/CloudException.html">KiiCorp.Cloud.Storage.CloudException</a>
+                </td>
+                <td>
+             Is thrown when server sends error response.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Refresh():Remarks">
+             Please call this API to the object created by <a href="../KiiCorp.Cloud.Storage/KiiObject.html#M:KiiCorp.Cloud.Storage.KiiObject.CreateByUri(System.Uri)">KiiObject.CreateByUri(Uri)</a></div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Refresh():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.Refresh(KiiCorp.Cloud.Storage.KiiObjectCallback)">Refresh Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.Refresh(KiiCorp.Cloud.Storage.KiiObjectCallback):member">
+          <div class="msummary">
+             Get latest KiiObject form KiiCloud and refresh properties.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Refresh</b> (<a href="../KiiCorp.Cloud.Storage/KiiObjectCallback.html">KiiObjectCallback</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Refresh(KiiCorp.Cloud.Storage.KiiObjectCallback):Parameters">
+            <dl>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>
+             Callback.
+             </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Refresh(KiiCorp.Cloud.Storage.KiiObjectCallback):Remarks">
+             Please call this API to the object created by <a href="../KiiCorp.Cloud.Storage/KiiObject.html#M:KiiCorp.Cloud.Storage.KiiObject.CreateByUri(System.Uri)">KiiObject.CreateByUri(Uri)</a></div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Refresh(KiiCorp.Cloud.Storage.KiiObjectCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.Save()">Save Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.Save():member">
+          <div class="msummary">
+             Create or update the KiiObject on KiiCloud.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Save</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Save():Remarks">
+             This API uploads only modified fields.
+             
+             This call is same as KiiObject.Save(true)
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Save():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.Save(KiiCorp.Cloud.Storage.KiiObjectCallback)">Save Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.Save(KiiCorp.Cloud.Storage.KiiObjectCallback):member">
+          <div class="msummary">
+             Create or update the KiiObject on KiiCloud.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Save</b> (<a href="../KiiCorp.Cloud.Storage/KiiObjectCallback.html">KiiObjectCallback</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Save(KiiCorp.Cloud.Storage.KiiObjectCallback):Parameters">
+            <dl>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>
+             Callback.
+             </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Save(KiiCorp.Cloud.Storage.KiiObjectCallback):Remarks">
+             This API uploads only modified fields.
+             
+             This call is same as KiiObject.Save(true)
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Save(KiiCorp.Cloud.Storage.KiiObjectCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.Save(System.Boolean)">Save Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.Save(System.Boolean):member">
+          <div class="msummary">
+             Create or update the KiiObject on KiiCloud.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Save</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> overWrite)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Save(System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>overWrite</i>
+              </dt>
+              <dd>
+             Over write.
+             </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Save(System.Boolean):Remarks">
+             This API uploads only modified fields.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Save(System.Boolean):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.Save(System.Boolean,KiiCorp.Cloud.Storage.KiiObjectCallback)">Save Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.Save(System.Boolean,KiiCorp.Cloud.Storage.KiiObjectCallback):member">
+          <div class="msummary">
+             Create or update the KiiObject on KiiCloud.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Save</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> overWrite, <a href="../KiiCorp.Cloud.Storage/KiiObjectCallback.html">KiiObjectCallback</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Save(System.Boolean,KiiCorp.Cloud.Storage.KiiObjectCallback):Parameters">
+            <dl>
+              <dt>
+                <i>overWrite</i>
+              </dt>
+              <dd>
+             Over write.
+             </dd>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>
+             Callback.
+             </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Save(System.Boolean,KiiCorp.Cloud.Storage.KiiObjectCallback):Remarks">
+             This API uploads only modified fields.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.Save(System.Boolean,KiiCorp.Cloud.Storage.KiiObjectCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.SaveAllFields(System.Boolean)">SaveAllFields Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.SaveAllFields(System.Boolean):member">
+          <div class="msummary">
+             Create or update the KiiObject on KiiCloud.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SaveAllFields</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> overWrite)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.SaveAllFields(System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>overWrite</i>
+              </dt>
+              <dd>
+             If <table class="CodeExampleTable"><tr><td><b><font size="-1"> Example</font></b></td></tr><tr><td><pre class="">false</pre></td></tr></table> and object in KiiCloud is updated, <a href="../KiiCorp.Cloud.Storage/CloudException.html">KiiCorp.Cloud.Storage.CloudException</a> is thrown.
+             </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.SaveAllFields(System.Boolean):Remarks">
+             When this API updates object in KiiCloud,
+             object's all fields in KiiCloud are replaced by fields in this instance.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.SaveAllFields(System.Boolean):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.SaveAllFields(System.Boolean,KiiCorp.Cloud.Storage.KiiObjectCallback)">SaveAllFields Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.SaveAllFields(System.Boolean,KiiCorp.Cloud.Storage.KiiObjectCallback):member">
+          <div class="msummary">
+             Create or update the KiiObject on KiiCloud.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SaveAllFields</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> overWrite, <a href="../KiiCorp.Cloud.Storage/KiiObjectCallback.html">KiiObjectCallback</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.SaveAllFields(System.Boolean,KiiCorp.Cloud.Storage.KiiObjectCallback):Parameters">
+            <dl>
+              <dt>
+                <i>overWrite</i>
+              </dt>
+              <dd>
+             If <table class="CodeExampleTable"><tr><td><b><font size="-1"> Example</font></b></td></tr><tr><td><pre class="">false</pre></td></tr></table> and object in KiiCloud is updated, <a href="../KiiCorp.Cloud.Storage/CloudException.html">KiiCorp.Cloud.Storage.CloudException</a> is thrown.
+             </dd>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>
+             Callback.
+             </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.SaveAllFields(System.Boolean,KiiCorp.Cloud.Storage.KiiObjectCallback):Remarks">
+             When this API updates object in KiiCloud,
+             object's all fields in KiiCloud are replaced by fields in this instance.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.SaveAllFields(System.Boolean,KiiCorp.Cloud.Storage.KiiObjectCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.SetGeoPoint(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint)">SetGeoPoint Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.SetGeoPoint(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint):member">
+          <div class="msummary">
+             Sets the geo point to this object with the specified key.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SetGeoPoint</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="../KiiCorp.Cloud.Storage/KiiGeoPoint.html">KiiGeoPoint</a> geoObj)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.SetGeoPoint(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key, name of the field. Must not null or empty string.
+             </dd>
+              <dt>
+                <i>geoObj</i>
+              </dt>
+              <dd>
+             Geo object to be tied to the specified key. Must not null.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.SetGeoPoint(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when an argument is invalid. Please see parameter explanation.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.SetGeoPoint(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.SetGeoPoint(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream)">UploadBody Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream):member">
+          <div class="msummary">
+             Upload the body of the KiiObject to KiiCloud.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>UploadBody</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> contentType, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a> stream)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream):Parameters">
+            <dl>
+              <dt>
+                <i>contentType</i>
+              </dt>
+              <dd>Content type of body.</dd>
+              <dt>
+                <i>stream</i>
+              </dt>
+              <dd>The object body to be uploaded. This stream will be closed after execution.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/NotFoundException.html">KiiCorp.Cloud.Storage.NotFoundException</a>
+                </td>
+                <td>
+             Is thrown when KiiObject is not in KiiCloud.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/UnauthorizedException.html">KiiCorp.Cloud.Storage.UnauthorizedException</a>
+                </td>
+                <td>
+             Is thrown when current user cannot access this KiiObject.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream):Remarks">
+            <p>The stream will be closed after execution.</p>
+            <p>NOTE: This api access to server. Should not be executed in UI/Main thread.</p>
+            <p>NOTE: After this operation, KiiObject version on cloud will be updated. If you want to use <a href="../KiiCorp.Cloud.Storage/KiiObject.html#M:KiiCorp.Cloud.Storage.KiiObject.Save(System.Boolean)">KiiObject.Save(bool)</a> with overwrite=false argument, please do <a href="../KiiCorp.Cloud.Storage/KiiObject.html#M:KiiCorp.Cloud.Storage.KiiObject.Refresh">KiiObject.Refresh</a> before saving.</p>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectCallback)">UploadBody Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectCallback):member">
+          <div class="msummary">
+             Upload the body of the KiiObject to KiiCloud. This API will be executed asynchronously. 
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>UploadBody</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> contentType, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a> stream, <a href="../KiiCorp.Cloud.Storage/KiiObjectCallback.html">KiiObjectCallback</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectCallback):Parameters">
+            <dl>
+              <dt>
+                <i>contentType</i>
+              </dt>
+              <dd>Content type of body.</dd>
+              <dt>
+                <i>stream</i>
+              </dt>
+              <dd>The object body to be uploaded.</dd>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>Callback.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectCallback):Remarks">
+            <p>The stream will be closed after execution.</p>
+            <p>NOTE: After this operation, KiiObject version on cloud will be updated. If you want to use <a href="../KiiCorp.Cloud.Storage/KiiObject.html#M:KiiCorp.Cloud.Storage.KiiObject.Save(System.Boolean)">KiiObject.Save(bool)</a> with overwrite=false argument, please do <a href="../KiiCorp.Cloud.Storage/KiiObject.html#M:KiiCorp.Cloud.Storage.KiiObject.Refresh">KiiObject.Refresh</a> before saving.</p>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressCallback)">UploadBody Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressCallback):member">
+          <div class="msummary">
+             Upload the body of the KiiObject to KiiCloud. This API will be executed asynchronously. 
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>UploadBody</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> contentType, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a> stream, <a href="../KiiCorp.Cloud.Storage/KiiObjectCallback.html">KiiObjectCallback</a> callback, <a href="../KiiCorp.Cloud.Storage/KiiObjectBodyProgressCallback.html">KiiObjectBodyProgressCallback</a> progressCallback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressCallback):Parameters">
+            <dl>
+              <dt>
+                <i>contentType</i>
+              </dt>
+              <dd>Content type of body.</dd>
+              <dt>
+                <i>stream</i>
+              </dt>
+              <dd>The object body to be uploaded.</dd>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>Callback.</dd>
+              <dt>
+                <i>progressCallback</i>
+              </dt>
+              <dd>This callback will be called when API will tell a progress.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressCallback):Remarks">
+             KiiObjectBodyProgressCallback doesn't work properly when use KiiInitializeBehaviour in order to initialize the KiiCloudSDK.
+             Use <a href="../KiiCorp.Cloud.Storage/KiiObject.html#M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressPercentageCallback)">KiiObject.UploadBody(string, System.IO.Stream, KiiObjectCallback, KiiObjectBodyProgressPercentageCallback)</a> instead.
+             <p>The stream will be closed after execution.</p><p>NOTE: After this operation, KiiObject version on cloud will be updated. If you want to use <a href="../KiiCorp.Cloud.Storage/KiiObject.html#M:KiiCorp.Cloud.Storage.KiiObject.Save(System.Boolean)">KiiObject.Save(bool)</a> with overwrite=false argument, please do <a href="../KiiCorp.Cloud.Storage/KiiObject.html#M:KiiCorp.Cloud.Storage.KiiObject.Refresh">KiiObject.Refresh</a> before saving.</p></div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressPercentageCallback)">UploadBody Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressPercentageCallback):member">
+          <div class="msummary">
+             Upload the body of the KiiObject to KiiCloud. This API will be executed asynchronously. 
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>UploadBody</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> contentType, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.IO.Stream">System.IO.Stream</a> stream, <a href="../KiiCorp.Cloud.Storage/KiiObjectCallback.html">KiiObjectCallback</a> callback, <a href="../KiiCorp.Cloud.Storage/KiiObjectBodyProgressPercentageCallback.html">KiiObjectBodyProgressPercentageCallback</a> progressCallback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressPercentageCallback):Parameters">
+            <dl>
+              <dt>
+                <i>contentType</i>
+              </dt>
+              <dd>Content type of body.</dd>
+              <dt>
+                <i>stream</i>
+              </dt>
+              <dd>The object body to be uploaded.</dd>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>Callback.</dd>
+              <dt>
+                <i>progressCallback</i>
+              </dt>
+              <dd>This callback will be called when API will tell a progress.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressPercentageCallback):Remarks">
+            <p>The stream will be closed after execution.</p>
+            <p>NOTE: After this operation, KiiObject version on cloud will be updated. If you want to use <a href="../KiiCorp.Cloud.Storage/KiiObject.html#M:KiiCorp.Cloud.Storage.KiiObject.Save(System.Boolean)">KiiObject.Save(bool)</a> with overwrite=false argument, please do <a href="../KiiCorp.Cloud.Storage/KiiObject.html#M:KiiCorp.Cloud.Storage.KiiObject.Refresh">KiiObject.Refresh</a> before saving.</p>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiObject.UploadBody(System.String,System.IO.Stream,KiiCorp.Cloud.Storage.KiiObjectCallback,KiiCorp.Cloud.Storage.KiiObjectBodyProgressPercentageCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.Storage.KiiObject.Uri">Uri Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.Storage.KiiObject.Uri:member">
+          <div class="msummary">
+             Gets the URI of this instance.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a> <b>Uri</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.KiiObject.Uri:Value">
+             The URI of this instance.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.KiiObject.Uri:Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                </td>
+                <td>
+             Is thrown when this object doesn't have ID
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.KiiObject.Uri:Remarks">
+             Format is the following:
+             <ul><li>Application scope object: kiicloud://buckets/{name of bucket}/objects/{id of the object}</li><li>User scope object: kiicloud://users/{id of the user}/buckets/{name of bucket}/objects/{id of the object}</li><li>Group scope object: kiicloud://groups/{id of the group}/buckets/{name of bucket}/objects/{id of the object}</li></ul></div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.KiiObject.Uri:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

@@ -1,0 +1,593 @@
+<html>
+  <head>
+    <title>KiiCorp.Cloud.Unity.KiiPushPlugin</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">plugin</a> : <a href="index.html">KiiCorp.Cloud.Unity Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:KiiCorp.Cloud.Unity.KiiPushPlugin">Overview</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Unity.KiiPushPlugin:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Unity.KiiPushPlugin:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Unity.KiiPushPlugin:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:KiiCorp.Cloud.Unity.KiiPushPlugin">KiiPushPlugin  Class</h1>
+    <p class="Summary" id="T:KiiCorp.Cloud.Unity.KiiPushPlugin:Summary">
+             Unity plugin for push notification.
+             </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:KiiCorp.Cloud.Unity.KiiPushPlugin:Signature">public class  <b>KiiPushPlugin</b> : <a href="javascript:alert(&quot;Documentation not found.&quot;)">UnityEngine.MonoBehaviour</a></div>
+    </div>
+    <div class="Remarks" id="T:KiiCorp.Cloud.Unity.KiiPushPlugin:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:KiiCorp.Cloud.Unity.KiiPushPlugin:Docs:Remarks">
+             This class is not included in KiiCloudStorageSDK.dll
+             You need to download unity plug-in.
+             Usage.
+             <ol><li>Create an empty GameObject and attach the KiiPushPlugin.cs to it.</li><li>Replace 'com.example.your.application.package.name' with the value of your package name in the AndroidManifest.xml.</li><li>Set the SenderID to KiiPushPlugin GameObject for GCM.</li><li>Write the following code in your application.</li></ol><table class="CodeExampleTable"><tr><td><b><font size="-1"> Example</font></b></td></tr><tr><td><pre class="">
+             KiiPushPlugin kiiPushPlugin = GameObject.Find ("KiiPushPlugin").GetComponent&lt;KiiPushPlugin&gt; ();
+             kiiPushPlugin.OnPushMessageReceived += (ReceivedMessage message) =&gt; {
+             	// This event handler is called when received the push message.
+             	switch (message.PushMessageType)
+             	{
+             		case ReceivedMessage.MessageType.PUSH_TO_APP:
+             			Debug.Log ("#####PUSH_TO_APP Message");
+             			break;
+             		case ReceivedMessage.MessageType.PUSH_TO_USER:
+             			Debug.Log ("#####PUSH_TO_USER Message");
+             			break;
+             		case ReceivedMessage.MessageType.DIRECT_PUSH:
+             			Debug.Log ("#####DIRECT_PUSH Message");
+             			break;
+             	}
+             	Debug.Log("Type=" + message.PushMessageType);
+             	Debug.Log("Sender=" + message.Sender);
+             	Debug.Log("Scope=" + message.ObjectScope);
+             	// You can get the value of custom field using GetXXXX method.
+             	Debug.Log("Payload=" + message.GetString("payload"));
+             };
+             </pre></td></tr></table></div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:KiiCorp.Cloud.Unity.KiiPushPlugin:Docs:Version Information">
+        <b>Namespace: </b>KiiCorp.Cloud.Unity<br /><b>Assembly: </b>plugin (in plugin.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="javascript:alert(&quot;Documentation not found.&quot;)">UnityEngine.MonoBehaviour</a>.
+							</p>
+        <h2 class="Section">Public Constructors</h2>
+        <div class="SectionBox" id="Public Constructors">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <div>
+                    <b>
+                      <a href="#C:KiiCorp.Cloud.Unity.KiiPushPlugin()">KiiPushPlugin</a>
+                    </b>()</div>
+                </td>
+                <td>
+             Initializes a new instance of the <a href="javascript:alert(&quot;Documentation not found.&quot;)">KiiCorp.Cloud.Storage.KiiPushPlugin</a> class.
+             </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Fields</h2>
+        <div class="SectionBox" id="Public Fields">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#F:KiiCorp.Cloud.Unity.KiiPushPlugin.SenderID">SenderID</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. 
+             This setting is needed only on Android.
+             </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Unity.KiiPushPlugin.GetLastMessage()">GetLastMessage</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a></nobr><blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Unity.KiiPushPlugin.OnPushNotificationsReceived(System.String)">OnPushNotificationsReceived</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<blockquote>
+             This method is called by the unity native plugin when received push message.
+             Don't call this method from unity application.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Unity.KiiPushPlugin.OnUnregisterPushFailed(System.String)">OnUnregisterPushFailed</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Unity.KiiPushPlugin.OnUnregisterPushSucceeded()">OnUnregisterPushSucceeded</a>
+                  </b>()<blockquote><span class="NotEntered">Documentation for this section has not yet been entered.</span></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Unity.KiiPushPlugin.RegisterPush(KiiCorp.Cloud.Unity.KiiPushPlugin.KiiRegisterPushCallback)">RegisterPush</a>
+                  </b>(<a href="../KiiCorp.Cloud.Unity/KiiPushPlugin+KiiRegisterPushCallback.html">KiiPushPlugin.KiiRegisterPushCallback</a>)<blockquote>
+             Registers the push.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Unity.KiiPushPlugin.UnregisterPush(KiiCorp.Cloud.Unity.KiiPushPlugin.KiiUnregisterPushCallback)">UnregisterPush</a>
+                  </b>(<a href="../KiiCorp.Cloud.Unity/KiiPushPlugin+KiiUnregisterPushCallback.html">KiiPushPlugin.KiiUnregisterPushCallback</a>)<blockquote>
+             Unregisters the push.
+             </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Events</h2>
+        <div class="SectionBox" id="Public Events">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td>
+                  <b>
+                    <a href="#E:KiiCorp.Cloud.Unity.KiiPushPlugin.OnPushMessageReceived">OnPushMessageReceived</a>
+                  </b>
+                </td>
+                <td>
+             Occurs when push message received.
+             This event doesn't occur while application is in the background.
+             Application returns to foreground state, OnPushMessageReceived is called.
+             This event called on UI thread.
+             </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:KiiCorp.Cloud.Unity.KiiPushPlugin:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="C:KiiCorp.Cloud.Unity.KiiPushPlugin()">KiiPushPlugin Constructor</h3>
+        <blockquote id="C:KiiCorp.Cloud.Unity.KiiPushPlugin():member">
+          <div class="msummary">
+             Initializes a new instance of the <a href="javascript:alert(&quot;Documentation not found.&quot;)">KiiCorp.Cloud.Storage.KiiPushPlugin</a> class.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public  <b>KiiPushPlugin</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="C:KiiCorp.Cloud.Unity.KiiPushPlugin():Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="C:KiiCorp.Cloud.Unity.KiiPushPlugin():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Unity<br /><b>Assembly: </b>plugin (in plugin.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.GetLastMessage()">GetLastMessage Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.GetLastMessage():member">
+          <div class="msummary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>GetLastMessage</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.GetLastMessage():Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.GetLastMessage():Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.GetLastMessage():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Unity<br /><b>Assembly: </b>plugin (in plugin.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="E:KiiCorp.Cloud.Unity.KiiPushPlugin.OnPushMessageReceived">OnPushMessageReceived Event</h3>
+        <blockquote id="E:KiiCorp.Cloud.Unity.KiiPushPlugin.OnPushMessageReceived:member">
+          <div class="msummary">
+             Occurs when push message received.
+             This event doesn't occur while application is in the background.
+             Application returns to foreground state, OnPushMessageReceived is called.
+             This event called on UI thread.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public event <a href="../KiiCorp.Cloud.Unity/KiiPushPlugin+KiiPushMessageReceivedCallback.html">KiiPushPlugin.KiiPushMessageReceivedCallback</a> <b>OnPushMessageReceived</b> </div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="E:KiiCorp.Cloud.Unity.KiiPushPlugin.OnPushMessageReceived:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="E:KiiCorp.Cloud.Unity.KiiPushPlugin.OnPushMessageReceived:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Unity<br /><b>Assembly: </b>plugin (in plugin.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.OnPushNotificationsReceived(System.String)">OnPushNotificationsReceived Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.OnPushNotificationsReceived(System.String):member">
+          <div class="msummary">
+             This method is called by the unity native plugin when received push message.
+             Don't call this method from unity application.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>OnPushNotificationsReceived</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> payload)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.OnPushNotificationsReceived(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>payload</i>
+              </dt>
+              <dd>Payload.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.OnPushNotificationsReceived(System.String):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.OnPushNotificationsReceived(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Unity<br /><b>Assembly: </b>plugin (in plugin.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.OnUnregisterPushFailed(System.String)">OnUnregisterPushFailed Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.OnUnregisterPushFailed(System.String):member">
+          <div class="msummary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>OnUnregisterPushFailed</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> errorString)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.OnUnregisterPushFailed(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>errorString</i>
+              </dt>
+              <dd>
+                <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+              </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.OnUnregisterPushFailed(System.String):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.OnUnregisterPushFailed(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Unity<br /><b>Assembly: </b>plugin (in plugin.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.OnUnregisterPushSucceeded()">OnUnregisterPushSucceeded Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.OnUnregisterPushSucceeded():member">
+          <div class="msummary">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>OnUnregisterPushSucceeded</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.OnUnregisterPushSucceeded():Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.OnUnregisterPushSucceeded():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Unity<br /><b>Assembly: </b>plugin (in plugin.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.RegisterPush(KiiCorp.Cloud.Unity.KiiPushPlugin.KiiRegisterPushCallback)">RegisterPush Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.RegisterPush(KiiCorp.Cloud.Unity.KiiPushPlugin.KiiRegisterPushCallback):member">
+          <div class="msummary">
+             Registers the push.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>RegisterPush</b> (<a href="../KiiCorp.Cloud.Unity/KiiPushPlugin+KiiRegisterPushCallback.html">KiiPushPlugin.KiiRegisterPushCallback</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.RegisterPush(KiiCorp.Cloud.Unity.KiiPushPlugin.KiiRegisterPushCallback):Parameters">
+            <dl>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>Callback delegate. If exception is null, execution is succeeded.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.RegisterPush(KiiCorp.Cloud.Unity.KiiPushPlugin.KiiRegisterPushCallback):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.RegisterPush(KiiCorp.Cloud.Unity.KiiPushPlugin.KiiRegisterPushCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Unity<br /><b>Assembly: </b>plugin (in plugin.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="F:KiiCorp.Cloud.Unity.KiiPushPlugin.SenderID">SenderID Field</h3>
+        <blockquote id="F:KiiCorp.Cloud.Unity.KiiPushPlugin.SenderID:member">
+          <div class="msummary">
+             This setting is needed only on Android.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">[UnityEngine.SerializeField]<br />public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>SenderID</b> </div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="F:KiiCorp.Cloud.Unity.KiiPushPlugin.SenderID:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="F:KiiCorp.Cloud.Unity.KiiPushPlugin.SenderID:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Unity<br /><b>Assembly: </b>plugin (in plugin.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.UnregisterPush(KiiCorp.Cloud.Unity.KiiPushPlugin.KiiUnregisterPushCallback)">UnregisterPush Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.UnregisterPush(KiiCorp.Cloud.Unity.KiiPushPlugin.KiiUnregisterPushCallback):member">
+          <div class="msummary">
+             Unregisters the push.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>UnregisterPush</b> (<a href="../KiiCorp.Cloud.Unity/KiiPushPlugin+KiiUnregisterPushCallback.html">KiiPushPlugin.KiiUnregisterPushCallback</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.UnregisterPush(KiiCorp.Cloud.Unity.KiiPushPlugin.KiiUnregisterPushCallback):Parameters">
+            <dl>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>Callback delegate. If exception is null, execution is succeeded.</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.UnregisterPush(KiiCorp.Cloud.Unity.KiiPushPlugin.KiiUnregisterPushCallback):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Unity.KiiPushPlugin.UnregisterPush(KiiCorp.Cloud.Unity.KiiPushPlugin.KiiUnregisterPushCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Unity<br /><b>Assembly: </b>plugin (in plugin.dll)<br /><b>Assembly Versions: </b>1.0.0.0</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

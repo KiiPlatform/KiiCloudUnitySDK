@@ -1,0 +1,717 @@
+<html>
+  <head>
+    <title>KiiCorp.Cloud.ABTesting.KiiExperiment</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">KiiCloudStorageSDK</a> : <a href="index.html">KiiCorp.Cloud.ABTesting Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:KiiCorp.Cloud.ABTesting.KiiExperiment">Overview</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.ABTesting.KiiExperiment:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.ABTesting.KiiExperiment:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.ABTesting.KiiExperiment:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:KiiCorp.Cloud.ABTesting.KiiExperiment">KiiExperiment  Class</h1>
+    <p class="Summary" id="T:KiiCorp.Cloud.ABTesting.KiiExperiment:Summary">
+             Represents Experiments.
+             </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:KiiCorp.Cloud.ABTesting.KiiExperiment:Signature">public class  <b>KiiExperiment</b></div>
+    </div>
+    <div class="Remarks" id="T:KiiCorp.Cloud.ABTesting.KiiExperiment:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:KiiCorp.Cloud.ABTesting.KiiExperiment:Docs:Remarks">
+      </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:KiiCorp.Cloud.ABTesting.KiiExperiment:Docs:Version Information">
+        <b>Namespace: </b>KiiCorp.Cloud.ABTesting<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h2 class="Section">Public Properties</h2>
+        <div class="SectionBox" id="Public Properties">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.ABTesting.KiiExperiment.ChosenVariation">ChosenVariation</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../KiiCorp.Cloud.ABTesting/Variation.html">Variation</a>
+                  </i>. 
+             Gets chosen variation if the experiment has finished with specified variation.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.ABTesting.KiiExperiment.ConversionEvents">ConversionEvents</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../KiiCorp.Cloud.ABTesting/ConversionEvent.html">ConversionEvent</a>[]</i>. 
+             Gets conversion events
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.ABTesting.KiiExperiment.Description">Description</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. 
+             Gets the description of the experiment.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.ABTesting.KiiExperiment.ID">ID</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. 
+             Gets the ID of the Experiment.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.ABTesting.KiiExperiment.Status">Status</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../KiiCorp.Cloud.ABTesting/KiiExperimentStatus.html">KiiExperimentStatus</a>
+                  </i>. 
+             Gets the status of the experiment.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.ABTesting.KiiExperiment.Variations">Variations</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../KiiCorp.Cloud.ABTesting/Variation.html">Variation</a>[]</i>. 
+             Gets the variations associated with this experiment
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.ABTesting.KiiExperiment.Version">Version</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>
+                  </i>. 
+             Gets the version of the Experiment.
+             </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetAppliedVariation(KiiCorp.Cloud.ABTesting.Variation)">GetAppliedVariation</a>
+                  </b>(<a href="../KiiCorp.Cloud.ABTesting/Variation.html">Variation</a>)<nobr> : <a href="../KiiCorp.Cloud.ABTesting/Variation.html">Variation</a></nobr><blockquote>
+             Get the variation applied to this trial.
+             Variation will be determined by specified rate of each variation in this experiment.
+             Current login user information will be used for sampling.
+             If the experiment has terminated with specified variant, the specified variant will be returned regardless of login user information.
+             If the experiment has finished without specified variant, fallback will be returned.
+             If the status of experiment is draft or paused, fallback will be returned.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetAppliedVariation(KiiCorp.Cloud.ABTesting.Variation,KiiCorp.Cloud.ABTesting.VariationSampler)">GetAppliedVariation</a>
+                  </b>(<a href="../KiiCorp.Cloud.ABTesting/Variation.html">Variation</a>, <a href="../KiiCorp.Cloud.ABTesting/VariationSampler.html">VariationSampler</a>)<nobr> : <a href="../KiiCorp.Cloud.ABTesting/Variation.html">Variation</a></nobr><blockquote>
+             Get the variation applied to this trial.
+             Sampler should return the variation according to the rate defined in this experiment.
+             If you use <a href="../KiiCorp.Cloud.ABTesting/VariationSamplerByKiiUser.html">KiiCorp.Cloud.ABTesting.VariationSamplerByKiiUser</a> with current login user, It will be same as <a href="../KiiCorp.Cloud.ABTesting/KiiExperiment.html#M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetAppliedVariation(KiiCorp.Cloud.ABTesting.Variation)">KiiExperiment.GetAppliedVariation(Variation)</a></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetByID(System.String)">GetByID</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.ABTesting/KiiExperiment.html">KiiExperiment</a></nobr><blockquote>
+             Get the experiment which has the specified id.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetByID(System.String,KiiCorp.Cloud.ABTesting.KiiExperimentCallback)">GetByID</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="../KiiCorp.Cloud.ABTesting/KiiExperimentCallback.html">KiiExperimentCallback</a>)<blockquote>
+             Get the experiment having the specified id in background.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetConversionEventByName(System.String)">GetConversionEventByName</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.ABTesting/ConversionEvent.html">ConversionEvent</a></nobr><blockquote>
+             Get the Conversion Event by its name.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetVariationByName(System.String)">GetVariationByName</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.ABTesting/Variation.html">Variation</a></nobr><blockquote>
+             Get the variation having the specified name.
+             </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:KiiCorp.Cloud.ABTesting.KiiExperiment:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.ChosenVariation">ChosenVariation Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.ChosenVariation:member">
+          <div class="msummary">
+             Gets chosen variation if the experiment has finished with specified variation.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.ABTesting/Variation.html">Variation</a> <b>ChosenVariation</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.ChosenVariation:Value">Variation chosen or null if when the no variation has not been chosen.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.ChosenVariation:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.ChosenVariation:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.ABTesting<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.ConversionEvents">ConversionEvents Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.ConversionEvents:member">
+          <div class="msummary">
+             Gets conversion events
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.ABTesting/ConversionEvent.html">ConversionEvent</a>[] <b>ConversionEvents</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.ConversionEvents:Value">Conversion events.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.ConversionEvents:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.ConversionEvents:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.ABTesting<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.Description">Description Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.Description:member">
+          <div class="msummary">
+             Gets the description of the experiment.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Description</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.Description:Value">The description of the experiment.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.Description:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.Description:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.ABTesting<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetAppliedVariation(KiiCorp.Cloud.ABTesting.Variation)">GetAppliedVariation Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetAppliedVariation(KiiCorp.Cloud.ABTesting.Variation):member">
+          <div class="msummary">
+             Get the variation applied to this trial.
+             Variation will be determined by specified rate of each variation in this experiment.
+             Current login user information will be used for sampling.
+             If the experiment has terminated with specified variant, the specified variant will be returned regardless of login user information.
+             If the experiment has finished without specified variant, fallback will be returned.
+             If the status of experiment is draft or paused, fallback will be returned.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.ABTesting/Variation.html">Variation</a> <b>GetAppliedVariation</b> (<a href="../KiiCorp.Cloud.ABTesting/Variation.html">Variation</a> fallback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetAppliedVariation(KiiCorp.Cloud.ABTesting.Variation):Parameters">
+            <dl>
+              <dt>
+                <i>fallback</i>
+              </dt>
+              <dd>The variation to return when failed to get the applied variation. If you want to detect error, you need to set null.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetAppliedVariation(KiiCorp.Cloud.ABTesting.Variation):Returns">Applied variation for this trial.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetAppliedVariation(KiiCorp.Cloud.ABTesting.Variation):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetAppliedVariation(KiiCorp.Cloud.ABTesting.Variation):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.ABTesting<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetAppliedVariation(KiiCorp.Cloud.ABTesting.Variation,KiiCorp.Cloud.ABTesting.VariationSampler)">GetAppliedVariation Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetAppliedVariation(KiiCorp.Cloud.ABTesting.Variation,KiiCorp.Cloud.ABTesting.VariationSampler):member">
+          <div class="msummary">
+             Get the variation applied to this trial.
+             Sampler should return the variation according to the rate defined in this experiment.
+             If you use <a href="../KiiCorp.Cloud.ABTesting/VariationSamplerByKiiUser.html">KiiCorp.Cloud.ABTesting.VariationSamplerByKiiUser</a> with current login user, It will be same as <a href="../KiiCorp.Cloud.ABTesting/KiiExperiment.html#M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetAppliedVariation(KiiCorp.Cloud.ABTesting.Variation)">KiiExperiment.GetAppliedVariation(Variation)</a></div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.ABTesting/Variation.html">Variation</a> <b>GetAppliedVariation</b> (<a href="../KiiCorp.Cloud.ABTesting/Variation.html">Variation</a> fallback, <a href="../KiiCorp.Cloud.ABTesting/VariationSampler.html">VariationSampler</a> sampler)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetAppliedVariation(KiiCorp.Cloud.ABTesting.Variation,KiiCorp.Cloud.ABTesting.VariationSampler):Parameters">
+            <dl>
+              <dt>
+                <i>fallback</i>
+              </dt>
+              <dd>The variation to return when failed to get the applied variation. If you want to detect error, you need to set null.</dd>
+              <dt>
+                <i>sampler</i>
+              </dt>
+              <dd>Variation sampler.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetAppliedVariation(KiiCorp.Cloud.ABTesting.Variation,KiiCorp.Cloud.ABTesting.VariationSampler):Returns">Applied variation for this trial.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetAppliedVariation(KiiCorp.Cloud.ABTesting.Variation,KiiCorp.Cloud.ABTesting.VariationSampler):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetAppliedVariation(KiiCorp.Cloud.ABTesting.Variation,KiiCorp.Cloud.ABTesting.VariationSampler):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.ABTesting<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetByID(System.String)">GetByID Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetByID(System.String):member">
+          <div class="msummary">
+             Get the experiment which has the specified id.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.ABTesting/KiiExperiment.html">KiiExperiment</a> <b>GetByID</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> experimentID)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetByID(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>experimentID</i>
+              </dt>
+              <dd>Experiment id.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetByID(System.String):Returns">Experiment which has the specified id.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetByID(System.String):Remarks">
+             NOTE: This api access to server. Should not be executed in UI/Main thread.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetByID(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.ABTesting<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetByID(System.String,KiiCorp.Cloud.ABTesting.KiiExperimentCallback)">GetByID Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetByID(System.String,KiiCorp.Cloud.ABTesting.KiiExperimentCallback):member">
+          <div class="msummary">
+             Get the experiment having the specified id in background.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>GetByID</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> experimentID, <a href="../KiiCorp.Cloud.ABTesting/KiiExperimentCallback.html">KiiExperimentCallback</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetByID(System.String,KiiCorp.Cloud.ABTesting.KiiExperimentCallback):Parameters">
+            <dl>
+              <dt>
+                <i>experimentID</i>
+              </dt>
+              <dd>Experiment id.</dd>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>Called on completion of get experiment.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetByID(System.String,KiiCorp.Cloud.ABTesting.KiiExperimentCallback):Returns">Experiment which has the specified id.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetByID(System.String,KiiCorp.Cloud.ABTesting.KiiExperimentCallback):Remarks">
+             NOTE: This api access to server. Should not be executed in UI/Main thread.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetByID(System.String,KiiCorp.Cloud.ABTesting.KiiExperimentCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.ABTesting<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetConversionEventByName(System.String)">GetConversionEventByName Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetConversionEventByName(System.String):member">
+          <div class="msummary">
+             Get the Conversion Event by its name.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.ABTesting/ConversionEvent.html">ConversionEvent</a> <b>GetConversionEventByName</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> name)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetConversionEventByName(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>name</i>
+              </dt>
+              <dd>Name of the Conversion Event</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetConversionEventByName(System.String):Returns">Conversion Event or null if Experiment does not have conversion having specified name.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetConversionEventByName(System.String):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetConversionEventByName(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.ABTesting<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetVariationByName(System.String)">GetVariationByName Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetVariationByName(System.String):member">
+          <div class="msummary">
+             Get the variation having the specified name.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.ABTesting/Variation.html">Variation</a> <b>GetVariationByName</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> name)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetVariationByName(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>name</i>
+              </dt>
+              <dd>Variation name.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetVariationByName(System.String):Returns">variation that match the specified name. Returns null if the experiment has no variation with the specified name.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetVariationByName(System.String):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.ABTesting.KiiExperiment.GetVariationByName(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.ABTesting<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.ID">ID Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.ID:member">
+          <div class="msummary">
+             Gets the ID of the Experiment.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>ID</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.ID:Value">ID of the Experiment.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.ID:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.ID:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.ABTesting<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.Status">Status Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.Status:member">
+          <div class="msummary">
+             Gets the status of the experiment.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.ABTesting/KiiExperimentStatus.html">KiiExperimentStatus</a> <b>Status</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.Status:Value">Current status of experiment.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.Status:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.Status:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.ABTesting<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.Variations">Variations Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.Variations:member">
+          <div class="msummary">
+             Gets the variations associated with this experiment
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.ABTesting/Variation.html">Variation</a>[] <b>Variations</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.Variations:Value">An array of the variation.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.Variations:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.Variations:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.ABTesting<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.Version">Version Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.Version:member">
+          <div class="msummary">
+             Gets the version of the Experiment.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> <b>Version</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.Version:Value">Version of the Experiment.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.Version:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.ABTesting.KiiExperiment.Version:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.ABTesting<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

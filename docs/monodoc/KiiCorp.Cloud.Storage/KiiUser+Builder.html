@@ -1,0 +1,714 @@
+<html>
+  <head>
+    <title>KiiCorp.Cloud.Storage.KiiUser.Builder</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">KiiCloudStorageSDK</a> : <a href="index.html">KiiCorp.Cloud.Storage Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiUser.Builder">Overview</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiUser.Builder:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiUser.Builder:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiUser.Builder:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:KiiCorp.Cloud.Storage.KiiUser.Builder">KiiUser.Builder  Class</h1>
+    <p class="Summary" id="T:KiiCorp.Cloud.Storage.KiiUser.Builder:Summary">
+             Builds KiiUser instance.
+             </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:KiiCorp.Cloud.Storage.KiiUser.Builder:Signature">public class  <b>KiiUser.Builder</b></div>
+    </div>
+    <div class="Remarks" id="T:KiiCorp.Cloud.Storage.KiiUser.Builder:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:KiiCorp.Cloud.Storage.KiiUser.Builder:Docs:Remarks">
+             To create this instance. Please use
+             <a href="../KiiCorp.Cloud.Storage/KiiUser.html#M:KiiCorp.Cloud.Storage.KiiUser.BuilderWithName(System.String)">KiiUser.BuilderWithName(string)</a>,
+             <a href="../KiiCorp.Cloud.Storage/KiiUser.html#M:KiiCorp.Cloud.Storage.KiiUser.BuilderWithEmail(System.String)">KiiUser.BuilderWithEmail(string)</a>,
+             <a href="../KiiCorp.Cloud.Storage/KiiUser.html#M:KiiCorp.Cloud.Storage.KiiUser.BuilderWithLocalPhone(System.String,System.String)">KiiUser.BuilderWithLocalPhone(string, string)</a> or
+             <a href="../KiiCorp.Cloud.Storage/KiiUser.html#M:KiiCorp.Cloud.Storage.KiiUser.BuilderWithIdentifier(System.String)">KiiUser.BuilderWithIdentifier(string)</a>.
+             </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:KiiCorp.Cloud.Storage.KiiUser.Builder:Docs:Version Information">
+        <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiUser.Builder.Build()">Build</a>
+                  </b>()<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiUser.html">KiiUser</a></nobr><blockquote>
+             Build KiiUser instance.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetEmail(System.String)">SetEmail</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiUser+Builder.html">KiiUser.Builder</a></nobr><blockquote>
+             Set email
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetGlobalPhone(System.String)">SetGlobalPhone</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiUser+Builder.html">KiiUser.Builder</a></nobr><blockquote>
+             Set global phone
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetLocalPhone(System.String,System.String)">SetLocalPhone</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiUser+Builder.html">KiiUser.Builder</a></nobr><blockquote>
+               Set local phone.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetName(System.String)">SetName</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiUser+Builder.html">KiiUser.Builder</a></nobr><blockquote>
+             Set username
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithEmail(System.String)">WithEmail</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiUser+Builder.html">KiiUser.Builder</a></nobr><blockquote>
+             Set email
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithName(System.String)">WithName</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiUser+Builder.html">KiiUser.Builder</a></nobr><blockquote>
+             Set username
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithPhone(System.String)">WithPhone</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiUser+Builder.html">KiiUser.Builder</a></nobr><blockquote>
+             Set phone
+             </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:KiiCorp.Cloud.Storage.KiiUser.Builder:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.Build()">Build Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.Build():member">
+          <div class="msummary">
+             Build KiiUser instance.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiUser.html">KiiUser</a> <b>Build</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.Build():Returns">
+             KiiUser instance.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.Build():Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                </td>
+                <td>
+             Is thrown when username, email and phone are null.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.Build():Remarks">Build KiiUser instance with username, email and phone if they're set.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.Build():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetEmail(System.String)">SetEmail Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetEmail(System.String):member">
+          <div class="msummary">
+             Set email
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiUser+Builder.html">KiiUser.Builder</a> <b>SetEmail</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> email)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetEmail(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>email</i>
+              </dt>
+              <dd>
+             Email.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetEmail(System.String):Returns">
+             Itself
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetEmail(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when an argument is invalid.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetEmail(System.String):Remarks">Email must be valid.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetEmail(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetGlobalPhone(System.String)">SetGlobalPhone Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetGlobalPhone(System.String):member">
+          <div class="msummary">
+             Set global phone
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiUser+Builder.html">KiiUser.Builder</a> <b>SetGlobalPhone</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> phone)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetGlobalPhone(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>phone</i>
+              </dt>
+              <dd>
+             Phone.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetGlobalPhone(System.String):Returns">
+             Itself.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetGlobalPhone(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when an argument is invalid.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetGlobalPhone(System.String):Remarks">Phone must be valid.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetGlobalPhone(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetLocalPhone(System.String,System.String)">SetLocalPhone Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetLocalPhone(System.String,System.String):member">
+          <div class="msummary">
+               Set local phone.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiUser+Builder.html">KiiUser.Builder</a> <b>SetLocalPhone</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> phone, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> country)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetLocalPhone(System.String,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>phone</i>
+              </dt>
+              <dd>
+             Local phone.
+             </dd>
+              <dt>
+                <i>country</i>
+              </dt>
+              <dd>
+             Country.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetLocalPhone(System.String,System.String):Returns">
+               Itself.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetLocalPhone(System.String,System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             One of phone and country is not valid or both of phone
+             and country are not valid.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetLocalPhone(System.String,System.String):Remarks">
+                 Phone and country must be valid.
+               </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetLocalPhone(System.String,System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetName(System.String)">SetName Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetName(System.String):member">
+          <div class="msummary">
+             Set username
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiUser+Builder.html">KiiUser.Builder</a> <b>SetName</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> userName)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetName(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>userName</i>
+              </dt>
+              <dd>
+             Username.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetName(System.String):Returns">
+             Itself
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetName(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when an argument is invalid.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetName(System.String):Remarks">Username must be valid.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.SetName(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithEmail(System.String)">WithEmail Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithEmail(System.String):member">
+          <div class="msummary">
+             Set email
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">[System.Obsolete("WithEmail() is deprecated, please use SetEmail(string) instead", false)]<br />public <a href="../KiiCorp.Cloud.Storage/KiiUser+Builder.html">KiiUser.Builder</a> <b>WithEmail</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> email)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithEmail(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>email</i>
+              </dt>
+              <dd>
+             Email.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithEmail(System.String):Returns">
+             Itself
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithEmail(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when an argument is invalid.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithEmail(System.String):Remarks">Email must be valid.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithEmail(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithName(System.String)">WithName Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithName(System.String):member">
+          <div class="msummary">
+             Set username
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">[System.Obsolete("WithName() is deprecated, please use SetName(string) instead", false)]<br />public <a href="../KiiCorp.Cloud.Storage/KiiUser+Builder.html">KiiUser.Builder</a> <b>WithName</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> userName)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithName(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>userName</i>
+              </dt>
+              <dd>
+             Username.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithName(System.String):Returns">
+             Itself
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithName(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when an argument is invalid.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithName(System.String):Remarks">Username must be valid.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithName(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithPhone(System.String)">WithPhone Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithPhone(System.String):member">
+          <div class="msummary">
+             Set phone
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">[System.Obsolete("WithPhone() is deprecated, please use SetGlobalPhone(string) or SetLocalPhone(string, string) instead", false)]<br />public <a href="../KiiCorp.Cloud.Storage/KiiUser+Builder.html">KiiUser.Builder</a> <b>WithPhone</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> phone)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithPhone(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>phone</i>
+              </dt>
+              <dd>
+             Phone.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithPhone(System.String):Returns">
+             Itself.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithPhone(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when an argument is invalid.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithPhone(System.String):Remarks">Phone must be valid.</div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiUser.Builder.WithPhone(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

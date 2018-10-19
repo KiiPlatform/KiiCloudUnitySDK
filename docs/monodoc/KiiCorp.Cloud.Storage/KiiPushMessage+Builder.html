@@ -1,0 +1,926 @@
+<html>
+  <head>
+    <title>KiiCorp.Cloud.Storage.KiiPushMessage.Builder</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">KiiCloudStorageSDK</a> : <a href="index.html">KiiCorp.Cloud.Storage Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiPushMessage.Builder">Overview</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiPushMessage.Builder:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiPushMessage.Builder:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiPushMessage.Builder:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:KiiCorp.Cloud.Storage.KiiPushMessage.Builder">KiiPushMessage.Builder  Class</h1>
+    <p class="Summary" id="T:KiiCorp.Cloud.Storage.KiiPushMessage.Builder:Summary">
+             Builder of the message.
+             </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:KiiCorp.Cloud.Storage.KiiPushMessage.Builder:Signature">public class  <b>KiiPushMessage.Builder</b></div>
+    </div>
+    <div class="Remarks" id="T:KiiCorp.Cloud.Storage.KiiPushMessage.Builder:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:KiiCorp.Cloud.Storage.KiiPushMessage.Builder:Docs:Remarks">
+      </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:KiiCorp.Cloud.Storage.KiiPushMessage.Builder:Docs:Version Information">
+        <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.Build()">Build</a>
+                  </b>()<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiPushMessage.html">KiiPushMessage</a></nobr><blockquote>
+             Build and return KiiPushMessage.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableAPNS(System.Boolean)">EnableAPNS</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a></nobr><blockquote>
+             Set flag of APNS delivery If omit calling this method, APNS delivery is enabled.
+             Overwrite APNS delivery flag in the JSON message if already set by <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithAPNSMessage(KiiCorp.Cloud.Storage.APNSMessage)">KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithAPNSMessage(APNSMessage)</a></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableGCM(System.Boolean)">EnableGCM</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a></nobr><blockquote>
+             Set flag of GCM delivery If omit calling this method, GCM delivery is enabled.
+             Overwrite the GCM delivery flag in the message JSON if already set by <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithGCMMessage(KiiCorp.Cloud.Storage.GCMMessage)">KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithGCMMessage(GCMMessage)</a> method, GCM delivery flag will be 
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableMqtt(System.Boolean)">EnableMqtt</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a></nobr><blockquote>
+             Set flag of MQTT delivery If omit calling this method, MQTT delivery is enabled.
+             Overwrite the MQTT delivery flag in the message JSON if already set by <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithMqttMessage(KiiCorp.Cloud.Storage.MqttMessage)">KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithMqttMessage(MqttMessage)</a> method, MQTT delivery flag will be 
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendAppID(System.Boolean)">SendAppID</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a></nobr><blockquote>
+             Flags indicates whether "appId" field will be send or not.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendObjectScope(System.Boolean)">SendObjectScope</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a></nobr><blockquote>
+             Flags indicates whether "objectScope" field will be send or not.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendOrigin(System.Boolean)">SendOrigin</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a></nobr><blockquote>
+             Flags indicates whether "sendOrigin" field will be send or not.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendSender(System.Boolean)">SendSender</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a></nobr><blockquote>
+             Flags indicates whether "sender" field will be send or not.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendToDevelopment(System.Boolean)">SendToDevelopment</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a></nobr><blockquote>
+             Flag indicates whether send to Development installations or not.
+             Development installations are instantiated by calling <a href="../KiiCorp.Cloud.Storage/KiiUser.html#M:KiiCorp.Cloud.Storage.KiiUser.PushInstallation(System.Boolean)">KiiUser.PushInstallation(bool)</a> with true.
+             If omit calling this method, default value is true.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendTopicId(System.Boolean)">SendTopicId</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a></nobr><blockquote>
+             Flags indicates whether "topicID" field will be send or not.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendToProduction(System.Boolean)">SendToProduction</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a></nobr><blockquote>
+             Flag indicates whether send to Production installations or not.
+             Production installations are instantiated by calling <a href="../KiiCorp.Cloud.Storage/KiiUser.html#M:KiiCorp.Cloud.Storage.KiiUser.PushInstallation">KiiUser.PushInstallation</a> or <a href="../KiiCorp.Cloud.Storage/KiiUser.html#M:KiiCorp.Cloud.Storage.KiiUser.PushInstallation(System.Boolean)">KiiUser.PushInstallation(bool)</a> with false.
+             If omit calling this method, default value is true.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendWhen(System.Boolean)">SendWhen</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a></nobr><blockquote>
+             Flags indicates whether "when" field will be send or not.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithAPNSMessage(KiiCorp.Cloud.Storage.APNSMessage)">WithAPNSMessage</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/APNSMessage.html">APNSMessage</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a></nobr><blockquote>
+             Build with APNS specific message that will be delivered through APNS.
+             Override the APNS delivery flag if already set by <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableAPNS(System.Boolean)">KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableAPNS(bool)</a></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithGCMMessage(KiiCorp.Cloud.Storage.GCMMessage)">WithGCMMessage</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/GCMMessage.html">GCMMessage</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a></nobr><blockquote>
+             Build with GCM specific message that will be delivered through GCM.
+             Override the GCM delivery flag if already set by <a href="../KiiCorp.Cloud.Storage/GCMMessage.html">KiiCorp.Cloud.Storage.GCMMessage</a></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithMqttMessage(KiiCorp.Cloud.Storage.MqttMessage)">WithMqttMessage</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/MqttMessage.html">MqttMessage</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a></nobr><blockquote>
+             Build with MQTT specific message that will be delivered through MQTT.
+             Override the MQTT delivery flag if already set by <a href="../KiiCorp.Cloud.Storage/MqttMessage.html">KiiCorp.Cloud.Storage.MqttMessage</a></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithPushMessageType(System.String)">WithPushMessageType</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a></nobr><blockquote>
+             Set the  message type field with the provided value. 
+             </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:KiiCorp.Cloud.Storage.KiiPushMessage.Builder:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.Build()">Build Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.Build():member">
+          <div class="msummary">
+             Build and return KiiPushMessage.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiPushMessage.html">KiiPushMessage</a> <b>Build</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.Build():Returns">KiiPushMessage</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.Build():Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.Build():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableAPNS(System.Boolean)">EnableAPNS Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableAPNS(System.Boolean):member">
+          <div class="msummary">
+             Set flag of APNS delivery If omit calling this method, APNS delivery is enabled.
+             Overwrite APNS delivery flag in the JSON message if already set by <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithAPNSMessage(KiiCorp.Cloud.Storage.APNSMessage)">KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithAPNSMessage(APNSMessage)</a></div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a> <b>EnableAPNS</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> apnsEnabled)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableAPNS(System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>apnsEnabled</i>
+              </dt>
+              <dd>if true message would be delivered via APNS. If false, this message would not delivered thru APNS.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableAPNS(System.Boolean):Returns">Builder of the message.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableAPNS(System.Boolean):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableAPNS(System.Boolean):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableGCM(System.Boolean)">EnableGCM Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableGCM(System.Boolean):member">
+          <div class="msummary">
+             Set flag of GCM delivery If omit calling this method, GCM delivery is enabled.
+             Overwrite the GCM delivery flag in the message JSON if already set by <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithGCMMessage(KiiCorp.Cloud.Storage.GCMMessage)">KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithGCMMessage(GCMMessage)</a> method, GCM delivery flag will be 
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a> <b>EnableGCM</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> gcmEnabled)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableGCM(System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>gcmEnabled</i>
+              </dt>
+              <dd>if true message would be delivered via GCM. If false, this message would not delivered thru GCM.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableGCM(System.Boolean):Returns">Builder of the message.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableGCM(System.Boolean):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableGCM(System.Boolean):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableMqtt(System.Boolean)">EnableMqtt Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableMqtt(System.Boolean):member">
+          <div class="msummary">
+             Set flag of MQTT delivery If omit calling this method, MQTT delivery is enabled.
+             Overwrite the MQTT delivery flag in the message JSON if already set by <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithMqttMessage(KiiCorp.Cloud.Storage.MqttMessage)">KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithMqttMessage(MqttMessage)</a> method, MQTT delivery flag will be 
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a> <b>EnableMqtt</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> mqttEnabled)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableMqtt(System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>mqttEnabled</i>
+              </dt>
+              <dd>if true message would be delivered via MQTT. If false, this message would not delivered thru MQTT.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableMqtt(System.Boolean):Returns">Builder of the message.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableMqtt(System.Boolean):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableMqtt(System.Boolean):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendAppID(System.Boolean)">SendAppID Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendAppID(System.Boolean):member">
+          <div class="msummary">
+             Flags indicates whether "appId" field will be send or not.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a> <b>SendAppID</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> isSendAppId)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendAppID(System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>isSendAppId</i>
+              </dt>
+              <dd>If true, the appID field will also be sent. Default is false.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendAppID(System.Boolean):Returns">Builder of the message.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendAppID(System.Boolean):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendAppID(System.Boolean):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendObjectScope(System.Boolean)">SendObjectScope Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendObjectScope(System.Boolean):member">
+          <div class="msummary">
+             Flags indicates whether "objectScope" field will be send or not.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a> <b>SendObjectScope</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> sendObjectScope)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendObjectScope(System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>sendObjectScope</i>
+              </dt>
+              <dd>If true, send the “objectScope”-related fields that contain the topic that is the source of this notification. Default is true.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendObjectScope(System.Boolean):Returns">Builder of the message.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendObjectScope(System.Boolean):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendObjectScope(System.Boolean):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendOrigin(System.Boolean)">SendOrigin Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendOrigin(System.Boolean):member">
+          <div class="msummary">
+             Flags indicates whether "sendOrigin" field will be send or not.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a> <b>SendOrigin</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> sendOrigin)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendOrigin(System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>sendOrigin</i>
+              </dt>
+              <dd>If true, send the “origin” field that indicates if the message is the result of an event or sended explicitly by someone. Default is false.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendOrigin(System.Boolean):Returns">Builder of the message.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendOrigin(System.Boolean):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendOrigin(System.Boolean):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendSender(System.Boolean)">SendSender Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendSender(System.Boolean):member">
+          <div class="msummary">
+             Flags indicates whether "sender" field will be send or not.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a> <b>SendSender</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> sendSender)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendSender(System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>sendSender</i>
+              </dt>
+              <dd>If true, send the “sender” field which is userID of the user that triggered the notification. Default is true.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendSender(System.Boolean):Returns">Builder of the message.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendSender(System.Boolean):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendSender(System.Boolean):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendToDevelopment(System.Boolean)">SendToDevelopment Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendToDevelopment(System.Boolean):member">
+          <div class="msummary">
+             Flag indicates whether send to Development installations or not.
+             Development installations are instantiated by calling <a href="../KiiCorp.Cloud.Storage/KiiUser.html#M:KiiCorp.Cloud.Storage.KiiUser.PushInstallation(System.Boolean)">KiiUser.PushInstallation(bool)</a> with true.
+             If omit calling this method, default value is true.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a> <b>SendToDevelopment</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> sendToDevelopment)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendToDevelopment(System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>sendToDevelopment</i>
+              </dt>
+              <dd>If set to <tt>true</tt> send to development.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendToDevelopment(System.Boolean):Returns">Builder of the message.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendToDevelopment(System.Boolean):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendToDevelopment(System.Boolean):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendTopicId(System.Boolean)">SendTopicId Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendTopicId(System.Boolean):member">
+          <div class="msummary">
+             Flags indicates whether "topicID" field will be send or not.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a> <b>SendTopicId</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> sendTopicId)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendTopicId(System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>sendTopicId</i>
+              </dt>
+              <dd>If true, send the “topicID” field, which contains the topicID that is the source of this notification. Default is true.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendTopicId(System.Boolean):Returns">Builder of the message.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendTopicId(System.Boolean):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendTopicId(System.Boolean):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendToProduction(System.Boolean)">SendToProduction Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendToProduction(System.Boolean):member">
+          <div class="msummary">
+             Flag indicates whether send to Production installations or not.
+             Production installations are instantiated by calling <a href="../KiiCorp.Cloud.Storage/KiiUser.html#M:KiiCorp.Cloud.Storage.KiiUser.PushInstallation">KiiUser.PushInstallation</a> or <a href="../KiiCorp.Cloud.Storage/KiiUser.html#M:KiiCorp.Cloud.Storage.KiiUser.PushInstallation(System.Boolean)">KiiUser.PushInstallation(bool)</a> with false.
+             If omit calling this method, default value is true.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a> <b>SendToProduction</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> sendToProduction)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendToProduction(System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>sendToProduction</i>
+              </dt>
+              <dd>If set to <tt>true</tt> send to production.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendToProduction(System.Boolean):Returns">Builder of the message.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendToProduction(System.Boolean):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendToProduction(System.Boolean):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendWhen(System.Boolean)">SendWhen Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendWhen(System.Boolean):member">
+          <div class="msummary">
+             Flags indicates whether "when" field will be send or not.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a> <b>SendWhen</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> sendWhen)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendWhen(System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>sendWhen</i>
+              </dt>
+              <dd>If true, send the “when” field which denotes the time of push message was sent. Default is false.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendWhen(System.Boolean):Returns">Builder of the message.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendWhen(System.Boolean):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.SendWhen(System.Boolean):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithAPNSMessage(KiiCorp.Cloud.Storage.APNSMessage)">WithAPNSMessage Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithAPNSMessage(KiiCorp.Cloud.Storage.APNSMessage):member">
+          <div class="msummary">
+             Build with APNS specific message that will be delivered through APNS.
+             Override the APNS delivery flag if already set by <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html#M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableAPNS(System.Boolean)">KiiCorp.Cloud.Storage.KiiPushMessage.Builder.EnableAPNS(bool)</a></div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a> <b>WithAPNSMessage</b> (<a href="../KiiCorp.Cloud.Storage/APNSMessage.html">APNSMessage</a> message)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithAPNSMessage(KiiCorp.Cloud.Storage.APNSMessage):Parameters">
+            <dl>
+              <dt>
+                <i>message</i>
+              </dt>
+              <dd>Message.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithAPNSMessage(KiiCorp.Cloud.Storage.APNSMessage):Returns">Builder of the message.</blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithAPNSMessage(KiiCorp.Cloud.Storage.APNSMessage):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+             Is thrown when an argument is null.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithAPNSMessage(KiiCorp.Cloud.Storage.APNSMessage):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithAPNSMessage(KiiCorp.Cloud.Storage.APNSMessage):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithGCMMessage(KiiCorp.Cloud.Storage.GCMMessage)">WithGCMMessage Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithGCMMessage(KiiCorp.Cloud.Storage.GCMMessage):member">
+          <div class="msummary">
+             Build with GCM specific message that will be delivered through GCM.
+             Override the GCM delivery flag if already set by <a href="../KiiCorp.Cloud.Storage/GCMMessage.html">KiiCorp.Cloud.Storage.GCMMessage</a></div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a> <b>WithGCMMessage</b> (<a href="../KiiCorp.Cloud.Storage/GCMMessage.html">GCMMessage</a> message)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithGCMMessage(KiiCorp.Cloud.Storage.GCMMessage):Parameters">
+            <dl>
+              <dt>
+                <i>message</i>
+              </dt>
+              <dd>Message.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithGCMMessage(KiiCorp.Cloud.Storage.GCMMessage):Returns">Builder of the message.</blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithGCMMessage(KiiCorp.Cloud.Storage.GCMMessage):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+             Is thrown when an argument is null.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithGCMMessage(KiiCorp.Cloud.Storage.GCMMessage):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithGCMMessage(KiiCorp.Cloud.Storage.GCMMessage):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithMqttMessage(KiiCorp.Cloud.Storage.MqttMessage)">WithMqttMessage Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithMqttMessage(KiiCorp.Cloud.Storage.MqttMessage):member">
+          <div class="msummary">
+             Build with MQTT specific message that will be delivered through MQTT.
+             Override the MQTT delivery flag if already set by <a href="../KiiCorp.Cloud.Storage/MqttMessage.html">KiiCorp.Cloud.Storage.MqttMessage</a></div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a> <b>WithMqttMessage</b> (<a href="../KiiCorp.Cloud.Storage/MqttMessage.html">MqttMessage</a> message)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithMqttMessage(KiiCorp.Cloud.Storage.MqttMessage):Parameters">
+            <dl>
+              <dt>
+                <i>message</i>
+              </dt>
+              <dd>Message.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithMqttMessage(KiiCorp.Cloud.Storage.MqttMessage):Returns">Builder of the message.</blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithMqttMessage(KiiCorp.Cloud.Storage.MqttMessage):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+             Is thrown when an argument is null.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithMqttMessage(KiiCorp.Cloud.Storage.MqttMessage):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithMqttMessage(KiiCorp.Cloud.Storage.MqttMessage):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithPushMessageType(System.String)">WithPushMessageType Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithPushMessageType(System.String):member">
+          <div class="msummary">
+             Set the  message type field with the provided value. 
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiPushMessage+Builder.html">KiiPushMessage.Builder</a> <b>WithPushMessageType</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> pushMessageType)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithPushMessageType(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>pushMessageType</i>
+              </dt>
+              <dd>Type of the push message.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithPushMessageType(System.String):Returns">Builder of the message.</blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithPushMessageType(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+             Is thrown when an argument is null.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithPushMessageType(System.String):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiPushMessage.Builder.WithPushMessageType(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

@@ -1,0 +1,2481 @@
+<html>
+  <head>
+    <title>KiiCorp.Cloud.Storage.KiiClause</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">KiiCloudStorageSDK</a> : <a href="index.html">KiiCorp.Cloud.Storage Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiClause">Overview</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiClause:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiClause:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiClause:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:KiiCorp.Cloud.Storage.KiiClause">KiiClause  Class</h1>
+    <p class="Summary" id="T:KiiCorp.Cloud.Storage.KiiClause:Summary">
+             Provides APIs to construct query condition.
+             </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:KiiCorp.Cloud.Storage.KiiClause:Signature">public class  <b>KiiClause</b></div>
+    </div>
+    <div class="Remarks" id="T:KiiCorp.Cloud.Storage.KiiClause:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:KiiCorp.Cloud.Storage.KiiClause:Docs:Remarks">
+             This class is used for building <a href="../KiiCorp.Cloud.Storage/KiiQuery.html">KiiCorp.Cloud.Storage.KiiQuery</a><table class="CodeExampleTable"><tr><td><b><font size="-1"> Example</font></b></td></tr><tr><td><pre class="">
+             // example 1 : I want to get object whose name is "John"
+             KiiQuery q = new KiiQuery(KiiClause.Equals("name", "John"));
+            
+             // example 2 : I want to get objects whose age &gt;= 18 and score &gt; 80
+             KiiQuery q = new KiiQuery(
+                 KiiClause.And(
+                     KiiClause.GreaterThanOrEqual("age", 18),
+                     KiiClause.GreaterThan("score", 80))
+                 );
+             </pre></td></tr></table></div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:KiiCorp.Cloud.Storage.KiiClause:Docs:Version Information">
+        <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.And(KiiCorp.Cloud.Storage.KiiClause[])">And</a>
+                  </b>(<b>params</b> <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a>[])<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Concatenate <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiCorp.Cloud.Storage.KiiClause</a> with AND operator.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Boolean)">Equals</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of equals condition.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Double)">Equals</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of equals condition.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Int32)">Equals</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of equals condition.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Int64)">Equals</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of equals condition.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Object)">Equals</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of equals condition.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.String)">Equals</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of equals condition.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.GeoBox(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint,KiiCorp.Cloud.Storage.KiiGeoPoint)">GeoBox</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="../KiiCorp.Cloud.Storage/KiiGeoPoint.html">KiiGeoPoint</a>, <a href="../KiiCorp.Cloud.Storage/KiiGeoPoint.html">KiiGeoPoint</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of geo box.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.GeoDistance(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint,System.Double,System.String)">GeoDistance</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="../KiiCorp.Cloud.Storage/KiiGeoPoint.html">KiiGeoPoint</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of geo distance.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Double)">GreaterThan</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of greater than.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Int32)">GreaterThan</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of greater than.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Int64)">GreaterThan</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of greater than.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Object)">GreaterThan</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of greater than.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.String)">GreaterThan</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of greater than.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Double)">GreaterThanOrEqual</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of greater than or equal.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Int32)">GreaterThanOrEqual</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of greater than or equal.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Int64)">GreaterThanOrEqual</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of greater than or equal.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Object)">GreaterThanOrEqual</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of greater than or equal.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.String)">GreaterThanOrEqual</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of greater than or equal.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.HasField(System.String,KiiCorp.Cloud.Storage.FieldType)">HasField</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="../KiiCorp.Cloud.Storage/FieldType.html">FieldType</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause to return all entities that have a specified field.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.InWithDoubleValue(System.String,System.Double[])">InWithDoubleValue</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a>[])<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of in condition.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.InWithIntValue(System.String,System.Int32[])">InWithIntValue</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>[])<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of in condition.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.InWithLongValue(System.String,System.Int64[])">InWithLongValue</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a>[])<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of in condition.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.InWithStringValue(System.String,System.String[])">InWithStringValue</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>[])<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of in condition.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Double)">LessThan</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of less than.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Int32)">LessThan</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of less than.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Int64)">LessThan</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of less than.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Object)">LessThan</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of less than.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.String)">LessThan</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of less than.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Double)">LessThanOrEqual</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of less than or equal.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Int32)">LessThanOrEqual</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of less than or equal.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Int64)">LessThanOrEqual</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of less than or equal.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Object)">LessThanOrEqual</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of less than or equal.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.String)">LessThanOrEqual</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of less than or equal.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.Not(KiiCorp.Cloud.Storage.KiiClause)">Not</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Concatenate <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiCorp.Cloud.Storage.KiiClause</a> with NOT operator.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Boolean)">NotEquals</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of not equals condition.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Double)">NotEquals</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of not equals condition.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Int32)">NotEquals</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of not equals condition.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Int64)">NotEquals</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of not equals condition.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Object)">NotEquals</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of not equals condition.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.String)">NotEquals</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause of not equals condition.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.Or(KiiCorp.Cloud.Storage.KiiClause[])">Or</a>
+                  </b>(<b>params</b> <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a>[])<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Concatenate <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiCorp.Cloud.Storage.KiiClause</a> with OR operator.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiClause.StartsWith(System.String,System.String)">StartsWith</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a></nobr><blockquote>
+             Create a clause with the prefix condition.
+             </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:KiiCorp.Cloud.Storage.KiiClause:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.And(KiiCorp.Cloud.Storage.KiiClause[])">And Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.And(KiiCorp.Cloud.Storage.KiiClause[]):member">
+          <div class="msummary">
+             Concatenate <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiCorp.Cloud.Storage.KiiClause</a> with AND operator.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>And</b> (<b>params</b> <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a>[] clauses)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.And(KiiCorp.Cloud.Storage.KiiClause[]):Parameters">
+            <dl>
+              <dt>
+                <i>clauses</i>
+              </dt>
+              <dd>
+             Clauses.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.And(KiiCorp.Cloud.Storage.KiiClause[]):Returns">
+             KiiClanse instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.And(KiiCorp.Cloud.Storage.KiiClause[]):Remarks">
+             Clauses must not be null or empty array.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.And(KiiCorp.Cloud.Storage.KiiClause[]):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Boolean)">Equals Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Boolean):member">
+          <div class="msummary">
+             Create a clause of equals condition.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>Equals</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Boolean):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Boolean):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Boolean):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Double)">Equals Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Double):member">
+          <div class="msummary">
+             Create a clause of equals condition.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>Equals</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Double):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Double):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Double):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Double):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Int32)">Equals Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Int32):member">
+          <div class="msummary">
+             Create a clause of equals condition.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>Equals</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Int32):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Int32):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Int32):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Int32):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Int64)">Equals Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Int64):member">
+          <div class="msummary">
+             Create a clause of equals condition.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>Equals</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Int64):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Int64):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Int64):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Int64):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Object)">Equals Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Object):member">
+          <div class="msummary">
+             Create a clause of equals condition.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>Equals</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Object):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Object):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Object):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.Object):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.String)">Equals Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.String):member">
+          <div class="msummary">
+             Create a clause of equals condition.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>Equals</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.String):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.String):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Equals(System.String,System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.GeoBox(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint,KiiCorp.Cloud.Storage.KiiGeoPoint)">GeoBox Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.GeoBox(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint,KiiCorp.Cloud.Storage.KiiGeoPoint):member">
+          <div class="msummary">
+             Create a clause of geo box.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>GeoBox</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="../KiiCorp.Cloud.Storage/KiiGeoPoint.html">KiiGeoPoint</a> northEast, <a href="../KiiCorp.Cloud.Storage/KiiGeoPoint.html">KiiGeoPoint</a> southWest)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GeoBox(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint,KiiCorp.Cloud.Storage.KiiGeoPoint):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Name of the key to inquire, which holds geo point. Must not null or empty string.
+             </dd>
+              <dt>
+                <i>northEast</i>
+              </dt>
+              <dd>
+             North east corner of the rectangle. Must not null.
+             </dd>
+              <dt>
+                <i>southWest</i>
+              </dt>
+              <dd>
+             South west corner of the rectangle. Must not null.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GeoBox(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint,KiiCorp.Cloud.Storage.KiiGeoPoint):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GeoBox(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint,KiiCorp.Cloud.Storage.KiiGeoPoint):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when an argument is invalid. Please see parameter explanation.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GeoBox(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint,KiiCorp.Cloud.Storage.KiiGeoPoint):Remarks">
+             This clause inquires objects in the specified rectangle.
+             Rectangle would be placed parallel to the equator with specified coordinates of the corner.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GeoBox(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint,KiiCorp.Cloud.Storage.KiiGeoPoint):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.GeoDistance(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint,System.Double,System.String)">GeoDistance Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.GeoDistance(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint,System.Double,System.String):member">
+          <div class="msummary">
+             Create a clause of geo distance.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>GeoDistance</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="../KiiCorp.Cloud.Storage/KiiGeoPoint.html">KiiGeoPoint</a> center, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a> radius, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> calculatedDistance)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GeoDistance(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint,System.Double,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Name of the key to inquire, which holds geo point. Must not null or empty string.
+             </dd>
+              <dt>
+                <i>center</i>
+              </dt>
+              <dd>
+             Geo point which specify center of the circle. Mus not null.
+             </dd>
+              <dt>
+                <i>radius</i>
+              </dt>
+              <dd>
+             Radius of the circle. unit is meter. value should be in range of 0-20000000.
+             </dd>
+              <dt>
+                <i>calculatedDistance</i>
+              </dt>
+              <dd>
+             Calculated distance is used for retrieve distance from the center from the query result. If the specified value is null, query result will not contain the distance.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GeoDistance(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint,System.Double,System.String):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GeoDistance(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint,System.Double,System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when an argument is invalid. Please see parameter explanation.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GeoDistance(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint,System.Double,System.String):Remarks">
+             This clause inquires objects in the specified circle.Note: You can get the results in ascending order of distances from center.
+             To do so, build the orderBy field  by "_calculated.{specified value of calculatedDistance}" and pass it in <a href="javascript:alert(&quot;Documentation not found.&quot;)">KiiQuery.SortByAsc()</a>.
+             Note that, descending order of distances is not supported. The unit of distance is meter.
+             <a href="../KiiCorp.Cloud.Storage/KiiObject.html">KiiCorp.Cloud.Storage.KiiObject</a><table class="CodeExampleTable"><tr><td><b><font size="-1"> Example</font></b></td></tr><tr><td><pre class="">
+             // example
+             string calculatedDistance = "distanceFromCurrentLoc";
+             KiiGeoPoint currentLoc = KiiGeoPoint(120.000,77.000); //dummy location
+             KiiClause geoDist = KiiClause("location",currentLoc, 7.0,calculatedDistance);
+             KiiQuery query = KiiQuery.QueryWithClause(geoDist);
+             // sort distance ny ascending order.
+             string orderByKey = "_calculated."+ calculatedDistance;
+             query.SortByAsc(orderByKey);
+             KiiBucket bucket = Kii.Bucket("MyBucket");
+             KiiQueryResult&lt;KiiObject&gt; result = bucket.Query(query);
+             if(result.Size &gt; 0)
+             {
+                 KiiObject object = result[0];
+                 double distanceInMeter = object.GetJsonObject("_calculated").GetDouble(calculatedDistance);
+             }
+             </pre></td></tr></table></div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GeoDistance(System.String,KiiCorp.Cloud.Storage.KiiGeoPoint,System.Double,System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Double)">GreaterThan Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Double):member">
+          <div class="msummary">
+             Create a clause of greater than.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>GreaterThan</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Double):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Double):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Double):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Double):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Int32)">GreaterThan Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Int32):member">
+          <div class="msummary">
+             Create a clause of greater than.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>GreaterThan</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Int32):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Int32):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Int32):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Int32):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Int64)">GreaterThan Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Int64):member">
+          <div class="msummary">
+             Create a clause of greater than.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>GreaterThan</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Int64):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Int64):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Int64):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Int64):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Object)">GreaterThan Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Object):member">
+          <div class="msummary">
+             Create a clause of greater than.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>GreaterThan</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Object):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Object):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Object):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.Object):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.String)">GreaterThan Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.String):member">
+          <div class="msummary">
+             Create a clause of greater than.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>GreaterThan</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.String):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.String):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThan(System.String,System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Double)">GreaterThanOrEqual Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Double):member">
+          <div class="msummary">
+             Create a clause of greater than or equal.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>GreaterThanOrEqual</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Double):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Double):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Double):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Double):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Int32)">GreaterThanOrEqual Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Int32):member">
+          <div class="msummary">
+             Create a clause of greater than or equal.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>GreaterThanOrEqual</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Int32):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Int32):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Int32):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Int32):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Int64)">GreaterThanOrEqual Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Int64):member">
+          <div class="msummary">
+             Create a clause of greater than or equal.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>GreaterThanOrEqual</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Int64):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Int64):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Int64):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Int64):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Object)">GreaterThanOrEqual Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Object):member">
+          <div class="msummary">
+             Create a clause of greater than or equal.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>GreaterThanOrEqual</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Object):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Object):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Object):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.Object):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.String)">GreaterThanOrEqual Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.String):member">
+          <div class="msummary">
+             Create a clause of greater than or equal.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>GreaterThanOrEqual</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.String):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.String):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.GreaterThanOrEqual(System.String,System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.HasField(System.String,KiiCorp.Cloud.Storage.FieldType)">HasField Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.HasField(System.String,KiiCorp.Cloud.Storage.FieldType):member">
+          <div class="msummary">
+             Create a clause to return all entities that have a specified field.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>HasField</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="../KiiCorp.Cloud.Storage/FieldType.html">FieldType</a> fieldType)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.HasField(System.String,KiiCorp.Cloud.Storage.FieldType):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Name of the specified field.
+             </dd>
+              <dt>
+                <i>fieldType</i>
+              </dt>
+              <dd>
+             The type of the content of the field.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.HasField(System.String,KiiCorp.Cloud.Storage.FieldType):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.HasField(System.String,KiiCorp.Cloud.Storage.FieldType):Remarks">
+             The type of the content of the field must be provided, possible values are "STRING", "INTEGER", "DECIMAL" and "BOOLEAN".
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.HasField(System.String,KiiCorp.Cloud.Storage.FieldType):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.InWithDoubleValue(System.String,System.Double[])">InWithDoubleValue Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.InWithDoubleValue(System.String,System.Double[]):member">
+          <div class="msummary">
+             Create a clause of in condition.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>InWithDoubleValue</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a>[] value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.InWithDoubleValue(System.String,System.Double[]):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Values to be compared. The length of values array should be less than or equals to 200.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.InWithDoubleValue(System.String,System.Double[]):Returns">
+             KiiClause instance
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.InWithDoubleValue(System.String,System.Double[]):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown in the following cases:
+             <ul><li>key is null.</li><li>value is null or length of value is 0.</li><li>length of value is more than 200.</li></ul></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="javascript:alert(&quot;Documentation not found.&quot;)">JsonOrg.JsonException</a>
+                </td>
+                <td>
+             Is thrown when the unexpected invalid params given. 
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.InWithDoubleValue(System.String,System.Double[]):Remarks">
+             Query records matches with key-value specified by argument.
+             More efficient than using combination of "equals" and "or"
+             When querying the multiple records with specific key.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.InWithDoubleValue(System.String,System.Double[]):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.InWithIntValue(System.String,System.Int32[])">InWithIntValue Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.InWithIntValue(System.String,System.Int32[]):member">
+          <div class="msummary">
+             Create a clause of in condition.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>InWithIntValue</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a>[] value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.InWithIntValue(System.String,System.Int32[]):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Values to be compared. The length of values array should be less than or equals to 200.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.InWithIntValue(System.String,System.Int32[]):Returns">
+             KiiClause instance
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.InWithIntValue(System.String,System.Int32[]):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown in the following cases:
+             <ul><li>key is null.</li><li>value is null or length of value is 0.</li><li>length of value is more than 200.</li></ul></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="javascript:alert(&quot;Documentation not found.&quot;)">JsonOrg.JsonException</a>
+                </td>
+                <td>
+             Is thrown when the unexpected invalid params given. 
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.InWithIntValue(System.String,System.Int32[]):Remarks">
+             Query records matches with key-value specified by argument.
+             More efficient than using combination of "equals" and "or"
+             When querying the multiple records with specific key.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.InWithIntValue(System.String,System.Int32[]):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.InWithLongValue(System.String,System.Int64[])">InWithLongValue Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.InWithLongValue(System.String,System.Int64[]):member">
+          <div class="msummary">
+             Create a clause of in condition.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>InWithLongValue</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a>[] value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.InWithLongValue(System.String,System.Int64[]):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Values to be compared. The length of values array should be less than or equals to 200.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.InWithLongValue(System.String,System.Int64[]):Returns">
+             KiiClause instance
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.InWithLongValue(System.String,System.Int64[]):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown in the following cases:
+             <ul><li>key is null.</li><li>value is null or length of value is 0.</li><li>length of value is more than 200.</li></ul></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="javascript:alert(&quot;Documentation not found.&quot;)">JsonOrg.JsonException</a>
+                </td>
+                <td>
+             Is thrown when the unexpected invalid params given. 
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.InWithLongValue(System.String,System.Int64[]):Remarks">
+             Query records matches with key-value specified by argument.
+             More efficient than using combination of "equals" and "or"
+             When querying the multiple records with specific key.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.InWithLongValue(System.String,System.Int64[]):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.InWithStringValue(System.String,System.String[])">InWithStringValue Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.InWithStringValue(System.String,System.String[]):member">
+          <div class="msummary">
+             Create a clause of in condition.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>InWithStringValue</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <b>params</b> <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>[] value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.InWithStringValue(System.String,System.String[]):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Values to be compared. The length of values array should be less than or equals to 200.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.InWithStringValue(System.String,System.String[]):Returns">
+             KiiClause instance
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.InWithStringValue(System.String,System.String[]):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown in the following cases:
+             <ul><li>key is null.</li><li>value is null or length of value is 0.</li><li>length of value is more than 200.</li></ul></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="javascript:alert(&quot;Documentation not found.&quot;)">JsonOrg.JsonException</a>
+                </td>
+                <td>
+             Is thrown when the unexpected invalid params given. 
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.InWithStringValue(System.String,System.String[]):Remarks">
+             Query records matches with key-value specified by argument.
+             More efficient than using combination of "equals" and "or"
+             When querying the multiple records with specific key.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.InWithStringValue(System.String,System.String[]):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Double)">LessThan Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Double):member">
+          <div class="msummary">
+             Create a clause of less than.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>LessThan</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Double):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Double):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Double):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Double):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Int32)">LessThan Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Int32):member">
+          <div class="msummary">
+             Create a clause of less than.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>LessThan</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Int32):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Int32):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Int32):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Int32):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Int64)">LessThan Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Int64):member">
+          <div class="msummary">
+             Create a clause of less than.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>LessThan</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Int64):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Int64):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Int64):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Int64):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Object)">LessThan Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Object):member">
+          <div class="msummary">
+             Create a clause of less than.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>LessThan</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Object):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Object):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Object):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.Object):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.String)">LessThan Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.String):member">
+          <div class="msummary">
+             Create a clause of less than.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>LessThan</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.String):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.String):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThan(System.String,System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Double)">LessThanOrEqual Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Double):member">
+          <div class="msummary">
+             Create a clause of less than or equal.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>LessThanOrEqual</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Double):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Double):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Double):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Double):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Int32)">LessThanOrEqual Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Int32):member">
+          <div class="msummary">
+             Create a clause of less than or equal.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>LessThanOrEqual</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Int32):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Int32):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Int32):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Int32):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Int64)">LessThanOrEqual Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Int64):member">
+          <div class="msummary">
+             Create a clause of less than or equal.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>LessThanOrEqual</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Int64):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Int64):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Int64):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Int64):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Object)">LessThanOrEqual Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Object):member">
+          <div class="msummary">
+             Create a clause of less than or equal.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>LessThanOrEqual</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Object):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Object):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Object):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.Object):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.String)">LessThanOrEqual Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.String):member">
+          <div class="msummary">
+             Create a clause of less than or equal.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>LessThanOrEqual</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.String):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.String):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.LessThanOrEqual(System.String,System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.Not(KiiCorp.Cloud.Storage.KiiClause)">Not Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.Not(KiiCorp.Cloud.Storage.KiiClause):member">
+          <div class="msummary">
+             Concatenate <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiCorp.Cloud.Storage.KiiClause</a> with NOT operator.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>Not</b> (<a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> clause)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Not(KiiCorp.Cloud.Storage.KiiClause):Parameters">
+            <dl>
+              <dt>
+                <i>clause</i>
+              </dt>
+              <dd>Clause.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Not(KiiCorp.Cloud.Storage.KiiClause):Returns">
+             KiiClanse instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Not(KiiCorp.Cloud.Storage.KiiClause):Remarks">
+             Query performance will be worse as the number of objects in bucket increases, so we recommend you avoid the OR clause if possible.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Not(KiiCorp.Cloud.Storage.KiiClause):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Boolean)">NotEquals Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Boolean):member">
+          <div class="msummary">
+             Create a clause of not equals condition.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>NotEquals</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Boolean):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Boolean):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Boolean):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Boolean):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Double)">NotEquals Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Double):member">
+          <div class="msummary">
+             Create a clause of not equals condition.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>NotEquals</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Double">double</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Double):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Double):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Double):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Double):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Int32)">NotEquals Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Int32):member">
+          <div class="msummary">
+             Create a clause of not equals condition.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>NotEquals</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int32">int</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Int32):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Int32):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Int32):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Int32):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Int64)">NotEquals Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Int64):member">
+          <div class="msummary">
+             Create a clause of not equals condition.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>NotEquals</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Int64">long</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Int64):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Int64):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Int64):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Int64):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Object)">NotEquals Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Object):member">
+          <div class="msummary">
+             Create a clause of not equals condition.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>NotEquals</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Object):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Object):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Object):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.Object):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.String)">NotEquals Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.String):member">
+          <div class="msummary">
+             Create a clause of not equals condition.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>NotEquals</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.String):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.String):Remarks">
+             If type of value in Object is different, it won't be included in a result.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.NotEquals(System.String,System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.Or(KiiCorp.Cloud.Storage.KiiClause[])">Or Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.Or(KiiCorp.Cloud.Storage.KiiClause[]):member">
+          <div class="msummary">
+             Concatenate <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiCorp.Cloud.Storage.KiiClause</a> with OR operator.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>Or</b> (<b>params</b> <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a>[] clauses)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Or(KiiCorp.Cloud.Storage.KiiClause[]):Parameters">
+            <dl>
+              <dt>
+                <i>clauses</i>
+              </dt>
+              <dd>
+             Clauses.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Or(KiiCorp.Cloud.Storage.KiiClause[]):Returns">
+             KiiClanse instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Or(KiiCorp.Cloud.Storage.KiiClause[]):Remarks">
+             Clauses must not be null or empty array.
+             Query performance will be worse as the number of objects in bucket increases, so we recommend you avoid the OR clause if possible.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.Or(KiiCorp.Cloud.Storage.KiiClause[]):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiClause.StartsWith(System.String,System.String)">StartsWith Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiClause.StartsWith(System.String,System.String):member">
+          <div class="msummary">
+             Create a clause with the prefix condition.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiClause.html">KiiClause</a> <b>StartsWith</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> key, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> value)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.StartsWith(System.String,System.String):Parameters">
+            <dl>
+              <dt>
+                <i>key</i>
+              </dt>
+              <dd>
+             Key.
+             </dd>
+              <dt>
+                <i>value</i>
+              </dt>
+              <dd>
+             Value to be compared
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.StartsWith(System.String,System.String):Returns">
+             KiiClause instance.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.StartsWith(System.String,System.String):Remarks">
+             It matches the specified key's value to be starts with the specified value.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiClause.StartsWith(System.String,System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

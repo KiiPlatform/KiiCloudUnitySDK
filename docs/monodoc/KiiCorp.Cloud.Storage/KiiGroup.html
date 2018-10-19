@@ -1,0 +1,1553 @@
+<html>
+  <head>
+    <title>KiiCorp.Cloud.Storage.KiiGroup</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">KiiCloudStorageSDK</a> : <a href="index.html">KiiCorp.Cloud.Storage Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiGroup">Overview</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiGroup:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiGroup:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiGroup:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:KiiCorp.Cloud.Storage.KiiGroup">KiiGroup  Class</h1>
+    <p class="Summary" id="T:KiiCorp.Cloud.Storage.KiiGroup:Summary">
+             Provides APIs for Group features.
+             </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:KiiCorp.Cloud.Storage.KiiGroup:Signature">public class  <b>KiiGroup</b> : <a href="../KiiCorp.Cloud.Storage/KiiSubject.html">KiiSubject</a></div>
+    </div>
+    <div class="Remarks" id="T:KiiCorp.Cloud.Storage.KiiGroup:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:KiiCorp.Cloud.Storage.KiiGroup:Docs:Remarks">
+             GroupName doesn't have unique constraints, so developers can create 3 groups whose names are the same one.
+             </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:KiiCorp.Cloud.Storage.KiiGroup:Docs:Version Information">
+        <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h2 class="Section">Public Properties</h2>
+        <div class="SectionBox" id="Public Properties">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.Storage.KiiGroup.ID">ID</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. 
+             Returns the ID of this group.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.Storage.KiiGroup.Name">Name</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. 
+             Gets or sets the group name.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.Storage.KiiGroup.Owner">Owner</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="../KiiCorp.Cloud.Storage/KiiUser.html">KiiUser</a>
+                  </i>. 
+             Gets the owner.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.Storage.KiiGroup.Subject">Subject</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. 
+             Gets the subject string.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.Storage.KiiGroup.Uri">Uri</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a>
+                  </i>. 
+             Gets the URI of this group.
+             </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiGroup.AddUser(KiiCorp.Cloud.Storage.KiiUser)">AddUser</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/KiiUser.html">KiiUser</a>)<blockquote>
+             Adds the user to this group.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiGroup.Bucket(System.String)">Bucket</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiBucket.html">KiiBucket</a></nobr><blockquote>
+             Gets the KiiBucket whose scope is this group
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiGroup.ChangeName(System.String)">ChangeName</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<blockquote>
+             Changes the name of this group.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiGroup.ChangeName(System.String,KiiCorp.Cloud.Storage.KiiGroupCallback)">ChangeName</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="../KiiCorp.Cloud.Storage/KiiGroupCallback.html">KiiGroupCallback</a>)<blockquote>
+             Changes the name of this group.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiGroup.CreateByUri(System.Uri)">CreateByUri</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiGroup.html">KiiGroup</a></nobr><blockquote>
+             Creates KiiGroup by Uri
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiGroup.Delete()">Delete</a>
+                  </b>()<blockquote>
+             Delete this group from KiiCloud.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiGroup.Delete(KiiCorp.Cloud.Storage.KiiGroupCallback)">Delete</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/KiiGroupCallback.html">KiiGroupCallback</a>)<blockquote>
+             Delete this group from KiiCloud.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiGroup.GroupWithID(System.String)">GroupWithID</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiGroup.html">KiiGroup</a></nobr><blockquote>
+             Instantiate KiiGroup that refers to existing group which has specified ID.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiGroup.ListMembers()">ListMembers</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;KiiUser&gt;</a></nobr><blockquote>
+             Gets the list of members in this group.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiGroup.ListMembers(KiiCorp.Cloud.Storage.KiiUserListCallback)">ListMembers</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/KiiUserListCallback.html">KiiUserListCallback</a>)<blockquote>
+             Gets the list of members in this group.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics()">ListTopics</a>
+                  </b>()<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiListResult`1.html">KiiListResult&lt;KiiTopic&gt;</a></nobr><blockquote>
+             Gets the list of topics in this group scope.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}})">ListTopics</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/KiiGenericsCallback`1.html">KiiGenericsCallback&lt;KiiListResult&lt;KiiTopic&gt;&gt;</a>)<blockquote>
+             Asynchronous call for <a href="../KiiCorp.Cloud.Storage/KiiGroup.html#M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics">KiiGroup.ListTopics</a>.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(System.String)">ListTopics</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiListResult`1.html">KiiListResult&lt;KiiTopic&gt;</a></nobr><blockquote>
+             Gets the list of next page of topics in this group scope.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(System.String,KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}})">ListTopics</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="../KiiCorp.Cloud.Storage/KiiGenericsCallback`1.html">KiiGenericsCallback&lt;KiiListResult&lt;KiiTopic&gt;&gt;</a>)<blockquote>
+             Asynchronous call for <a href="../KiiCorp.Cloud.Storage/KiiGroup.html#M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(System.String)">KiiGroup.ListTopics(string)</a>.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiGroup.Refresh()">Refresh</a>
+                  </b>()<blockquote>
+             Gets the latest information of this group.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiGroup.Refresh(KiiCorp.Cloud.Storage.KiiGroupCallback)">Refresh</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/KiiGroupCallback.html">KiiGroupCallback</a>)<blockquote>
+             Gets the latest information of this group.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiGroup.RegisterGroupWithID(System.String,System.String,System.Collections.Generic.List{KiiCorp.Cloud.Storage.KiiUser})">RegisterGroupWithID</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.List`1">List&lt;KiiUser&gt;</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiGroup.html">KiiGroup</a></nobr><blockquote>
+             Creates new group own by current user on Kii Cloud with specified ID.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>static </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiGroup.RegisterGroupWithID(System.String,System.String,System.Collections.Generic.IList{KiiCorp.Cloud.Storage.KiiUser},KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiGroup})">RegisterGroupWithID</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;KiiUser&gt;</a>, <a href="../KiiCorp.Cloud.Storage/KiiGenericsCallback`1.html">KiiGenericsCallback&lt;KiiGroup&gt;</a>)<blockquote>
+             Creates new group own by current user on Kii Cloud with specified ID.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiGroup.RemoveUser(KiiCorp.Cloud.Storage.KiiUser)">RemoveUser</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/KiiUser.html">KiiUser</a>)<blockquote>
+             Removes the user from this group.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiGroup.Save()">Save</a>
+                  </b>()<blockquote>
+             Save this KiiGroup on KiiCloud
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiGroup.Save(KiiCorp.Cloud.Storage.KiiGroupCallback)">Save</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/KiiGroupCallback.html">KiiGroupCallback</a>)<blockquote>
+             Save this KiiGroup on KiiCloud
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiGroup.Topic(System.String)">Topic</a>
+                  </b>(<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiTopic.html">KiiTopic</a></nobr><blockquote>
+             Get instance of group scope topic.
+             The topic bound to this group
+             </blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:KiiCorp.Cloud.Storage.KiiGroup:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiGroup.AddUser(KiiCorp.Cloud.Storage.KiiUser)">AddUser Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiGroup.AddUser(KiiCorp.Cloud.Storage.KiiUser):member">
+          <div class="msummary">
+             Adds the user to this group.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>AddUser</b> (<a href="../KiiCorp.Cloud.Storage/KiiUser.html">KiiUser</a> user)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.AddUser(KiiCorp.Cloud.Storage.KiiUser):Parameters">
+            <dl>
+              <dt>
+                <i>user</i>
+              </dt>
+              <dd>
+             User you want to add
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.AddUser(KiiCorp.Cloud.Storage.KiiUser):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when user is null or doesn't have ID
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.AddUser(KiiCorp.Cloud.Storage.KiiUser):Remarks">
+             If user is already added, this API does nothing.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.AddUser(KiiCorp.Cloud.Storage.KiiUser):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiGroup.Bucket(System.String)">Bucket Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiGroup.Bucket(System.String):member">
+          <div class="msummary">
+             Gets the KiiBucket whose scope is this group
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiBucket.html">KiiBucket</a> <b>Bucket</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> bucketName)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Bucket(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>bucketName</i>
+              </dt>
+              <dd>
+             Bucket name.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Bucket(System.String):Returns">
+             KiiBucket instance whose scope is this group. If bucket is not in KiiCloud, it will be created when object in it is saved.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Bucket(System.String):Remarks">
+             Bucket name must be valid.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Bucket(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiGroup.ChangeName(System.String)">ChangeName Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiGroup.ChangeName(System.String):member">
+          <div class="msummary">
+             Changes the name of this group.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>ChangeName</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> name)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ChangeName(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>name</i>
+              </dt>
+              <dd>
+             New group name.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ChangeName(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when an argument is empty.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                </td>
+                <td>
+             Is thrown when this group doesn't have ID.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/GroupOperationException.html">KiiCorp.Cloud.Storage.GroupOperationException</a>
+                </td>
+                <td>
+             Is thrown when the group operation is failed.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ChangeName(System.String):Remarks">
+             New group name must no be empty.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ChangeName(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiGroup.ChangeName(System.String,KiiCorp.Cloud.Storage.KiiGroupCallback)">ChangeName Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiGroup.ChangeName(System.String,KiiCorp.Cloud.Storage.KiiGroupCallback):member">
+          <div class="msummary">
+             Changes the name of this group.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>ChangeName</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> name, <a href="../KiiCorp.Cloud.Storage/KiiGroupCallback.html">KiiGroupCallback</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ChangeName(System.String,KiiCorp.Cloud.Storage.KiiGroupCallback):Parameters">
+            <dl>
+              <dt>
+                <i>name</i>
+              </dt>
+              <dd>
+             New group name.
+             </dd>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>
+             Callback.
+             </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ChangeName(System.String,KiiCorp.Cloud.Storage.KiiGroupCallback):Remarks">
+             New group name must no be empty.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ChangeName(System.String,KiiCorp.Cloud.Storage.KiiGroupCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiGroup.CreateByUri(System.Uri)">CreateByUri Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiGroup.CreateByUri(System.Uri):member">
+          <div class="msummary">
+             Creates KiiGroup by Uri
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiGroup.html">KiiGroup</a> <b>CreateByUri</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a> uri)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.CreateByUri(System.Uri):Parameters">
+            <dl>
+              <dt>
+                <i>uri</i>
+              </dt>
+              <dd>
+             Uri of KiiGroup
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.CreateByUri(System.Uri):Returns">
+             KiiGroup instance.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.CreateByUri(System.Uri):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when Uri is invalid.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.CreateByUri(System.Uri):Remarks">
+             To get the latest information from server, need to call Refresh().
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.CreateByUri(System.Uri):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiGroup.Delete()">Delete Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiGroup.Delete():member">
+          <div class="msummary">
+             Delete this group from KiiCloud.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Delete</b> ()</div>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Delete():Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                </td>
+                <td>
+             Is thrown when this group doesn't have ID.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/GroupOperationException.html">KiiCorp.Cloud.Storage.GroupOperationException</a>
+                </td>
+                <td>
+             Is thrown when the group operation is failed.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Delete():Remarks">
+             This API sends a request to KiiCloud.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Delete():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiGroup.Delete(KiiCorp.Cloud.Storage.KiiGroupCallback)">Delete Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiGroup.Delete(KiiCorp.Cloud.Storage.KiiGroupCallback):member">
+          <div class="msummary">
+             Delete this group from KiiCloud.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Delete</b> (<a href="../KiiCorp.Cloud.Storage/KiiGroupCallback.html">KiiGroupCallback</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Delete(KiiCorp.Cloud.Storage.KiiGroupCallback):Parameters">
+            <dl>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>
+             Callback.
+             </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Delete(KiiCorp.Cloud.Storage.KiiGroupCallback):Remarks">
+             This API sends a request to KiiCloud.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Delete(KiiCorp.Cloud.Storage.KiiGroupCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiGroup.GroupWithID(System.String)">GroupWithID Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiGroup.GroupWithID(System.String):member">
+          <div class="msummary">
+             Instantiate KiiGroup that refers to existing group which has specified ID.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiGroup.html">KiiGroup</a> <b>GroupWithID</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> groupID)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.GroupWithID(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>groupID</i>
+              </dt>
+              <dd>
+             ID of the group to instantiate.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.GroupWithID(System.String):Returns">
+             KiiGroup instance.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.GroupWithID(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when specified groupID is null or empty.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.GroupWithID(System.String):Remarks">
+             You have to specify the ID of existing KiiGroup. Unlike KiiObject,
+             you can not assign ID in the client side.
+             This API does not access to the server.
+             After instantiation, call <a href="../KiiCorp.Cloud.Storage/KiiGroup.html#M:KiiCorp.Cloud.Storage.KiiGroup.Refresh">KiiGroup.Refresh</a> to fetch the properties.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.GroupWithID(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.Storage.KiiGroup.ID">ID Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.Storage.KiiGroup.ID:member">
+          <div class="msummary">
+             Returns the ID of this group.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>ID</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.KiiGroup.ID:Value">
+             The group ID.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.KiiGroup.ID:Remarks">
+             If the group has not saved to the cloud, returns null.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.KiiGroup.ID:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiGroup.ListMembers()">ListMembers Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiGroup.ListMembers():member">
+          <div class="msummary">
+             Gets the list of members in this group.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;KiiUser&gt;</a> <b>ListMembers</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListMembers():Returns">
+             The list of members
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListMembers():Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/IllegalKiiBaseObjectFormatException.html">KiiCorp.Cloud.Storage.IllegalKiiBaseObjectFormatException</a>
+                </td>
+                <td>
+             Is thrown when server sends broken Json
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/GroupOperationException.html">KiiCorp.Cloud.Storage.GroupOperationException</a>
+                </td>
+                <td>
+             Is thrown when the group operation is failed.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListMembers():Remarks">
+             This api sends a request to KiiCloud.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListMembers():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiGroup.ListMembers(KiiCorp.Cloud.Storage.KiiUserListCallback)">ListMembers Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiGroup.ListMembers(KiiCorp.Cloud.Storage.KiiUserListCallback):member">
+          <div class="msummary">
+             Gets the list of members in this group.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>ListMembers</b> (<a href="../KiiCorp.Cloud.Storage/KiiUserListCallback.html">KiiUserListCallback</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListMembers(KiiCorp.Cloud.Storage.KiiUserListCallback):Parameters">
+            <dl>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>
+             Callback.
+             </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListMembers(KiiCorp.Cloud.Storage.KiiUserListCallback):Remarks">
+             This api sends a request to KiiCloud.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListMembers(KiiCorp.Cloud.Storage.KiiUserListCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics()">ListTopics Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics():member">
+          <div class="msummary">
+             Gets the list of topics in this group scope.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiListResult`1.html">KiiListResult&lt;KiiTopic&gt;</a> <b>ListTopics</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics():Returns">A list of the topics in this group scope.</blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics():Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/CloudException.html">KiiCorp.Cloud.Storage.CloudException</a>
+                </td>
+                <td>
+             Is thrown when server sends error response.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/UnauthorizedException.html">KiiCorp.Cloud.Storage.UnauthorizedException</a>
+                </td>
+                <td>
+             Is thrown when this method called by anonymous user.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                </td>
+                <td>
+             Is thrown when this group doesn't have ID.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics():Remarks">
+             This api sends a request to server.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}})">ListTopics Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}}):member">
+          <div class="msummary">
+             Asynchronous call for <a href="../KiiCorp.Cloud.Storage/KiiGroup.html#M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics">KiiGroup.ListTopics</a>.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>ListTopics</b> (<a href="../KiiCorp.Cloud.Storage/KiiGenericsCallback`1.html">KiiGenericsCallback&lt;KiiListResult&lt;KiiTopic&gt;&gt;</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}}):Parameters">
+            <dl>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>Callback.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/CloudException.html">KiiCorp.Cloud.Storage.CloudException</a>
+                </td>
+                <td>
+             Is thrown when server sends error response.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}}):Remarks">
+             This api sends a request to server.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}}):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(System.String)">ListTopics Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(System.String):member">
+          <div class="msummary">
+             Gets the list of next page of topics in this group scope.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiListResult`1.html">KiiListResult&lt;KiiTopic&gt;</a> <b>ListTopics</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> paginationKey)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>paginationKey</i>
+              </dt>
+              <dd>
+             Specifies the pagination key that is obtained by <a href="../KiiCorp.Cloud.Storage/KiiListResult`1.html#P:KiiCorp.Cloud.Storage.KiiListResult`1.PaginationKey">KiiListResult`1.PaginationKey</a>.
+             If specified null or empty, it's same as the <a href="../KiiCorp.Cloud.Storage/KiiGroup.html#M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics">KiiGroup.ListTopics</a>.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(System.String):Returns">A list of the topics in this group scope.</blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(System.String):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/CloudException.html">KiiCorp.Cloud.Storage.CloudException</a>
+                </td>
+                <td>
+             Is thrown when server sends error response.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/UnauthorizedException.html">KiiCorp.Cloud.Storage.UnauthorizedException</a>
+                </td>
+                <td>
+             Is thrown when this method called by anonymous user.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(System.String):Remarks">
+             This api sends a request to server.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(System.String,KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}})">ListTopics Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(System.String,KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}}):member">
+          <div class="msummary">
+             Asynchronous call for <a href="../KiiCorp.Cloud.Storage/KiiGroup.html#M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(System.String)">KiiGroup.ListTopics(string)</a>.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>ListTopics</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> paginationKey, <a href="../KiiCorp.Cloud.Storage/KiiGenericsCallback`1.html">KiiGenericsCallback&lt;KiiListResult&lt;KiiTopic&gt;&gt;</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(System.String,KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}}):Parameters">
+            <dl>
+              <dt>
+                <i>paginationKey</i>
+              </dt>
+              <dd>
+             Specifies the pagination key that is obtained by <a href="../KiiCorp.Cloud.Storage/KiiListResult`1.html#P:KiiCorp.Cloud.Storage.KiiListResult`1.PaginationKey">KiiListResult`1.PaginationKey</a>.
+             If specified null or empty, it's same as the <a href="../KiiCorp.Cloud.Storage/KiiGroup.html#M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}})">KiiGroup.ListTopics(KiiGenericsCallback&lt;KiiListResult&lt;KiiTopic&gt;&gt;)</a>.
+             </dd>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>Callback.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(System.String,KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/CloudException.html">KiiCorp.Cloud.Storage.CloudException</a>
+                </td>
+                <td>
+             Is thrown when server sends error response.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(System.String,KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}}):Remarks">
+             This api sends a request to server.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.ListTopics(System.String,KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiListResult{KiiCorp.Cloud.Storage.KiiTopic}}):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.Storage.KiiGroup.Name">Name Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.Storage.KiiGroup.Name:member">
+          <div class="msummary">
+             Gets or sets the group name.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Name</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.KiiGroup.Name:Value">
+             The group name.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.KiiGroup.Name:Remarks">
+             Developers can use this name for UI label etc.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.KiiGroup.Name:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.Storage.KiiGroup.Owner">Owner Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.Storage.KiiGroup.Owner:member">
+          <div class="msummary">
+             Gets the owner.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiUser.html">KiiUser</a> <b>Owner</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.KiiGroup.Owner:Value">
+             The owner. Null if Group has been created by app admin.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.KiiGroup.Owner:Remarks">
+             Developers can use this for showing group owner.
+             If displayName is needed, please call KiiUser.Refresh()/&gt;
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.KiiGroup.Owner:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiGroup.Refresh()">Refresh Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiGroup.Refresh():member">
+          <div class="msummary">
+             Gets the latest information of this group.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Refresh</b> ()</div>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Refresh():Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.InvalidOperationException">InvalidOperationException</a>
+                </td>
+                <td>
+             Is thrown when this group doesn't have ID.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/IllegalKiiBaseObjectFormatException.html">KiiCorp.Cloud.Storage.IllegalKiiBaseObjectFormatException</a>
+                </td>
+                <td>
+             Is thrown when server sends broken Json.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/GroupOperationException.html">KiiCorp.Cloud.Storage.GroupOperationException</a>
+                </td>
+                <td>
+             Is thrown when server sends error response.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Refresh():Remarks">
+             This api sends a request to server.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Refresh():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiGroup.Refresh(KiiCorp.Cloud.Storage.KiiGroupCallback)">Refresh Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiGroup.Refresh(KiiCorp.Cloud.Storage.KiiGroupCallback):member">
+          <div class="msummary">
+             Gets the latest information of this group.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Refresh</b> (<a href="../KiiCorp.Cloud.Storage/KiiGroupCallback.html">KiiGroupCallback</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Refresh(KiiCorp.Cloud.Storage.KiiGroupCallback):Parameters">
+            <dl>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>
+             Callback.
+             </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Refresh(KiiCorp.Cloud.Storage.KiiGroupCallback):Remarks">
+             This api sends a request to server.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Refresh(KiiCorp.Cloud.Storage.KiiGroupCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiGroup.RegisterGroupWithID(System.String,System.String,System.Collections.Generic.List{KiiCorp.Cloud.Storage.KiiUser})">RegisterGroupWithID Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiGroup.RegisterGroupWithID(System.String,System.String,System.Collections.Generic.List{KiiCorp.Cloud.Storage.KiiUser}):member">
+          <div class="msummary">
+             Creates new group own by current user on Kii Cloud with specified ID.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="../KiiCorp.Cloud.Storage/KiiGroup.html">KiiGroup</a> <b>RegisterGroupWithID</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> id, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> name, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.List`1">List&lt;KiiUser&gt;</a> members)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.RegisterGroupWithID(System.String,System.String,System.Collections.Generic.List{KiiCorp.Cloud.Storage.KiiUser}):Parameters">
+            <dl>
+              <dt>
+                <i>id</i>
+              </dt>
+              <dd>ID of the KiiGroup.</dd>
+              <dt>
+                <i>name</i>
+              </dt>
+              <dd>Name of the KiiGroup.</dd>
+              <dt>
+                <i>members</i>
+              </dt>
+              <dd>Members of the group. Group owner will be added as a group member no matter owner is in the list or not.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.RegisterGroupWithID(System.String,System.String,System.Collections.Generic.List{KiiCorp.Cloud.Storage.KiiUser}):Returns">KiiGroup instance.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.RegisterGroupWithID(System.String,System.String,System.Collections.Generic.List{KiiCorp.Cloud.Storage.KiiUser}):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.RegisterGroupWithID(System.String,System.String,System.Collections.Generic.List{KiiCorp.Cloud.Storage.KiiUser}):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiGroup.RegisterGroupWithID(System.String,System.String,System.Collections.Generic.IList{KiiCorp.Cloud.Storage.KiiUser},KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiGroup})">RegisterGroupWithID Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiGroup.RegisterGroupWithID(System.String,System.String,System.Collections.Generic.IList{KiiCorp.Cloud.Storage.KiiUser},KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiGroup}):member">
+          <div class="msummary">
+             Creates new group own by current user on Kii Cloud with specified ID.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public static <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>RegisterGroupWithID</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> id, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> name, <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;KiiUser&gt;</a> members, <a href="../KiiCorp.Cloud.Storage/KiiGenericsCallback`1.html">KiiGenericsCallback&lt;KiiGroup&gt;</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.RegisterGroupWithID(System.String,System.String,System.Collections.Generic.IList{KiiCorp.Cloud.Storage.KiiUser},KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiGroup}):Parameters">
+            <dl>
+              <dt>
+                <i>id</i>
+              </dt>
+              <dd>ID of the KiiGroup.</dd>
+              <dt>
+                <i>name</i>
+              </dt>
+              <dd>Name of the KiiGroup.</dd>
+              <dt>
+                <i>members</i>
+              </dt>
+              <dd>Members of the group. Group owner will be added as a group member no matter owner is in the list or not.</dd>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>Callback</dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.RegisterGroupWithID(System.String,System.String,System.Collections.Generic.IList{KiiCorp.Cloud.Storage.KiiUser},KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiGroup}):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.RegisterGroupWithID(System.String,System.String,System.Collections.Generic.IList{KiiCorp.Cloud.Storage.KiiUser},KiiCorp.Cloud.Storage.KiiGenericsCallback{KiiCorp.Cloud.Storage.KiiGroup}):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiGroup.RemoveUser(KiiCorp.Cloud.Storage.KiiUser)">RemoveUser Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiGroup.RemoveUser(KiiCorp.Cloud.Storage.KiiUser):member">
+          <div class="msummary">
+             Removes the user from this group.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>RemoveUser</b> (<a href="../KiiCorp.Cloud.Storage/KiiUser.html">KiiUser</a> user)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.RemoveUser(KiiCorp.Cloud.Storage.KiiUser):Parameters">
+            <dl>
+              <dt>
+                <i>user</i>
+              </dt>
+              <dd>
+             User you want to remove
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.RemoveUser(KiiCorp.Cloud.Storage.KiiUser):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentException">ArgumentException</a>
+                </td>
+                <td>
+             Is thrown when user is null or doesn't have ID.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.RemoveUser(KiiCorp.Cloud.Storage.KiiUser):Remarks">
+             User mut not be null.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.RemoveUser(KiiCorp.Cloud.Storage.KiiUser):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiGroup.Save()">Save Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiGroup.Save():member">
+          <div class="msummary">
+             Save this KiiGroup on KiiCloud
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Save</b> ()</div>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Save():Remarks">
+             This API sends some requests to KiiCloud.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Save():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiGroup.Save(KiiCorp.Cloud.Storage.KiiGroupCallback)">Save Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiGroup.Save(KiiCorp.Cloud.Storage.KiiGroupCallback):member">
+          <div class="msummary">
+             Save this KiiGroup on KiiCloud
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Save</b> (<a href="../KiiCorp.Cloud.Storage/KiiGroupCallback.html">KiiGroupCallback</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Save(KiiCorp.Cloud.Storage.KiiGroupCallback):Parameters">
+            <dl>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>
+             Callback.
+             </dd>
+            </dl>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Save(KiiCorp.Cloud.Storage.KiiGroupCallback):Remarks">
+             This API sends some requests to KiiCloud.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Save(KiiCorp.Cloud.Storage.KiiGroupCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.Storage.KiiGroup.Subject">Subject Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.Storage.KiiGroup.Subject:member">
+          <div class="msummary">
+             Gets the subject string.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Subject</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.KiiGroup.Subject:Value">
+             The subject string.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.KiiGroup.Subject:Remarks">
+             Developers don't need to use this property in their apps.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.KiiGroup.Subject:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiGroup.Topic(System.String)">Topic Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiGroup.Topic(System.String):member">
+          <div class="msummary">
+             Get instance of group scope topic.
+             The topic bound to this group
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiTopic.html">KiiTopic</a> <b>Topic</b> (<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> name)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Topic(System.String):Parameters">
+            <dl>
+              <dt>
+                <i>name</i>
+              </dt>
+              <dd>Name of topic.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Topic(System.String):Returns">KiiTopic bound to this group.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Topic(System.String):Remarks">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiGroup.Topic(System.String):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.Storage.KiiGroup.Uri">Uri Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.Storage.KiiGroup.Uri:member">
+          <div class="msummary">
+             Gets the URI of this group.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a> <b>Uri</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.KiiGroup.Uri:Value">
+             The URI.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.KiiGroup.Uri:Remarks">
+             Developers can use this for getting KiiGroup instance by <a href="../KiiCorp.Cloud.Storage/KiiGroup.html#M:KiiCorp.Cloud.Storage.KiiGroup.CreateByUri(System.Uri)">KiiGroup.CreateByUri(Uri)</a></div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.KiiGroup.Uri:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>

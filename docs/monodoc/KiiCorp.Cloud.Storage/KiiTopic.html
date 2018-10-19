@@ -1,0 +1,882 @@
+<html>
+  <head>
+    <title>KiiCorp.Cloud.Storage.KiiTopic</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+      a { text-decoration: none }
+
+      div.SideBar {
+        padding-left: 1em;
+        padding-right: 1em;
+        right: 0;
+        float: right;
+        border: thin solid black;
+        background-color: #f2f2f2;
+      }
+    
+      .CollectionTitle { font-weight: bold }
+      .PageTitle { font-size: 150%; font-weight: bold }
+
+      .Summary { }
+      .Signature { }          
+      .Remarks { }
+      .Members { }
+      .Copyright { }
+      
+      .Section { font-size: 125%; font-weight: bold }
+      p.Summary {
+        margin-left: 1em;
+      }
+      .SectionBox { margin-left: 2em }
+      .NamespaceName { font-size: 105%; font-weight: bold }
+      .NamespaceSumary { }
+      .MemberName { font-size: 115%; font-weight: bold; margin-top: 1em }
+      .Subsection { font-size: 105%; font-weight: bold }
+      .SubsectionBox { margin-left: 2em; margin-bottom: 1em }
+
+      .CodeExampleTable { background-color: #f5f5dd; border: thin solid black; padding: .25em; }
+      
+      .TypesListing {
+        border-collapse: collapse;
+      }
+
+      td {
+        vertical-align: top;
+      }
+      th {
+        text-align: left;
+      }
+
+      .TypesListing td { 
+        margin: 0px;  
+        padding: .25em;
+        border: solid gray 1px;
+      }
+
+      .TypesListing th { 
+        margin: 0px;  
+        padding: .25em;
+        background-color: #f2f2f2;
+        border: solid gray 1px;
+      }
+
+      div.Footer {
+        border-top: 1px solid gray;
+        margin-top: 1.5em;
+        padding-top: 0.6em;
+        text-align: center;
+        color: gray;
+      }
+
+      span.NotEntered /* Documentation for this section has not yet been entered */ {
+        font-style: italic;
+        color: red;	
+      }
+
+      div.Header {
+        background: #B0C4DE;
+        border: double;
+        border-color: white;
+        border-width: 7px;
+        padding: 0.5em;
+      }
+
+      div.Header * {
+        font-size: smaller;
+      }
+
+      div.Note {
+      }
+
+      i.ParamRef {
+      }
+
+      i.subtitle {
+      }
+
+      ul.TypeMembersIndex {
+        text-align: left;
+        background: #F8F8F8;
+      }
+
+      ul.TypeMembersIndex li {
+        display: inline;
+        margin:  0.5em;
+      }
+
+      table.HeaderTable {
+      }
+
+      table.SignatureTable {
+      }
+
+      table.Documentation, table.Enumeration, table.TypeDocumentation {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      table.Documentation tr th, table.TypeMembers tr th, table.Enumeration tr th, table.TypeDocumentation tr th {
+        background: whitesmoke;
+        padding: 0.8em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: bottom;
+      }
+
+      table.Documentation tr td, table.TypeMembers tr td, table.Enumeration tr td, table.TypeDocumentation tr td {
+        padding: 0.5em;
+        border: 1px solid gray;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      table.TypeMembers {
+        border: 1px solid #C0C0C0;
+        width: 100%;
+      }
+
+      table.TypeMembers tr td {
+        background: #F8F8F8;
+        border: white;
+      }
+
+      table.Documentation {
+      }
+
+      table.TypeMembers {
+      }
+
+      div.CodeExample {
+        width: 100%;
+        border: 1px solid #DDDDDD;
+        background-color: #F8F8F8;
+      }
+
+      div.CodeExample p {
+        margin: 0.5em;
+        border-bottom: 1px solid #DDDDDD;
+      }
+
+      div.CodeExample div {
+        margin: 0.5em;
+      }
+
+      h4 {
+        margin-bottom: 0;
+      }
+
+      div.Signature {
+        border: 1px solid #C0C0C0;
+        background: #F2F2F2;
+        padding: 1em;
+      }
+    </style>
+    <script type="text/JavaScript">
+      function toggle_display (block) {
+        var w = document.getElementById (block);
+        var t = document.getElementById (block + ":toggle");
+        if (w.style.display == "none") {
+          w.style.display = "block";
+          t.innerHTML = "⊟";
+        } else {
+          w.style.display = "none";
+          t.innerHTML = "⊞";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="CollectionTitle">
+      <a href="../index.html">KiiCloudStorageSDK</a> : <a href="index.html">KiiCorp.Cloud.Storage Namespace</a></div>
+    <div class="SideBar">
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiTopic">Overview</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiTopic:Signature">Signature</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiTopic:Docs">Remarks</a>
+      </p>
+      <p>
+        <a href="#Members">Members</a>
+      </p>
+      <p>
+        <a href="#T:KiiCorp.Cloud.Storage.KiiTopic:Members">Member Details</a>
+      </p>
+    </div>
+    <h1 class="PageTitle" id="T:KiiCorp.Cloud.Storage.KiiTopic">KiiTopic  Class</h1>
+    <p class="Summary" id="T:KiiCorp.Cloud.Storage.KiiTopic:Summary">
+             Topic on Kii push notification service
+             </p>
+    <div>
+      <h2>Syntax</h2>
+      <div class="Signature" id="T:KiiCorp.Cloud.Storage.KiiTopic:Signature">public class  <b>KiiTopic</b> : <a href="../KiiCorp.Cloud.Storage/AccessControllable.html">AccessControllable</a>, <a href="../KiiCorp.Cloud.Storage/KiiSubscribable.html">KiiSubscribable</a></div>
+    </div>
+    <div class="Remarks" id="T:KiiCorp.Cloud.Storage.KiiTopic:Docs">
+      <h2 class="Section">Remarks</h2>
+      <div class="SectionBox" id="T:KiiCorp.Cloud.Storage.KiiTopic:Docs:Remarks">
+             KiiTopic is entity can be a target sending/subscribe push message. 
+             </div>
+      <h2 class="Section">Requirements</h2>
+      <div class="SectionBox" id="T:KiiCorp.Cloud.Storage.KiiTopic:Docs:Version Information">
+        <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+      <h2 class="Section" id="Members">Members</h2>
+      <div class="SectionBox" id="_Members">
+        <p>
+								See Also: Inherited members from
+								<a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Object">object</a>.
+							</p>
+        <h2 class="Section">Public Properties</h2>
+        <div class="SectionBox" id="Public Properties">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.Storage.KiiTopic.Name">Name</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a>
+                  </i>. 
+             Gets the name of this instance.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>[read-only]<div></div></td>
+                <td>
+                  <b>
+                    <a href="#P:KiiCorp.Cloud.Storage.KiiTopic.Uri">Uri</a>
+                  </b>
+                </td>
+                <td>
+                  <i>
+                    <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a>
+                  </i>. 
+             Gets the URI of this instance
+             </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <h2 class="Section">Public Methods</h2>
+        <div class="SectionBox" id="Public Methods">
+          <div class="SubsectionBox">
+            <table class="TypeMembers">
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiTopic.Acl(KiiCorp.Cloud.Storage.TopicAction)">Acl</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/TopicAction.html">TopicAction</a>)<nobr> : <a href="../KiiCorp.Cloud.Storage/KiiTopicACL.html">KiiTopicACL</a></nobr><blockquote>
+             Acl the specified action.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiTopic.Delete()">Delete</a>
+                  </b>()<blockquote>
+             Delete the topic.Only the scope owner or topic creator is allowed to perform delete operation.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiTopic.Delete(KiiCorp.Cloud.Storage.KiiTopicCallback)">Delete</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/KiiTopicCallback.html">KiiTopicCallback</a>)<blockquote>
+             Asynchronous call for <a href="../KiiCorp.Cloud.Storage/KiiTopic.html#M:KiiCorp.Cloud.Storage.KiiTopic.Delete">KiiTopic.Delete</a>.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiTopic.Exists()">Exists</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a></nobr><blockquote>
+             Checks whether the topic already exists or not.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiTopic.Exists(KiiCorp.Cloud.Storage.KiiGenericsCallback{System.Nullable{System.Boolean}})">Exists</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/KiiGenericsCallback`1.html">KiiGenericsCallback&lt;Nullable&lt;bool&gt;&gt;</a>)<blockquote>
+             Asynchronous call for <a href="../KiiCorp.Cloud.Storage/KiiTopic.html#M:KiiCorp.Cloud.Storage.KiiTopic.Exists">KiiTopic.Exists</a>.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiTopic.ListAclEntries()">ListAclEntries</a>
+                  </b>()<nobr> : <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;KiiACLEntry&lt;KiiTopic, TopicAction&gt;&gt;</a></nobr><blockquote>
+             Lists the acl entries of this topic
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiTopic.ListAclEntries(KiiCorp.Cloud.Storage.KiiACLListCallback{KiiCorp.Cloud.Storage.KiiTopic,KiiCorp.Cloud.Storage.TopicAction})">ListAclEntries</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/KiiACLListCallback`2.html">KiiACLListCallback&lt;KiiTopic, TopicAction&gt;</a>)<blockquote>
+             Asynchronous call for <a href="../KiiCorp.Cloud.Storage/KiiTopic.html#M:KiiCorp.Cloud.Storage.KiiTopic.ListAclEntries">KiiTopic.ListAclEntries</a>.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiTopic.Save()">Save</a>
+                  </b>()<blockquote>
+             Save this topic on KiiCloud.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiTopic.Save(KiiCorp.Cloud.Storage.KiiTopicCallback)">Save</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/KiiTopicCallback.html">KiiTopicCallback</a>)<blockquote>
+             Asynchronous call of <a href="../KiiCorp.Cloud.Storage/KiiTopic.html#M:KiiCorp.Cloud.Storage.KiiTopic.Save">KiiTopic.Save</a></blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiTopic.SendMessage(KiiCorp.Cloud.Storage.KiiPushMessage)">SendMessage</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/KiiPushMessage.html">KiiPushMessage</a>)<blockquote>
+             Send message to this topic.
+             </blockquote></td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <div>
+                  </div>
+                </td>
+                <td colspan="2">
+                  <b>
+                    <a href="#M:KiiCorp.Cloud.Storage.KiiTopic.SendMessage(KiiCorp.Cloud.Storage.KiiPushMessage,KiiCorp.Cloud.Storage.KiiPushMessageCallback)">SendMessage</a>
+                  </b>(<a href="../KiiCorp.Cloud.Storage/KiiPushMessage.html">KiiPushMessage</a>, <a href="../KiiCorp.Cloud.Storage/KiiPushMessageCallback.html">KiiPushMessageCallback</a>)<blockquote>
+             Asynchronous call of <a href="../KiiCorp.Cloud.Storage/KiiTopic.html#M:KiiCorp.Cloud.Storage.KiiTopic.SendMessage(KiiCorp.Cloud.Storage.KiiPushMessage)">KiiTopic.SendMessage(KiiPushMessage)</a></blockquote></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Members" id="T:KiiCorp.Cloud.Storage.KiiTopic:Members">
+      <h2 class="Section" id="MemberDetails">Member Details</h2>
+      <div class="SectionBox" id="_MemberDetails">
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiTopic.Acl(KiiCorp.Cloud.Storage.TopicAction)">Acl Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiTopic.Acl(KiiCorp.Cloud.Storage.TopicAction):member">
+          <div class="msummary">
+             Acl the specified action.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="../KiiCorp.Cloud.Storage/KiiTopicACL.html">KiiTopicACL</a> <b>Acl</b> (<a href="../KiiCorp.Cloud.Storage/TopicAction.html">TopicAction</a> action)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Acl(KiiCorp.Cloud.Storage.TopicAction):Parameters">
+            <dl>
+              <dt>
+                <i>action</i>
+              </dt>
+              <dd>Action.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Acl(KiiCorp.Cloud.Storage.TopicAction):Returns">ACL of this KiiTopic.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Acl(KiiCorp.Cloud.Storage.TopicAction):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Acl(KiiCorp.Cloud.Storage.TopicAction):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiTopic.Delete()">Delete Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiTopic.Delete():member">
+          <div class="msummary">
+             Delete the topic.Only the scope owner or topic creator is allowed to perform delete operation.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Delete</b> ()</div>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Delete():Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/CloudException.html">KiiCorp.Cloud.Storage.CloudException</a>
+                </td>
+                <td>
+             Is thrown when server sends error response.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Delete():Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Delete():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiTopic.Delete(KiiCorp.Cloud.Storage.KiiTopicCallback)">Delete Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiTopic.Delete(KiiCorp.Cloud.Storage.KiiTopicCallback):member">
+          <div class="msummary">
+             Asynchronous call for <a href="../KiiCorp.Cloud.Storage/KiiTopic.html#M:KiiCorp.Cloud.Storage.KiiTopic.Delete">KiiTopic.Delete</a>.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Delete</b> (<a href="../KiiCorp.Cloud.Storage/KiiTopicCallback.html">KiiTopicCallback</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Delete(KiiCorp.Cloud.Storage.KiiTopicCallback):Parameters">
+            <dl>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>Callback.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Delete(KiiCorp.Cloud.Storage.KiiTopicCallback):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+             Is thrown when an argument is null.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/CloudException.html">KiiCorp.Cloud.Storage.CloudException</a>
+                </td>
+                <td>
+             Is thrown when server sends error response.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Delete(KiiCorp.Cloud.Storage.KiiTopicCallback):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Delete(KiiCorp.Cloud.Storage.KiiTopicCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiTopic.Exists()">Exists Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiTopic.Exists():member">
+          <div class="msummary">
+             Checks whether the topic already exists or not.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Boolean">bool</a> <b>Exists</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Exists():Returns">
+            <span class="NotEntered">Documentation for this section has not yet been entered.</span>
+          </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Exists():Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/CloudException.html">KiiCorp.Cloud.Storage.CloudException</a>
+                </td>
+                <td>
+             Is thrown when server sends error response.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Exists():Remarks">
+             This api sends a request to server.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Exists():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiTopic.Exists(KiiCorp.Cloud.Storage.KiiGenericsCallback{System.Nullable{System.Boolean}})">Exists Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiTopic.Exists(KiiCorp.Cloud.Storage.KiiGenericsCallback{System.Nullable{System.Boolean}}):member">
+          <div class="msummary">
+             Asynchronous call for <a href="../KiiCorp.Cloud.Storage/KiiTopic.html#M:KiiCorp.Cloud.Storage.KiiTopic.Exists">KiiTopic.Exists</a>.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Exists</b> (<a href="../KiiCorp.Cloud.Storage/KiiGenericsCallback`1.html">KiiGenericsCallback&lt;Nullable&lt;bool&gt;&gt;</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Exists(KiiCorp.Cloud.Storage.KiiGenericsCallback{System.Nullable{System.Boolean}}):Parameters">
+            <dl>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>Callback.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Exists(KiiCorp.Cloud.Storage.KiiGenericsCallback{System.Nullable{System.Boolean}}):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/CloudException.html">KiiCorp.Cloud.Storage.CloudException</a>
+                </td>
+                <td>
+             Is thrown when server sends error response.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Exists(KiiCorp.Cloud.Storage.KiiGenericsCallback{System.Nullable{System.Boolean}}):Remarks">
+             This api sends a request to server.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Exists(KiiCorp.Cloud.Storage.KiiGenericsCallback{System.Nullable{System.Boolean}}):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiTopic.ListAclEntries()">ListAclEntries Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiTopic.ListAclEntries():member">
+          <div class="msummary">
+             Lists the acl entries of this topic
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Collections.Generic.IList`1">IList&lt;KiiACLEntry&lt;KiiTopic, TopicAction&gt;&gt;</a> <b>ListAclEntries</b> ()</div>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.ListAclEntries():Returns">
+             The list of acl entries.
+             </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.ListAclEntries():Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/NotFoundException.html">KiiCorp.Cloud.Storage.NotFoundException</a>
+                </td>
+                <td>
+             Is thrown when topic or scope is not in KiiCloud.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.ListAclEntries():Remarks">
+             This api sends a request to server.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.ListAclEntries():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiTopic.ListAclEntries(KiiCorp.Cloud.Storage.KiiACLListCallback{KiiCorp.Cloud.Storage.KiiTopic,KiiCorp.Cloud.Storage.TopicAction})">ListAclEntries Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiTopic.ListAclEntries(KiiCorp.Cloud.Storage.KiiACLListCallback{KiiCorp.Cloud.Storage.KiiTopic,KiiCorp.Cloud.Storage.TopicAction}):member">
+          <div class="msummary">
+             Asynchronous call for <a href="../KiiCorp.Cloud.Storage/KiiTopic.html#M:KiiCorp.Cloud.Storage.KiiTopic.ListAclEntries">KiiTopic.ListAclEntries</a>.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>ListAclEntries</b> (<a href="../KiiCorp.Cloud.Storage/KiiACLListCallback`2.html">KiiACLListCallback&lt;KiiTopic, TopicAction&gt;</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.ListAclEntries(KiiCorp.Cloud.Storage.KiiACLListCallback{KiiCorp.Cloud.Storage.KiiTopic,KiiCorp.Cloud.Storage.TopicAction}):Parameters">
+            <dl>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>
+             Callback.
+             </dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Returns</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.ListAclEntries(KiiCorp.Cloud.Storage.KiiACLListCallback{KiiCorp.Cloud.Storage.KiiTopic,KiiCorp.Cloud.Storage.TopicAction}):Returns">
+             The list of acl entries.
+             </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.ListAclEntries(KiiCorp.Cloud.Storage.KiiACLListCallback{KiiCorp.Cloud.Storage.KiiTopic,KiiCorp.Cloud.Storage.TopicAction}):Remarks">
+             This api sends a request to server.
+             </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.ListAclEntries(KiiCorp.Cloud.Storage.KiiACLListCallback{KiiCorp.Cloud.Storage.KiiTopic,KiiCorp.Cloud.Storage.TopicAction}):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.Storage.KiiTopic.Name">Name Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.Storage.KiiTopic.Name:member">
+          <div class="msummary">
+             Gets the name of this instance.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.String">string</a> <b>Name</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.KiiTopic.Name:Value">The name of this instance.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.KiiTopic.Name:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.KiiTopic.Name:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiTopic.Save()">Save Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiTopic.Save():member">
+          <div class="msummary">
+             Save this topic on KiiCloud.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Save</b> ()</div>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Save():Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/CloudException.html">KiiCorp.Cloud.Storage.CloudException</a>
+                </td>
+                <td>
+             Is thrown when server sends error response.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Save():Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Save():Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiTopic.Save(KiiCorp.Cloud.Storage.KiiTopicCallback)">Save Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiTopic.Save(KiiCorp.Cloud.Storage.KiiTopicCallback):member">
+          <div class="msummary">
+             Asynchronous call of <a href="../KiiCorp.Cloud.Storage/KiiTopic.html#M:KiiCorp.Cloud.Storage.KiiTopic.Save">KiiTopic.Save</a></div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>Save</b> (<a href="../KiiCorp.Cloud.Storage/KiiTopicCallback.html">KiiTopicCallback</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Save(KiiCorp.Cloud.Storage.KiiTopicCallback):Parameters">
+            <dl>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>Callback.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Save(KiiCorp.Cloud.Storage.KiiTopicCallback):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+             Is thrown when an argument is null.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/CloudException.html">KiiCorp.Cloud.Storage.CloudException</a>
+                </td>
+                <td>
+             Is thrown when server sends error response.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Save(KiiCorp.Cloud.Storage.KiiTopicCallback):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.Save(KiiCorp.Cloud.Storage.KiiTopicCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiTopic.SendMessage(KiiCorp.Cloud.Storage.KiiPushMessage)">SendMessage Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiTopic.SendMessage(KiiCorp.Cloud.Storage.KiiPushMessage):member">
+          <div class="msummary">
+             Send message to this topic.
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SendMessage</b> (<a href="../KiiCorp.Cloud.Storage/KiiPushMessage.html">KiiPushMessage</a> message)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.SendMessage(KiiCorp.Cloud.Storage.KiiPushMessage):Parameters">
+            <dl>
+              <dt>
+                <i>message</i>
+              </dt>
+              <dd>Message to send.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.SendMessage(KiiCorp.Cloud.Storage.KiiPushMessage):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+             Is thrown when an argument is null.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/CloudException.html">KiiCorp.Cloud.Storage.CloudException</a>
+                </td>
+                <td>
+             Is thrown when server sends error response.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.SendMessage(KiiCorp.Cloud.Storage.KiiPushMessage):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.SendMessage(KiiCorp.Cloud.Storage.KiiPushMessage):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="M:KiiCorp.Cloud.Storage.KiiTopic.SendMessage(KiiCorp.Cloud.Storage.KiiPushMessage,KiiCorp.Cloud.Storage.KiiPushMessageCallback)">SendMessage Method</h3>
+        <blockquote id="M:KiiCorp.Cloud.Storage.KiiTopic.SendMessage(KiiCorp.Cloud.Storage.KiiPushMessage,KiiCorp.Cloud.Storage.KiiPushMessageCallback):member">
+          <div class="msummary">
+             Asynchronous call of <a href="../KiiCorp.Cloud.Storage/KiiTopic.html#M:KiiCorp.Cloud.Storage.KiiTopic.SendMessage(KiiCorp.Cloud.Storage.KiiPushMessage)">KiiTopic.SendMessage(KiiPushMessage)</a></div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Void">void</a> <b>SendMessage</b> (<a href="../KiiCorp.Cloud.Storage/KiiPushMessage.html">KiiPushMessage</a> message, <a href="../KiiCorp.Cloud.Storage/KiiPushMessageCallback.html">KiiPushMessageCallback</a> callback)</div>
+          <h4 class="Subsection">Parameters</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.SendMessage(KiiCorp.Cloud.Storage.KiiPushMessage,KiiCorp.Cloud.Storage.KiiPushMessageCallback):Parameters">
+            <dl>
+              <dt>
+                <i>message</i>
+              </dt>
+              <dd>Message to send.</dd>
+              <dt>
+                <i>callback</i>
+              </dt>
+              <dd>Callback.</dd>
+            </dl>
+          </blockquote>
+          <h4 class="Subsection">Exceptions</h4>
+          <blockquote class="SubsectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.SendMessage(KiiCorp.Cloud.Storage.KiiPushMessage,KiiCorp.Cloud.Storage.KiiPushMessageCallback):Exceptions">
+            <table class="TypeDocumentation">
+              <tr>
+                <th>Type</th>
+                <th>Reason</th>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.ArgumentNullException">ArgumentNullException</a>
+                </td>
+                <td>
+             Is thrown when an argument is null.
+             </td>
+              </tr>
+              <tr valign="top">
+                <td>
+                  <a href="../KiiCorp.Cloud.Storage/CloudException.html">KiiCorp.Cloud.Storage.CloudException</a>
+                </td>
+                <td>
+             Is thrown when server sends error response.
+             </td>
+              </tr>
+            </table>
+          </blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.SendMessage(KiiCorp.Cloud.Storage.KiiPushMessage,KiiCorp.Cloud.Storage.KiiPushMessageCallback):Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="M:KiiCorp.Cloud.Storage.KiiTopic.SendMessage(KiiCorp.Cloud.Storage.KiiPushMessage,KiiCorp.Cloud.Storage.KiiPushMessageCallback):Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+        <h3 id="P:KiiCorp.Cloud.Storage.KiiTopic.Uri">Uri Property</h3>
+        <blockquote id="P:KiiCorp.Cloud.Storage.KiiTopic.Uri:member">
+          <div class="msummary">
+             Gets the URI of this instance
+             </div>
+          <h2>Syntax</h2>
+          <div class="Signature">public <a href="http://www.go-mono.com/docs/monodoc.ashx?link=T:System.Uri">Uri</a> <b>Uri</b>  { get; }</div>
+          <h4 class="Subsection">Value</h4>
+          <blockquote class="SubsectionBox" id="P:KiiCorp.Cloud.Storage.KiiTopic.Uri:Value">The URI of this instance.</blockquote>
+          <h2 class="Section">Remarks</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.KiiTopic.Uri:Remarks">
+          </div>
+          <h2 class="Section">Requirements</h2>
+          <div class="SectionBox" id="P:KiiCorp.Cloud.Storage.KiiTopic.Uri:Version Information">
+            <b>Namespace: </b>KiiCorp.Cloud.Storage<br /><b>Assembly: </b>KiiCloudStorageSDK (in KiiCloudStorageSDK.dll)<br /><b>Assembly Versions: </b>3.2.10.0</div>
+          <hr size="1" />
+        </blockquote>
+      </div>
+    </div>
+    <hr size="1" />
+    <div class="Copyright">
+    </div>
+  </body>
+</html>
