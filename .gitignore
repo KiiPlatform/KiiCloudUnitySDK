@@ -21,4 +21,10 @@ TestResult*
 test-results/
 
 Sample
+
+# Visual Studio
 .vs
+*.nupkg
+packages
+
+
