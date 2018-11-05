@@ -29,7 +29,7 @@ make clean
 make archive
 ```
 
-After completed, Unity must be created under the path.
+After completed, Unity package must be created under the path.
 
 `./KiiCloudUnitySDK/bin/Release/KiiCloudUnitySDK-Release-{version-name}.unitypackage`
 
